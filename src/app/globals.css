@@ -120,6 +120,18 @@ body {
   font-size: 1.0625rem;
 }
 
+.dental-content h1,
+.dental-content h2,
+.dental-content h3,
+.dental-content h4,
+.dental-content .why,
+.dental-content .more-to-explore,
+.dental-content .page-divider,
+.dental-content .section-toggle,
+.dental-content .accordion {
+  clear: both;
+}
+
 .dental-content h1 {
   font-size: 2.25rem;
   font-weight: 800;
@@ -151,16 +163,26 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.dental-content ul {
+.dental-content ul,
+.dental-content ol {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1.5rem;
 }
 
-.dental-content ul li {
+.dental-content ul.two-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1.5rem;
+}
+
+.dental-content ul li,
+.dental-content ol li {
+  display: flow-root;
   position: relative;
-  padding-left: 1.75rem;
-  margin-bottom: 0.625rem;
+  padding-left: 1.6rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
 .dental-content ul li::before {
@@ -168,8 +190,10 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #0d9488;
+  color: #204369;
   font-weight: bold;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .dental-content img.main-img {
@@ -183,25 +207,45 @@ body {
 
 .dental-content img.elem-left,
 .dental-content img.elem-right {
-  border-radius: 0.75rem;
+  border-radius: 0.875rem;
   box-shadow: 0 8px 20px -4px rgba(11, 37, 69, 0.08);
-  margin: 0.5rem 1.5rem 1.25rem 0;
-  max-width: 320px;
+  margin: 0.35rem 1.75rem 1.25rem 0;
+  max-width: 260px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
   float: left;
 }
 
-@media (max-width: 768px) {
+.dental-content img.elem-right {
+  float: right;
+  margin: 0.35rem 0 1.25rem 1.75rem;
+}
+
+@media (max-width: 900px) {
   .dental-content img.elem-left,
   .dental-content img.elem-right {
     float: none;
+    display: block;
     max-width: 100%;
-    margin: 1rem 0;
+    width: 100%;
+    max-height: 320px;
+    height: auto;
+    margin: 1.25rem auto;
   }
 }
 
+.dental-content h1.text-white,
+.dental-content h2.text-white,
+.dental-content h3.text-white,
+.dental-content h4.text-white,
+.dental-content .text-white {
+  color: #ffffff !important;
+}
+
 .dental-content .why {
-  background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
-  border-left: 4px solid #0d9488;
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  border-left: 4px solid #204369;
   padding: 1.5rem;
   border-radius: 0.75rem;
   margin: 2rem 0;

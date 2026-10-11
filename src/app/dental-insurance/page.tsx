@@ -94,10 +94,10 @@ export default function DentalInsurancePage() {
           <Link
             key={p.name}
             href={p.href}
-            className="p-3 bg-slate-50 hover:bg-[#0b2545] text-slate-800 hover:text-white rounded-xl border border-slate-200 text-xs font-bold transition-all flex items-center justify-between"
+            className="p-3 bg-slate-50 hover:bg-[#0b2545] text-slate-800 hover:text-white rounded-xl border border-slate-200 text-xs font-bold transition-all flex items-center justify-between group"
           >
             <span>{p.name}</span>
-            <Check className="w-4 h-4 text-teal-500" />
+            <Check className="w-4 h-4 text-[#204369] group-hover:text-white transition-colors" />
           </Link>
         ))}
       </div>

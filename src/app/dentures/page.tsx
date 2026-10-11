@@ -114,7 +114,7 @@ export default function DenturesPage() {
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="tel:12549876777"
-            className="bg-teal-500 hover:bg-teal-400 text-white font-bold py-3.5 px-8 rounded-xl text-base shadow transition-all"
+            className="bg-white hover:bg-slate-100 text-[#0b2545] font-bold py-3.5 px-8 rounded-xl text-base shadow transition-all"
           >
             Call: (254) 987-6777
           </a>

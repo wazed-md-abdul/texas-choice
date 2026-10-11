@@ -182,7 +182,7 @@ export default function DentalServicesPage() {
           {/* Quick Schedule Conversion Card */}
           <div className="bg-gradient-to-br from-[#0b2545] to-[#134074] text-white rounded-3xl p-8 flex flex-col justify-between shadow-xl">
             <div>
-              <span className="text-teal-300 font-bold uppercase tracking-wider text-xs block mb-2">
+              <span className="text-[#9c8f6d] font-bold uppercase tracking-wider text-xs block mb-2">
                 Ready to Get Started?
               </span>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
@@ -196,7 +196,7 @@ export default function DentalServicesPage() {
             <div className="space-y-3">
               <a
                 href="tel:12549876777"
-                className="w-full bg-teal-500 hover:bg-teal-400 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow transition-colors text-center"
+                className="w-full bg-white hover:bg-slate-100 text-[#0b2545] font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow transition-colors text-center"
               >
                 Call: (254) 987-6777
               </a>
