@@ -16,9 +16,9 @@ export default function Footer() {
       <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-sm">
         <Link href="/" className="inline-block mb-3">
           <img
-            src="/assets/images/footer-logo.png"
+            src="/assets/images/footer-logo-white.png"
             alt="Cove Choice Dental logo"
-            className="h-12 sm:h-14 w-auto object-contain brightness-110"
+            className="h-12 sm:h-14 w-auto object-contain"
           />
         </Link>
         <p className="font-sans text-xs sm:text-sm text-slate-300/80 leading-relaxed">

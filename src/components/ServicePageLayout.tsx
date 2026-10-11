@@ -130,44 +130,7 @@ export default function ServicePageLayout({
               </div>
             </div>
 
-            {/* Related Quick Links */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm">
-              <h4 className="font-bold text-sm text-[#204369] uppercase tracking-wider mb-3">
-                Related Dental Care
-              </h4>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>
-                  <Link href="/emergency-dentistry" className="hover:text-[#e64b38] flex items-center justify-between transition-colors">
-                    <span>Emergency Dentistry</span>
-                    <span className="text-slate-400">→</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/dental-implants" className="hover:text-[#204369] flex items-center justify-between transition-colors">
-                    <span>Dental Implants</span>
-                    <span className="text-slate-400">→</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/dentures" className="hover:text-[#204369] flex items-center justify-between transition-colors">
-                    <span>Modern Dentures</span>
-                    <span className="text-slate-400">→</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/preventive-dentistry" className="hover:text-[#204369] flex items-center justify-between transition-colors">
-                    <span>Family Dental Care</span>
-                    <span className="text-slate-400">→</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/dental-insurance" className="hover:text-[#204369] flex items-center justify-between transition-colors">
-                    <span>Insurance &amp; Financing</span>
-                    <span className="text-slate-400">→</span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>
