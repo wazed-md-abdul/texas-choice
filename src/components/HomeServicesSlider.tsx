@@ -100,14 +100,14 @@ export default function HomeServicesSlider() {
   const [activeId, setActiveId] = useState<string>("emergency");
 
   return (
-    <section className="py-24 bg-[#f2f1ec] relative overflow-hidden text-slate-800">
+    <section className="py-12 sm:py-16 bg-[#f2f1ec] relative overflow-hidden text-slate-800">
       {/* Background ambient accents */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#9c8f6d]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#204369]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-6">
           <div className="max-w-2xl">
             <span className="text-xs font-bold uppercase tracking-widest text-[#9c8f6d] block mb-2">
               Comprehensive Dental Treatments
@@ -341,7 +341,7 @@ export default function HomeServicesSlider() {
         </div>
 
         {/* Bottom Practice Reassurance Strip */}
-        <div className="mt-12 pt-8 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-600">
+        <div className="mt-8 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-600">
           <div className="flex items-center gap-2 font-medium">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
             <span>Accepting New Patients &amp; Same-Day Emergencies</span>

@@ -42,10 +42,10 @@ const reviews: Review[] = [
 
 export default function HomeReviewsSlider() {
   return (
-    <section className="py-24 sm:py-32 bg-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <span className="text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-slate-500 block mb-3">
             TESTIMONIAL
           </span>
@@ -100,7 +100,7 @@ export default function HomeReviewsSlider() {
         </div>
 
         {/* Bottom Trust Badge & Link */}
-        <div className="mt-16 sm:mt-20 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="mt-10 sm:mt-12 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div className="flex items-center gap-2 bg-[#f2f1ec] px-4 py-2 rounded-full border border-[#9c8f6d]/30">
             <span className="flex items-center gap-1 text-[#204369] font-bold text-sm">
               <Star className="w-4 h-4 fill-[#febb21] text-[#febb21]" /> 4.9 Rating

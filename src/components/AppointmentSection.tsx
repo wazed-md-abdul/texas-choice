@@ -23,7 +23,7 @@ export default function AppointmentSection() {
   };
 
   return (
-    <section id="appointment-booking" className="py-20 bg-slate-50 relative overflow-hidden">
+    <section id="appointment-booking" className="py-12 sm:py-16 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="bg-white rounded-3xl border border-slate-200/80 shadow-2xl overflow-hidden grid lg:grid-cols-12">
           {/* Left Visual & Clinic Contact Column */}

@@ -60,7 +60,7 @@ export default function DoctorProfileLayout({ doctor }: DoctorProfileLayoutProps
   return (
     <div className="min-h-screen bg-[#f2f1ec] text-slate-800">
       {/* Top Breadcrumb & Hero Header */}
-      <section className="relative bg-[#204369] text-white pt-8 pb-16 overflow-hidden">
+      <section className="relative bg-[#204369] text-white pt-6 pb-10 overflow-hidden">
         {/* Subtle ambient lighting */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#9c8f6d]/15 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#3a97bb]/10 rounded-full blur-3xl pointer-events-none" />
@@ -166,7 +166,7 @@ export default function DoctorProfileLayout({ doctor }: DoctorProfileLayoutProps
       </section>
 
       {/* Main Content Sections */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 space-y-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-8">
         {/* Section 1: Why Did You Decide to Become a Dentist? */}
         <section className="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200/80">
           <div className="grid lg:grid-cols-12 gap-8 items-center">

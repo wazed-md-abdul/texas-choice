@@ -17,7 +17,7 @@ const doctors: Doctor[] = [
     specialty: "Implant & Full Mouth Rehabilitation",
     image: "/assets/images/dr-alvi-landing.jpg",
     href: "/dr-daood-alvi",
-    staggerClass: "lg:translate-y-28 sm:translate-y-8",
+    staggerClass: "lg:translate-y-3 sm:translate-y-0",
   },
   {
     name: "Dr. Shruti Sharma, DDS",
@@ -25,7 +25,7 @@ const doctors: Doctor[] = [
     specialty: "Restorative Aesthetics & Endodontics",
     image: "/assets/images/dr-sharma-landing.jpg",
     href: "/dr-sharma",
-    staggerClass: "lg:translate-y-10 sm:translate-y-0",
+    staggerClass: "lg:translate-y-0",
   },
   {
     name: "Dr. Simrat Sehmi, DDS",
@@ -33,7 +33,7 @@ const doctors: Doctor[] = [
     specialty: "Children's Dental & Preventive Care",
     image: "/assets/images/dr-sehmi-landing.jpg",
     href: "/dr-simrat-sehmi",
-    staggerClass: "lg:translate-y-0 sm:translate-y-8",
+    staggerClass: "lg:translate-y-3 sm:translate-y-0",
   },
   {
     name: "Dr. Sileshi Assemu, DDS",
@@ -41,16 +41,16 @@ const doctors: Doctor[] = [
     specialty: "Gentle Care & Emergency Treatments",
     image: "/assets/images/dr-assemu-landing.jpg",
     href: "/dr-assemu",
-    staggerClass: "lg:translate-y-24 sm:translate-y-0",
+    staggerClass: "lg:translate-y-0",
   },
 ];
 
 export default function MeetDoctors() {
   return (
-    <section className="py-24 sm:py-32 bg-[#f2f1ec] text-slate-800 relative overflow-hidden">
+    <section className="py-12 sm:py-16 bg-[#f2f1ec] text-slate-800 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <span className="text-xs font-bold uppercase tracking-widest text-[#9c8f6d] block mb-3">
             Cove Choice Dental • Clinical Leadership
           </span>
@@ -62,8 +62,8 @@ export default function MeetDoctors() {
           </p>
         </div>
 
-        {/* 4 Staggered Undulating Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 pb-12 sm:pb-24 lg:pb-36 items-start">
+        {/* 4 Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 pb-6 sm:pb-8 items-start">
           {doctors.map((doc, idx) => (
             <Link
               key={doc.name}

@@ -4,7 +4,7 @@ import { FileText, HeartHandshake, CreditCard, Check } from "lucide-react";
 
 export default function InsuranceFinancingSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="bg-gradient-to-br from-[#16304c] via-[#204369] to-[#2d5b8c] rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-2xl relative overflow-hidden">
           {/* Ambient Accent Light */}

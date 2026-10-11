@@ -11,7 +11,7 @@ import { FaYelp, FaGoogle } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#204369] text-slate-200 rounded-t-[2.5rem] md:rounded-t-[3.5rem] mt-16 md:mt-24 px-6 sm:px-12 py-12 md:py-16 max-w-[1440px] mx-auto border-t border-white/10 shadow-2xl flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
+    <footer className="w-full bg-[#204369] text-slate-200 rounded-t-[2.5rem] md:rounded-t-[3.5rem] mt-6 md:mt-10 px-6 sm:px-12 py-10 md:py-12 max-w-[1440px] mx-auto border-t border-white/10 shadow-2xl flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
       {/* Brand & Clinic Info (Left) */}
       <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-sm">
         <Link href="/" className="inline-block mb-3">

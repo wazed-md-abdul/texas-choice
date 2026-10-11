@@ -13,14 +13,14 @@ import {
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 sm:py-32 bg-[#f2f1ec]/60 relative overflow-hidden">
+    <section className="py-12 sm:py-16 bg-[#f2f1ec]/60 relative overflow-hidden">
       {/* Decorative ambient background accents */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#204369]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#e64b38]/5 rounded-full blur-3xl pointer-events-none translate-y-1/2" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-[#9c8f6d]/30 shadow-xs mb-5">
             <span className="w-2 h-2 rounded-full bg-[#e64b38] animate-pulse" />
             <span className="text-[#204369] font-bold tracking-wider text-xs uppercase">
@@ -299,7 +299,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Bottom Practice Action & Reassurance Strip */}
-        <div className="mt-14 sm:mt-16 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xs flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+        <div className="mt-8 sm:mt-10 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xs flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
           <div className="max-w-2xl">
             <h4 className="text-lg sm:text-xl font-bold text-[#204369] mb-1">
               Ready to experience modern, family-first dentistry?

@@ -25,7 +25,7 @@ export default function ContactPage() {
       />
 
       {/* Contact Cards Grid */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-12 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Phone Card */}
           <div className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow text-center">

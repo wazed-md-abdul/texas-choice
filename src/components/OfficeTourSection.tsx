@@ -4,7 +4,7 @@ import { Camera, Zap } from "lucide-react";
 
 export default function OfficeTourSection() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Column */}

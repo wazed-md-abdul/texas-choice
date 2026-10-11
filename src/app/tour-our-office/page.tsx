@@ -97,8 +97,8 @@ export default function TourOurOfficePage() {
         }
       />
 
-      <main className="bg-slate-50/50 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      <main className="bg-slate-50/50 py-10 sm:py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-14">
 
           {/* Hero Feature Intro */}
           <section className="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200/80">

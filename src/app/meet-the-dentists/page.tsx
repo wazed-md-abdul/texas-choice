@@ -28,7 +28,7 @@ export default function MeetTheDentistsPage() {
       <MeetDoctors />
 
       {/* More to Explore Section */}
-      <section className="py-16 bg-white border-t border-slate-200">
+      <section className="py-10 sm:py-12 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <span className="text-[#204369] font-bold uppercase tracking-wider text-xs bg-[#f2f1ec] px-3.5 py-1.5 rounded-full border border-[#9c8f6d]/30">
             Learn More About Our Practice

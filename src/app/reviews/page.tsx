@@ -26,7 +26,7 @@ export default function ReviewsPage() {
       <HomeReviewsSlider />
 
       {/* Review Actions Section */}
-      <section className="py-16 bg-white border-t border-slate-200">
+      <section className="py-10 sm:py-12 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <div>
             <span className="text-teal-700 font-bold uppercase tracking-wider text-xs bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-100">

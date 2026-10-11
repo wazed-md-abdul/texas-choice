@@ -2,8 +2,8 @@ import React from "react";
 
 export default function GoogleMapSection() {
   return (
-    <section className="relative bg-white py-12 border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8">
+    <section className="relative bg-white py-8 sm:py-10 border-t border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-5">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <span className="text-[#204369] font-bold uppercase tracking-wider text-xs sm:text-sm bg-[#f2f1ec] px-3.5 py-1.5 rounded-full border border-[#9c8f6d]/30">

@@ -47,7 +47,7 @@ export default function ServicePageLayout({
       />
 
       {/* Main Content + Sidebar Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid lg:grid-cols-12 gap-10">
           {/* Main Article Content */}
           <div className="lg:col-span-8">

@@ -74,9 +74,9 @@ export default function MeetTheTeamPage() {
         ]}
       />
 
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-10 sm:py-12 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Intro Highlight */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="text-xs font-bold uppercase tracking-widest text-[#9c8f6d] block mb-2">
             Compassionate Patient Care
           </span>
