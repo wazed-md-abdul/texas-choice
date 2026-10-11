@@ -47,7 +47,7 @@ export default function CosmeticDentistryPage() {
           Porcelain veneers are ultra-thin shells of durable medical-grade ceramic permanently bonded to the front surface of your teeth. Veneers can instantly correct chips, severe discoloration, gaps, and misshapen teeth in as few as two visits.
         </p>
         <p>
-          <Link href="/veneers" className="text-teal-700 font-bold hover:underline">
+          <Link href="/veneers" className="text-[#204369] font-bold hover:text-[#e64b38] hover:underline">
             Learn More About Porcelain Veneers →
           </Link>
         </p>
@@ -65,7 +65,7 @@ export default function CosmeticDentistryPage() {
           Store-bought strips only remove surface stains. Our professional in-office and take-home Zoom whitening kits break up deep intrinsic stains from coffee, tea, wine, and aging, brightening your teeth up to 8 shades in a single session.
         </p>
         <p>
-          <Link href="/teeth-whitening" className="text-teal-700 font-bold hover:underline">
+          <Link href="/teeth-whitening" className="text-[#204369] font-bold hover:text-[#e64b38] hover:underline">
             Learn More About Teeth Whitening →
           </Link>
         </p>
@@ -83,7 +83,7 @@ export default function CosmeticDentistryPage() {
           For minor chips, small gaps, or localized discoloration, cosmetic bonding offers a fast, affordable fix in just one visit. We sculpt composite resin directly onto the tooth and cure it with high-intensity light for an unnoticeable seamless match.
         </p>
         <p>
-          <Link href="/cosmetic-bonding" className="text-teal-700 font-bold hover:underline">
+          <Link href="/cosmetic-bonding" className="text-[#204369] font-bold hover:text-[#e64b38] hover:underline">
             Learn More About Cosmetic Bonding →
           </Link>
         </p>

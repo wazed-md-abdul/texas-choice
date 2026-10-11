@@ -100,7 +100,7 @@ export default function EmergencyDentistryPage() {
 
         <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200">
           <h3 className="text-base font-bold text-[#0b2545] m-0 mb-1 flex items-center gap-2">
-            <Activity className="w-4 h-4 text-teal-600 shrink-0" /> Chipped or Cracked Teeth
+            <Activity className="w-4 h-4 text-[#204369] shrink-0" /> Chipped or Cracked Teeth
           </h3>
           <p className="text-xs text-slate-600 m-0">
             Cracks expose inner pulp to harmful bacteria. Immediate bonding or dental crowns prevent structural tooth loss.

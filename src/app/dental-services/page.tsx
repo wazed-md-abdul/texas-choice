@@ -155,9 +155,9 @@ export default function DentalServicesPage() {
                       <li key={idx}>
                         <Link
                           href={sub.href}
-                          className="hover:text-teal-700 flex items-center gap-2 group transition-colors"
+                          className="hover:text-[#204369] flex items-center gap-2 group transition-colors"
                         >
-                          <span className="text-teal-600 font-bold group-hover:translate-x-0.5 transition-transform">
+                          <span className="text-[#204369] font-bold group-hover:translate-x-0.5 transition-transform">
                             →
                           </span>
                           <span>{sub.label}</span>

@@ -61,19 +61,19 @@ export default function DentalInsurancePage() {
 
       <div className="grid sm:grid-cols-3 gap-4 my-6">
         <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-center">
-          <span className="text-2xl font-black text-teal-700 block mb-1">100%</span>
+          <span className="text-2xl font-black text-[#204369] block mb-1">100%</span>
           <h4 className="font-bold text-sm text-[#0b2545] mb-1">Preventive Care</h4>
           <p className="text-xs text-slate-600">Biannual checkups, cleanings, and diagnostic X-rays typically covered completely.</p>
         </div>
 
         <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-center">
-          <span className="text-2xl font-black text-teal-700 block mb-1">70% – 80%</span>
+          <span className="text-2xl font-black text-[#204369] block mb-1">70% – 80%</span>
           <h4 className="font-bold text-sm text-[#0b2545] mb-1">Basic Restorative</h4>
           <p className="text-xs text-slate-600">Tooth-colored fillings, basic extractions, and periodontal cleanings.</p>
         </div>
 
         <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-center">
-          <span className="text-2xl font-black text-teal-700 block mb-1">50%</span>
+          <span className="text-2xl font-black text-[#204369] block mb-1">50%</span>
           <h4 className="font-bold text-sm text-[#0b2545] mb-1">Major Services</h4>
           <p className="text-xs text-slate-600">Porcelain dental crowns, bridges, dentures, and root canals.</p>
         </div>
