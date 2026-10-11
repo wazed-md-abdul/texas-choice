@@ -8,12 +8,12 @@ import { Phone } from "lucide-react";
 const allCoupons: CouponItem[] = [
   {
     id: "np",
-    img: "/assets/images/cpn-np.png",
-    title: "$100 New Dental Patient Special",
-    subtitle: "Includes Comprehensive Exam & Full X-Rays",
+    img: "/assets/images/special-icon-laurel.png",
+    title: "$100 New Dental Patient Visit",
+    subtitle: "Includes Exam & X-Rays",
     price: "$100",
     notes: [
-      "Free Zoom Teeth Whitening Pen with New Patient Visit**",
+      "Free Zoom Teeth Whitening Pen W/ New Patient Visit**",
       "*For patients without dental insurance",
       "**Whitening pen available for a limited time",
     ],
@@ -21,9 +21,9 @@ const allCoupons: CouponItem[] = [
   },
   {
     id: "emer",
-    img: "/assets/images/cpn-emer.png",
+    img: "/assets/images/special-icon-emergency.png",
     title: "$65 Limited Dental Emergency Visit",
-    subtitle: "Includes Emergency Diagnostic Exam & X-Ray",
+    subtitle: "Includes Exam & X-Rays",
     price: "$65",
     notes: [
       "Same-day toothache pain relief",
@@ -33,9 +33,9 @@ const allCoupons: CouponItem[] = [
   },
   {
     id: "child",
-    img: "/assets/images/cpn-child.png",
-    title: "$85 Children's Visit (Ages 13 & Under)",
-    subtitle: "Includes Exam, Professional Cleaning & X-Rays",
+    img: "/assets/images/special-icon-family.png",
+    title: "$85 Children’s New Patient Visit (13 & Under)",
+    subtitle: "Includes Exam, X-Rays & Cleaning",
     price: "$85",
     notes: [
       "Gentle, fear-free pediatric dental visit",
@@ -45,9 +45,9 @@ const allCoupons: CouponItem[] = [
   },
   {
     id: "teen",
-    img: "/assets/images/cpn-teen.png",
-    title: "$95 Teen Visit (Ages 13 - 18)",
-    subtitle: "Includes Exam, Professional Cleaning & X-Rays",
+    img: "/assets/images/special-icon-tooth.png",
+    title: "$95 Teen New Patient Visit (13-18)",
+    subtitle: "Includes Exam, X-Rays & Cleaning",
     price: "$95",
     notes: [
       "Comprehensive teen oral wellness visit",
@@ -61,7 +61,7 @@ export default function OffersPromotionsPage() {
   const [selectedCoupon, setSelectedCoupon] = useState<CouponItem | null>(null);
 
   return (
-    <main className="min-h-screen bg-slate-50">
+    <main className="min-h-screen bg-[#f2f1ec]">
       <PageBanner
         title="Special Dental Offers &amp; Promotions"
         subtitle="Cove Choice Dental • Copperas Cove, TX"
@@ -82,26 +82,35 @@ export default function OffersPromotionsPage() {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-3xl font-extrabold text-teal-700">
-                    {coupon.price}
-                  </span>
-                  <span className="text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full">
-                    Instant Savings
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-2xl bg-[#f2f1ec] border border-[#9c8f6d]/30 flex items-center justify-center p-2 shrink-0">
+                      <img
+                        src={coupon.img}
+                        alt={coupon.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-3xl font-extrabold text-[#204369]">
+                      {coupon.price}
+                    </span>
+                  </div>
+                  <span className="text-xs font-bold text-[#e64b38] bg-rose-50 border border-rose-200 px-3 py-1 rounded-full">
+                    Instant Voucher
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#0b2545] mb-2">
+                <h3 className="text-2xl font-bold text-[#204369] mb-1">
                   {coupon.title}
                 </h3>
-                <p className="text-sm font-semibold text-teal-800 mb-4">
+                <p className="text-sm font-semibold text-[#9c8f6d] mb-4">
                   {coupon.subtitle}
                 </p>
 
                 {coupon.notes && coupon.notes.length > 0 && (
-                  <ul className="space-y-1.5 text-xs text-slate-500 mb-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <ul className="space-y-1.5 text-xs text-slate-600 mb-6 bg-[#f2f1ec]/60 p-4 rounded-xl border border-slate-200/60">
                     {coupon.notes.map((note, idx) => (
                       <li key={idx} className="flex items-start gap-1.5">
-                        <span className="text-teal-600 font-bold">•</span>
+                        <span className="text-[#e64b38] font-bold">•</span>
                         <span>{note}</span>
                       </li>
                     ))}
@@ -113,7 +122,7 @@ export default function OffersPromotionsPage() {
                 <button
                   type="button"
                   onClick={() => setSelectedCoupon(coupon)}
-                  className="flex-1 bg-[#0b2545] hover:bg-[#134074] text-white font-bold py-3.5 px-6 rounded-xl text-sm shadow transition-all text-center"
+                  className="flex-1 bg-[#e64b38] hover:bg-[#c93b2a] text-white font-bold py-3.5 px-6 rounded-xl text-sm shadow transition-all text-center"
                 >
                   Claim This Special Offer
                 </button>

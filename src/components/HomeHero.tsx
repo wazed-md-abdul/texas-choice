@@ -8,38 +8,38 @@ import { Star } from "lucide-react";
 const couponsData: CouponItem[] = [
   {
     id: "cpn1",
-    img: "/assets/images/cpn-np.png",
-    title: "$100 New Dental Patient Special",
-    subtitle: "Includes Comprehensive Exam & X-Rays",
+    img: "/assets/images/special-icon-laurel.png",
+    title: "$100 New Dental Patient Visit",
+    subtitle: "Includes Exam & X-Rays",
     price: "$100",
     notes: [
-      "Free Zoom Teeth Whitening Pen with New Patient Visit**",
+      "Free Zoom Teeth Whitening Pen W/ New Patient Visit**",
       "*For patients without dental insurance",
+      "**Whitening pen available for a limited time",
     ],
     subject: "New Dental Patient Special",
   },
   {
     id: "cpn2",
-    img: "/assets/images/cpn-emer.png",
+    img: "/assets/images/special-icon-emergency.png",
     title: "$65 Limited Dental Emergency Visit",
-    subtitle: "Includes Emergency Exam & Diagnostic X-Ray",
+    subtitle: "Includes Exam & X-Rays",
     price: "$65",
-    notes: ["Same-day emergency tooth pain relief"],
     subject: "Emergency Visit Special",
   },
   {
     id: "cpn3",
-    img: "/assets/images/cpn-child.png",
-    title: "$85 Children's Visit (13 & Under)",
-    subtitle: "Includes Exam, Cleaning & X-Rays",
+    img: "/assets/images/special-icon-family.png",
+    title: "$85 Children’s New Patient Visit (13 & Under)",
+    subtitle: "Includes Exam, X-Rays & Cleaning",
     price: "$85",
     subject: "New Child Patient special",
   },
   {
     id: "cpn4",
-    img: "/assets/images/cpn-teen.png",
-    title: "$95 Teen Visit (13 - 18)",
-    subtitle: "Includes Exam, Cleaning & X-Rays",
+    img: "/assets/images/special-icon-tooth.png",
+    title: "$95 Teen New Patient Visit (13-18)",
+    subtitle: "Includes Exam, X-Rays & Cleaning",
     price: "$95",
     subject: "New Teen Patient special",
   },
@@ -169,40 +169,65 @@ export default function HomeHero() {
 
             {/* Right Specials Card Deck */}
             <div className="lg:col-span-5">
-              <div className="bg-[#204369]/90 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl">
-                <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/15">
+              <div className="bg-[#0b1726]/95 backdrop-blur-xl border border-white/15 p-6 sm:p-7 rounded-3xl shadow-2xl">
+                <div className="flex items-center justify-between mb-2">
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#9c8f6d]">
-                      Limited Time Offers
-                    </span>
-                    <h3 className="text-xl font-bold text-white">Patient Specials</h3>
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                      The Choice is Simple.
+                    </h3>
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#9c8f6d] mt-0.5">
+                      Patient Specials
+                    </p>
                   </div>
                   <span className="px-3 py-1 bg-[#e64b38] text-white rounded-full text-xs font-bold shadow">
                     Instant Voucher
                   </span>
                 </div>
 
-                <div className="space-y-3">
-                  {couponsData.map((cpn) => (
+                <div className="divide-y divide-white/15 border-y border-white/15 my-4">
+                  {couponsData.map((cpn, idx) => (
                     <div
                       key={cpn.id}
                       onClick={() => setSelectedCoupon(cpn)}
-                      className="group cursor-pointer bg-white/10 hover:bg-white/20 border border-white/15 hover:border-[#9c8f6d]/60 p-4 rounded-2xl transition-all transform hover:-translate-y-0.5 duration-200 flex items-center justify-between"
+                      className="group cursor-pointer py-4 hover:bg-white/5 transition-all flex items-start gap-4"
                     >
-                      <div className="space-y-0.5 pr-2">
-                        <div className="flex items-center gap-2">
-                          <span className="text-[#febb21] font-extrabold text-base sm:text-lg">
-                            {cpn.price}
-                          </span>
-                          <h4 className="text-sm font-bold text-white group-hover:text-amber-200 transition-colors">
-                            {cpn.title.replace(/\$\d+\s*/, "")}
-                          </h4>
-                        </div>
-                        <p className="text-xs text-slate-300">{cpn.subtitle}</p>
+                      {/* Left Icon with authentic gold line art */}
+                      <div className="w-12 h-12 shrink-0 flex items-center justify-center pt-1">
+                        <img
+                          src={cpn.img}
+                          alt={cpn.title}
+                          className="w-11 h-11 object-contain group-hover:scale-105 transition-transform duration-200"
+                        />
                       </div>
+
+                      {/* Content block */}
+                      <div className="flex-1 min-w-0">
+                        <h4
+                          className={`text-base sm:text-lg font-bold leading-snug transition-colors ${
+                            idx === 0
+                              ? "text-white"
+                              : "text-[#54a0ff] group-hover:text-white"
+                          }`}
+                        >
+                          {cpn.title}
+                        </h4>
+                        <p className="text-xs sm:text-sm text-slate-300 font-normal mt-0.5">
+                          {cpn.subtitle}
+                        </p>
+
+                        {cpn.notes && cpn.notes.length > 0 && (
+                          <div className="mt-1.5 space-y-0.5 text-[11px] text-slate-300 font-light">
+                            {cpn.notes.map((note, nIdx) => (
+                              <p key={nIdx}>{note}</p>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Claim Button */}
                       <button
                         type="button"
-                        className="shrink-0 bg-[#e64b38] group-hover:bg-[#d23b28] text-white font-bold text-xs px-3.5 py-2 rounded-xl transition-colors shadow"
+                        className="shrink-0 self-center bg-[#e64b38] group-hover:bg-[#c93b2a] text-white font-bold text-xs px-3.5 py-1.5 rounded-lg transition-colors shadow"
                       >
                         Claim
                       </button>
@@ -210,7 +235,7 @@ export default function HomeHero() {
                   ))}
                 </div>
 
-                <div className="mt-5 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-slate-300">
+                <div className="flex items-center justify-between text-xs text-slate-300 pt-1">
                   <span>*No insurance needed for specials</span>
                   <Link href="/offers-promotions" className="text-[#9c8f6d] hover:text-white font-bold">
                     All Promotions →
