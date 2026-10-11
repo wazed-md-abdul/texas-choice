@@ -1,0 +1,24 @@
+import type { Metadata } from "next";
+import PageBanner from "@/components/PageBanner";
+
+export const metadata: Metadata = {
+  title: "Delta Dental Dentist Copperas Cove TX | In-Network Dental Benefits | Cove Choice Dental",
+  description: "Cove Choice Dental in Copperas Cove, TX, is proud to be an in-network Delta Dental dentist. Discover how we can help you use your benefits.",
+};
+
+export default function DeltaDentalDentistPagePage() {
+  const contentHtml = "\n    <div class=\"page-divider\">\n<h2>Delta Dental Coverage Availability &amp; Fees</h2>\n<p>\n    <img\n      alt=\"smiling female patient interacting with dentist\"\n      class=\"elem-left\"\n      src=\"/assets/images/delta-1.jpg\"\n    />\n  </p>\n<p>Delta Dental offers numerous plans to residents of Texas, so it is important that you familiarize yourself with your\n    unique policy. In the meantime, we can provide a general overview of how your PPO benefits might apply:</p>\n<ul>\n    <li><strong>Preventive services, </strong>such as cleanings, exams, and X-rays, are often 100% covered.</li>\n    <li><strong>Basic services, </strong>including fillings and simple tooth extractions, are up to 80% covered.</li>\n    <li><strong>Major services, </strong>such as root canal therapy and crowns, may be up to 50% covered.</li>\n    <li><strong>Cosmetic services </strong>are generally <em>not </em> However, a unique feature of Delta Dental PPO\n        Premium is that it covers up to 80% of the cost of professional teeth whitening.</li>\n</ul>\n<p>Your plan may also have a deductible and a waiting period before you can use your benefits for certain restorative\n    services. Additionally, you are likely to have an annual maximum of $1,000 or $2,000. An annual maximum represents\n    the highest amount that Delta is willing to pay for approved services in a calendar year.</p>\n<p>Since Cove Choice Dental is in-network with Delta Dental, we have a contract that controls prices and helps you to\n    get the greatest value possible out of your annual maximum. In some cases, we can even book major services in a way\n    that allows you to use two annual maximums instead of just one.</p>\n<h2>Speak to Our Front Desk Team</h2>\n<p>\n    <img\n      alt=\"smiling dental team member standing behind front desk\"\n      class=\"elem-left\"\n      src=\"/assets/images/delta-2.jpg\"\n    />\n  </p>\n<p>Our practice is proud to be home to a friendly and knowledgeable front office team. Simply give us a call and provide\n    your insurance policy information. We can help you understand how your benefits may apply in various situations.\n    When you receive treatment, we will make sure that all claims get filed in a timely manner so you do not miss out on\n    any of the benefits you are entitled to. We want the process of using your insurance to be as stress-free as\n    possible!</p>\n</div>\n<div class=\"more-to-explore\">\n    <span>More to Explore</span>\n    <p>\n      <a class=\"btn\" href=\"/preventive-dentistry\"\n        >I Need a Dental Checkup &amp; Cleaning</a\n      >\n      <a class=\"btn\" href=\"/childrens-dentistry\"\n        >I Need a Dentist for My Child</a\n      >\n      <a class=\"btn\" href=\"/gum-disease-treatment\"\n        >I am Worried About Bleeding Gums</a\n      >\n      <a class=\"btn\" href=\"/restorative-dentistry\"\n        >I Have a Cavity or Broken Tooth</a\n      >\n      <a class=\"btn\" href=\"/replace-missing-teeth\"\n        >I am Missing One or More Teeth</a\n      >\n      <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>\n       \n      <a class=\"btn\" href=\"/emergency-dentistry\"\n        >I am in Pain &amp; Need Help</a\n      >\n      <a class=\"btn\" href=\"/wisdom-teeth-removal\"\n        >I Need My Wisdom Teeth Removed</a\n      ><a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a>\n      <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n    </p>\n  </div>\n    ";
+
+  return (
+    <>
+      <PageBanner
+        title={"Delta Dental Dentist &ndash; Copperas Cove, TX"}
+        subtitle={"Learn More About the Benefits of Delta Dental"}
+        description={"If you have a Delta Dental insurance plan, you can count yourself fortunate! Delta offers a number of different plans, all of which can help to reduce your out-of-pocket expenses for top-quality dental care. But how can you make sure you are getting the greatest value possible from your policy? Cove Choice Dental in Copperas Cove, TX, is ready and eager to help. Not only are we in-network with Delta Dental, but we also have all the knowledge necessary to help you maximize your <a href=\"dental-insurance.html\">dental insurance</a>."}
+      />
+      <main className="wrapper">
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      </main>
+    </>
+  );
+}

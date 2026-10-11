@@ -1,0 +1,24 @@
+import type { Metadata } from "next";
+import PageBanner from "@/components/PageBanner";
+
+export const metadata: Metadata = {
+  title: "Missing Teeth Copperas Cove, TX | Dental Implants | Dentures",
+  description: "Replace missing teeth in Copperas Cove, TX, using dental implants, dentures, and fixed bridges crafted by the skilled cosmetic dentist in Copperas Cove and the dentistry team at Cove Choice Dental.",
+};
+
+export default function ReplaceMissingTeethPagePage() {
+  const contentHtml = "\n<div class=\"why\">\n\t<h2>\n\t\tWhy Choose Cove Choice Dental for Replacing Missing Teeth?</h2>\n\t<ul>\n\t\t<li>\n\t\t\tPartnered with Implant Specialists</li>\n\t\t<li>\n\t\t\tLong-Lasting, Expert Restorations</li>\n\t\t<li>\n\t\t\tConvenient Appointment<br />\n\t\t\tOptions</li>\n\t</ul>\n</div>\n<div class=\"page-divider\">\n\t<p>\n\t\t<a name=\"bridge\"></a></p>\n\t<h2>\n\t\tDental Bridges</h2>\n\t<p>\n\t\t<img alt=\"Model smile with dental bridge restoration\" class=\"elem-left\" src=\"/assets/images/missing-teeth-1.jpg\" /></p>\n\t<p>\n\t\tWe typically recommend bridges to replace either a single tooth or several consecutive teeth. An appropriate number of prosthetic teeth will be fused together, and crowns will be placed on both ends of the restoration. The crowns can either be attached to natural teeth on either side of the gap in question, or they can be anchored to dental crowns. In either case, you&rsquo;ll have new teeth that you can be confident will stay securely in place over the long term.</p>\n\t<p>\n\t\t<a class=\"btn\" href=\"/dental-bridges\">Learn More About Dental Bridges</a></p>\n\t<p>\n\t\t<a name=\"denture\"></a></p>\n\t<h2>\n\t\tDentures</h2>\n\t<p>\n\t\t<img alt=\"Full denture on smile model\" class=\"elem-left\" src=\"/assets/images/missing-teeth-2.jpg\" /></p>\n\t<p>\n\t\tWhen you&rsquo;re young, the idea that you might someday lose all of your teeth seems far-fetched, and yet as many as 40 million Americans suffer from this exact problem. It&rsquo;s little wonder then that dentures are such a popular restoration, being able to replace an entire arch at once. Each denture can be carefully designed in order to fit comfortably in the mouth so that natural suction is enough to keep them firmly in place.</p>\n\t<p>\n\t\t<a class=\"btn\" href=\"/dentures\">Learn More About Dentures</a></p>\n\t<p>\n\t\t<a name=\"implant\"></a></p>\n\t<h2>\n\t\tDental Implants</h2>\n\t<p>\n\t\t<img alt=\"Animated dental implant supported dental crown\" class=\"elem-left\" src=\"/assets/images/missing-teeth-3.jpg\" /></p>\n\t<p>\n\t\tDental implants are widely considered to be the most effective solution when it comes to replacing teeth. Bridges and dentures only account for the top parts of the teeth &ndash; the parts that everybody sees when your smile. Only a dental implant can take replace the roots that are typically hidden underneath the gums. In addition to the health benefits, dental implants also look and feel far more natural than other replacement options; they&rsquo;re also flexible enough to be used in many different cases of tooth loss.</p>\n\t<p>\n\t\t<a class=\"btn\" href=\"/dental-implants\">Learn More About Dental Implants</a></p>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a> <a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\" href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a> <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>   <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a> <a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+
+  return (
+    <>
+      <PageBanner
+        title={"Replacing Missing Teeth &ndash; Copperas Cove, TX"}
+        subtitle={"Rebuild Your Smile from the Roots Up"}
+        description={"Even one missing tooth can weaken your bite and leave you with a smile that&rsquo;s less than brilliant. The risk of tooth loss increases with every missing tooth, so you&rsquo;ll want to fill in the gap and restore your oral health as soon as possible. At Cove Choice Dental, we can help you explore multiple solutions for replacing missing teeth in Copperas Cove, TX based on your needs; please <a href=\"contact.html\">get in touch</a> if you have a missing tooth that needs to be replaced in the near future."}
+      />
+      <main className="wrapper">
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      </main>
+    </>
+  );
+}

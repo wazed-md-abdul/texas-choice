@@ -1,0 +1,177 @@
+/* --- EMERGENCY ICONS ---*/
+/***** Remove the class="off" from the leanModal link in the html to activate the link/connect to its pop-up *****/
+.off {
+  pointer-events: none;
+}
+.service-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.service-icons h3 {
+  margin: 5px auto;
+  font-size: 22px;
+  line-height: 1.1;
+}
+.service-icons > * {
+  padding: 5px;
+  flex: 0 1 210px;
+  margin: 10px auto;
+  display: block;
+}
+.service-icons a {
+  color: #2f3437;
+  text-decoration: none;
+}
+.service-icons a:hover .icon .ic-color {
+  fill: #3a97bb;
+}
+.service-icons a:hover h3 {
+  color: #3a97bb;
+}
+.ic-color {
+  fill: #e64b38;
+}
+.sv-icon {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.has-h3 {
+  clear: both;
+  display: table;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+}
+.has-h3 h3 {
+  margin: 0 auto 10px;
+  text-align: left;
+}
+@media (max-width: 750px) {
+  .has-h3, .has-h3 h3 {
+    text-align: center;
+  }
+}
+/*==================== Modal ================*/
+#lean_overlay {
+  padding: 10px;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  overflow: scroll;
+}
+.modal-content {
+  display: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 97%;
+  flex: 0 1 97%;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  max-width: 1000px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  width: 93%;
+  max-height: calc(100vh - 80px);
+  overflow-y: scroll;
+  padding: 10px 20px;
+overflow-x:hidden
+}
+.modal-content h3 {
+  text-align: center;
+  font-size: 26px;
+  margin: 15px 0 10px;
+}
+.modal-content .has_btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.modal-content .btn {
+  margin: 5px;
+  min-width: 430px;
+}
+.modal-content .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal-content .buttons > p {
+  margin: 5px;
+}
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 5px;
+  z-index: 1002;
+  cursor: pointer;
+  color: #e64b38;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+}
+.modal-close span {
+  display: none;
+}
+.modal-close i {
+  position: relative;
+  color: #e64b38;
+  font-style: normal;
+  padding-bottom: 4px;
+}
+.modal-close:hover i {
+  color: #555;
+}
+.modal-content .has_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.modal-content .btn {
+  margin: 5px;
+  min-width: 350px;
+}
+.elem-sm {float: left; margin: 0 25px 35px 0}
+
+
+/* --- SECTION TOGGLE ---*/
+.has-h3 {clear: both; display: table; width: 100%; margin: 20px auto; text-align: left;}
+.has-h3 h3 {margin: 0 auto 10px;text-align: left;}
+.section-toggle {display: none;margin-top: 20px;}
+button.togg {transition: .4s all;}
+@media (max-width: 750px) {
+ .has-h3, .has-h3 h3 {text-align: center;}
+}
+
+
+
+#find {
+  max-width: 1200px;
+  margin: auto;
+}

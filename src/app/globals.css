@@ -1,0 +1,257 @@
+@import "tailwindcss";
+@import "../styles/fontello.css";
+
+@theme {
+  --color-brand-navy: #0b2545;
+  --color-brand-navy-light: #134074;
+  --color-brand-blue: #0077b6;
+  --color-brand-teal: #0d9488;
+  --color-brand-cyan: #0284c7;
+  --color-brand-gold: #f59e0b;
+  --color-brand-red: #e11d48;
+  --color-brand-bg: #f8fafc;
+  --color-brand-border: #e2e8f0;
+
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
+}
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #0b2545 0%, #134074 100%);
+  --teal-gradient: linear-gradient(135deg, #0d9488 0%, #0284c7 100%);
+}
+
+/* Base Body Styles */
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism & UI Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 37, 69, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(11, 37, 69, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -4px rgba(11, 37, 69, 0.12);
+  border-color: #cbd5e1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle glow animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* Floating Action / Mobile Drawer */
+.mobile-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(11, 37, 69, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-drawer-content {
+  background-color: #0b2545;
+  width: 85%;
+  max-width: 380px;
+  height: 100%;
+  overflow-y: auto;
+  padding: 24px 20px 40px;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rich Prose Styling for Dental SEO & Service Subpages */
+.dental-content {
+  color: #334155;
+  line-height: 1.75;
+  font-size: 1.0625rem;
+}
+
+.dental-content h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0b2545;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+.dental-content h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0b2545;
+  line-height: 1.35;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.dental-content h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #134074;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.dental-content p {
+  margin-bottom: 1.25rem;
+}
+
+.dental-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.dental-content ul li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.625rem;
+}
+
+.dental-content ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0d9488;
+  font-weight: bold;
+}
+
+.dental-content img.main-img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(11, 37, 69, 0.1);
+}
+
+.dental-content img.elem-left,
+.dental-content img.elem-right {
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px -4px rgba(11, 37, 69, 0.08);
+  margin: 0.5rem 1.5rem 1.25rem 0;
+  max-width: 320px;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .dental-content img.elem-left,
+  .dental-content img.elem-right {
+    float: none;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+.dental-content .why {
+  background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+  border-left: 4px solid #0d9488;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin: 2rem 0;
+}
+
+.dental-content .why h2 {
+  border: none;
+  margin-top: 0;
+  color: #0b2545;
+  font-size: 1.35rem;
+}
+
+.dental-content .service-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.dental-content .service-icons a {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.dental-content .service-icons a:hover {
+  transform: translateY(-3px);
+  border-color: #0d9488;
+  box-shadow: 0 8px 20px rgba(13, 148, 136, 0.12);
+}
+
+.dental-content .service-icons a h3 {
+  font-size: 0.85rem;
+  color: #1e293b;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.dental-content .service-icons a .sv-icon {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dental-content .service-icons a svg {
+  max-height: 44px;
+  width: auto;
+}

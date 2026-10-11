@@ -1,0 +1,24 @@
+import type { Metadata } from "next";
+import PageBanner from "@/components/PageBanner";
+
+export const metadata: Metadata = {
+  title: "Advanced Dental Services & Technology Copperas Cove, TX | Digital X-Rays | Intraoral Images",
+  description: "Review our advanced dental services and technology in Copperas Cove, TX, including digital x-rays and intraoral images from the skilled dentist in Copperas Cove and the Cove Choice Dental team.",
+};
+
+export default function AdvancedDentalTechnologyPagePage() {
+  const contentHtml = "\n<div class=\"why\">\n\t<h2>\n\t\tCommitted to State-of-the-Art &amp; Comfortable Dental Experiences</h2>\n\t<ul>\n\t\t\n\t\t<li>\n\t\t\tState-of-the-Art Cavity Detection System</li>\n\t\t<li>\n\t\t\tIntraoral Cameras for Improved Communication</li>\n\t</ul>\n</div>\n<div class=\"page-divider\">\n\t<h2>\n\t\tIntraoral Cameras</h2>\n\t<p>\n\t\t<img alt=\"Dentist using intraoral camera to capture images\" class=\"elem-left\" src=\"/assets/images/technology-1.jpg\" /></p>\n\t<p>\n\t\tObviously, it&rsquo;s very difficult for you to take a detailed look inside your own mouth, which can make it hard to picture what your dentist is talking about when they&rsquo;re describing your oral health issues to you. Our intraoral cameras make it easier for us to show you what we&rsquo;re talking about; the pictures we take of your mouth are displayed on a chairside monitor, where we can point out problem areas to you in order to fully explain the situation.</p>\n\t<h2>\n\t\tAll-Digital X-Rays</h2>\n\t<p>\n\t\t<img alt=\"Woman receiving digital x-ray scans\" class=\"elem-left\" src=\"/assets/images/technology-2.jpg\" /></p>\n\t<p>\n\t\tX-rays are nothing new in the world of dentistry; they&rsquo;ve long been an important tool in checking for unseen cavities and other oral health issues. But with the change to digital technology, X-rays can now be developed almost instantly and displayed on our computer monitor &ndash; no more darkrooms filled with environmentally harmful chemicals. Better yet, digital X-rays emit far less radiation, making them a safer option for you and your loved ones.</p>\n\t\n\t<h2>\n\t\tThe Wand&trade;</h2>\n\t<p>\n\t\t<img alt=\"The Wand local anesthesia system\" class=\"elem-left\" src=\"/assets/images/technology-4.jpg\" /></p>\n\t<p>\n\t\tAnesthesia is essential for lengthy dental procedures, but some patients might become anxious when it comes to needles. The Wand Anesthesia System is far more comfortable than a traditional syringe and has been shown to help patients stay calm while anesthesia is administered. The system allows us to closely control the flow rate and pressure of the anesthesia during the injection, ensuring that it&rsquo;s administered at a speed that you&rsquo;re comfortable with while still being effective.</p>\n\t<h2>\n\t\tCavity Detection System</h2>\n\t<p>\n\t\t<img alt=\"Dental team member using cavit detection system\" class=\"elem-left\" src=\"/assets/images/technology-5.jpg\" /></p>\n\t<p>\n\t\tWe have not forgotten the traditional methods of checking for cavities, but advancements in technology have given us the ability to check for decay in its earlier stages in more locations throughout your mouth. Our cavity detection system makes it easier to find oral health issues early on when the issue will be easier to treat. This is accomplished via a special light that makes it easier to see the areas where decay has occurred.</p>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/about-us\">About Us</a> <a class=\"btn\" href=\"/meet-the-dentists\">Meet the Dentists</a> <a class=\"btn\" href=\"/meet-the-team\">Meet the Team</a> <a class=\"btn\" href=\"/tour-our-office\">Tour Our Dental Office</a> <!--<a class=\"btn\" href=\"/smile-gallery\">Smile Gallery</a>--><a class=\"btn\" href=\"/advanced-safety-protocol\">Advanced Safety Protocol</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+
+  return (
+    <>
+      <PageBanner
+        title={"Advanced Dental Services &amp; Technology &ndash; Copperas Cove, TX"}
+        subtitle={"The Latest in Oral Healthcare"}
+        description={"Technology makes all the difference in the world when it comes to dentistry. The advanced instruments at Cove Choice Dental have completely transformed our approach to diagnosing oral health issues and planning complex dental treatments &ndash; and that&rsquo;s not even mentioning how they save our patients time and discomfort. You can learn about some of our technology on this page before you <a href=\"contact.html\">call us </a>to schedule your next appointment."}
+      />
+      <main className="wrapper">
+        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      </main>
+    </>
+  );
+}
