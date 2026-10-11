@@ -1,24 +1,101 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Cosmetic Bonding Copperas Cove | Tooth Repair | Cove Choice Dental",
-  description: "Looking for a cosmetic dentist in Copperas Cove who can fix minor flaws? Let Cove Choice Dental use cosmetic bonding to repair and enhance your smile.",
+  title: "Cosmetic Bonding Copperas Cove, TX | Quick Smile Fixes | Cove Choice Dental",
+  description:
+    "Repair minor tooth chips, cracks, and gaps in just 1 hour with affordable composite bonding in Copperas Cove, TX at Cove Choice Dental.",
 };
 
-export default function CosmeticBondingPagePage() {
-  const contentHtml = "\n      \n\n<p>Do you have a small chip or crack that needs repairing? Do you feel as if your smile would help you feel more\n    confident in yourself if you had one small imperfection addressed? If so, the team at Cove Choice Dental is here to\n    provide you with a clear and easy answer &ndash; cosmetic bonding. As a safe and effective solution designed to hide\n    minor imperfections, it is easy to complete and offers long-lasting results. If you are interested in learning more\n    about this unique service, <a href=\"/contact\">contact us today</a> to schedule\n    an appointment with a skilled <a href=\"/cosmetic-dentistry\">cosmetic dentist\n        in Copperas Cove</a>.</p>\n<div class=\"why\">\n    <h2>Why Choose Cove Choice Dental for Cosmetic Bonding?</h2>\n    <ul>\n        <li>Talented Cosmetic Dentists to Administer Treatment</li>\n        <li>Saturday Appointments Available By Request</li>\n        <li>CareCredit Financing Available</li>\n    </ul>\n</div>\n<div class=\"page-divider\">\n    <h2>Who is a Good Candidate for Cosmetic Bonding?</h2>\n    <p>\n        <img alt=\"Dentist and shade guide for cosmetic bonding in Copperas Cove \" class=\"elem-left\"\n            src=\"/assets/images/cosmetic-bonding-1.jpg\" />\n    </p>\n    <p>The only way to know if you are qualified to receive cosmetic bonding is to schedule a consultation with one of\n        our\n        skilled dentists. It is during this visit that they will go over the imperfections you wish to address, such as:\n    </p>\n    <ul>\n        <li>Chips</li>\n        <li>Cracks</li>\n        <li>Stains</li>\n        <li>Discoloration</li>\n        <li>Minor gaps</li>\n        <li>Minor misalignment</li>\n        <li>Misshapen teeth</li>\n    </ul>\n    <p>As long as you have good general oral health (i.e., no signs of tooth decay or gum disease) and are committed to\n        maintaining your results for as long as possible, you&rsquo;ll be cleared to undergo treatment!</p>\n    <h2>How Does Cosmetic Bonding Work?</h2>\n    <p>\n        <img alt=\"Composite resin in Copperas Cove\" class=\"elem-left\" src=\"/assets/images/cosmetic-bonding-2.jpg\" />\n    </p>\n    <p>In just one visit, cosmetic bonding can give you the smile of your dreams. Because of how quickly it can be\n        performed, you don&rsquo;t need to worry about spending hours and hours in a dentist&rsquo;s chair or even\n        coming\n        back for a second appointment. The reason is that it can be accomplished in about one hour in just one\n        appointment!\n    </p>\n    <p>After identifying the specific tooth or teeth that require treatment, we will use a shade guide to match the\n        composite resin to ensure it blends in naturally with the rest of your smile. We will then etch a small bit of\n        the\n        tooth enamel to ensure that the resin adheres to the surface. Once we apply the composite resin, our team will\n        carefully shape and sculpt it into place, being sure to completely cover the imperfection. If additional\n        adjustments\n        are necessary, you can count on us to make sure the cosmetic bonding looks natural and blends in beautifully.\n        The\n        goal is to not only hide your flaws but also make it impossible for anyone to notice you received dental work!\n    </p>\n    <h2>What Are the Benefits of Cosmetic Bonding?</h2>\n    <p>\n        <img alt=\"Woman after cosmetic bonding in Copperas Cove\" class=\"elem-left\"\n            src=\"/assets/images/cosmetic-bonding-3.jpg\" />\n    </p>\n    <p>When it comes to cosmetic bonding, there are an endless array of benefits you may not have realized before,\n        including:</p>\n    <ul>\n        <li>A fast and effective procedure that allows you to get back to your normal routine in about one hour</li>\n        <li>An affordable solution that is more cost-effective than veneers or dental crowns</li>\n        <li>A less invasive procedure than veneers, as it only requires a small etching of the tooth enamel</li>\n        <li>A painless procedure that delivers beautiful, natural results</li>\n        <li>Results that can last up to a decade with regular maintenance and proper at-home habits</li>\n    </ul>\n</div>\n<div class=\"more-to-explore\">\n    <span>More to Explore</span>\n    <p>\n        <a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a> <a class=\"btn\"\n            href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\"\n            href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\"\n            href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a> <a class=\"btn\"\n            href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a> <a class=\"btn\"\n            href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\"\n            href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a><a class=\"btn\" href=\"/tmj-therapy\">I\n            Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n    </p>\n</div>\n    ";
+export default function CosmeticBondingPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Cosmetic Bonding?</h2>
+  <ul>
+    <li>Completed in Just One Single 60-Minute Visit</li>
+    <li>Budget-Friendly Alternative to Porcelain Veneers</li>
+    <li>No Enamel Shaving or Painful Injections Required</li>
+    <li>Natural Composite Shading That Blends Seamlessly</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>Who Is a Good Candidate for Cosmetic Bonding?</h2>
+  <p>
+    <img
+      alt="Dentist and shade guide for cosmetic bonding in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/cosmetic-bonding-1.jpg"
+    />
+    Do you have a small chip on your front tooth, an annoying gap, or an uneven edge that catches your eye in photos? Cosmetic bonding is a fast, conservative, and affordable treatment ideal for correcting minor aesthetic flaws without reshaping your natural tooth enamel.
+  </p>
+  <ul>
+    <li>Chipped or cracked tooth corners</li>
+    <li>Small gaps or spacing between front teeth</li>
+    <li>Stubborn isolated spots and discoloration</li>
+    <li>Misshapen or unusually short teeth</li>
+    <li>Exposed tooth roots caused by gum recession</li>
+  </ul>
+
+  <h2>How Does Cosmetic Bonding Work?</h2>
+  <p>
+    <img
+      alt="Composite resin bonding procedure in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/cosmetic-bonding-2.jpg"
+    />
+    In just one quick visit, our skilled cosmetic dentists can transform your smile:
+  </p>
+  <ul>
+    <li><strong>Shade Matching:</strong> We select a composite resin hue that flawlessly matches your neighboring enamel.</li>
+    <li><strong>Surface Conditioning:</strong> A gentle conditioning liquid prepares the tooth surface—no drilling required in most cases!</li>
+    <li><strong>Artistic Sculpting:</strong> Our dentist applies malleable composite resin, sculpting it into the ideal anatomical tooth shape.</li>
+    <li><strong>Light Curing &amp; Polish:</strong> A high-intensity curing light hardens the resin in seconds, followed by a high-gloss polish that looks identical to natural enamel.</li>
+  </ul>
+
+  <h2>Benefits of Cosmetic Dental Bonding</h2>
+  <p>
+    <img
+      alt="Woman smiling after cosmetic bonding in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/cosmetic-bonding-3.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Instant Results:</strong> Walk in with a chip, walk out an hour later with a flawless smile.</li>
+    <li><strong>Highly Affordable:</strong> Far more budget-friendly than lab-fabricated porcelain crowns or veneers.</li>
+    <li><strong>Minimally Invasive:</strong> Preserves 100% of your healthy natural tooth structure.</li>
+    <li><strong>Long-Lasting:</strong> With routine oral hygiene and cleanings, bonded teeth easily last 5 to 10 years.</li>
+  </ul>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/veneers">Porcelain Veneers</a>
+    <a class="btn" href="/teeth-whitening">Teeth Whitening</a>
+    <a class="btn" href="/cosmetic-dentistry">Cosmetic Dentistry Overview</a>
+    <a class="btn" href="/tooth-colored-fillings">Tooth-Colored Fillings</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Cosmetic Bonding &ndash; Copperas Cove, TX"}
-        subtitle={"Fixing Minor Imperfections With Ease"}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Cosmetic Dental Bonding in Copperas Cove, TX"
+      subtitle="Fast, One-Visit Smile Enhancements for Chips, Cracks &amp; Gaps"
+      description="Looking for an affordable, non-invasive way to repair a chipped or gapped tooth? Direct composite bonding restores beautiful symmetry and natural aesthetics in under an hour."
+      breadcrumbLabel="Cosmetic Bonding"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Cosmetic Consultation Special",
+        price: "Consult",
+        notes: "Detailed Smile Evaluation & Treatment Planning",
+        href: "/request-an-appointment",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

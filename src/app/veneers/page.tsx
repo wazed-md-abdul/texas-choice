@@ -1,24 +1,109 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Porcelain Veneers Copperas Cove, TX | Cosmetic Dentist | Cove Choice Dental",
-  description: "Create a flawless new smile with porcelain veneers in Copperas Cove, TX custom designed and placed by the cosmetic dentist in Copperas  Cove and the dentistry team at Cove Choice Dental.",
+  title: "Porcelain Veneers Copperas Cove, TX | Cosmetic Smile Makeover | Cove Choice Dental",
+  description:
+    "Transform chipped, stained, or gapped teeth with custom porcelain veneers in Copperas Cove, TX. Lifelike, stain-resistant, and durable cosmetic dentistry at Cove Choice Dental.",
 };
 
-export default function VeneersPagePage() {
-  const contentHtml = "\n<div class=\"why\">\n\t<h2>\n\t\tWhy Choose Cove Choice Dental for Porcelain Veneers?</h2>\n\t<ul>\n\t\t<li>\n\t\t\tFully Customized Restorations</li>\n\t\t<li>\n\t\t\tFlexible Appointment Times</li>\n\t\t<li>\n\t\t\tExcellent Customer Service</li>\n\t</ul>\n</div>\n<div class=\"page-divider\">\n\t<h2>\n\t\tWhat Are Dental Veneers?</h2>\n\t<p>\n\t\t<img alt=\"Illustration of veneer being placed on top, front tooth\" class=\"elem-left\" src=\"/assets/images/veneer-1.jpg\" /></p>\n\t<p>\n\t\tDental veneers are crafted from top-of-the-line dental materials like porcelain, which ensures that the final result will be both lifelike and durable. When bonding to the front-facing surfaces of your teeth, these thin shells (which are about the width of a fingernail) can effectively conceal several dental flaws, including misshapen, cracked, chipped, stained, and gapped teeth. The best part? There aren&rsquo;t any lengthy timelines and there&rsquo;s no need for back-to-back treatments &ndash; veneers can transform your entire smile in as little as two visits!</p>\n\t<h2>\n\t\tThe Process of Getting Veneers&nbsp;</h2>\n\t<p>\n\t\t<img alt=\"Patient smiling while dentist selects shade of veneer\" class=\"elem-left\" src=\"/assets/images/veneer-2.jpg\" /></p>\n\t<p>\n\t\tLet&rsquo;s start at the very beginning, which is your consultation. At this appointment, you&rsquo;ll meet with one of <a href=\"/meet-the-dentists\">our talented Copperas Cove dentists</a> to share what you&rsquo;d like to change about your teeth as well as what your dream smile looks like. If they determine that veneers are the best <a href=\"/cosmetic-dentistry\">cosmetic dental treatment</a> for you, then they will move onto the next step: selecting the size, shape, and shade of your veneers and determining how many you need.</p>\n\t<p>\n\t\tOnce the details of your treatment plan are solidified, we&rsquo;ll need to take impressions of your teeth for the dental lab. While the lab artisans are working on your permanent veneers, we&rsquo;ll provide you with a temporary set. During the next few weeks, you&rsquo;ll need to stick to a soft foods diet and adjust your oral hygiene routine a bit to keep them securely in place.</p>\n\t<p>\n\t\tWhen your final veneers arrive at our office, you&rsquo;ll come in for your last appointment. At this point, we will carefully remove your temporary veneers, secure your permanent ones in place, and show you how to take care of your new and improved smile!</p>\n\t<h2>\n\t\tThe Benefits of Veneers</h2>\n\t<p>\n\t\t<img alt=\"Woman's smile compared with porcelain veneers shade chart\" class=\"elem-left\" src=\"/assets/images/veneers-1.jpg\" /></p>\n\t<ul>\n\t\t<li>\n\t\t\t<strong>Versatility</strong>: From chipped and broken teeth to stubborn stains to worn enamel to misshapen or irregularly shaped teeth, veneers can hide any number of flaws.</li>\n\t\t<li>\n\t\t\t<strong>Minimally Invasive</strong>: The amount of enamel that needs to be removed in order to place veneers is very small in comparison to what&rsquo;s required for dental crowns.</li>\n\t\t<li>\n\t\t\t<strong>Fewer Appointments</strong>: The process of designing and placing veneers can take as little as two visits.</li>\n\t\t<li>\n\t\t\t<strong>Longevity</strong>: Veneers can last for 15 years or longer with the right care.</li>\n\t</ul>\n<h2>Veneers FAQs</h2>\n<div class=\"accordion\">\n<h3>Are Veneers Permanent?</h3>\n<p>While veneers are not considered a permanent solution, they are highly durable and can last many years with proper care. Typically, veneers last between 10 to 15 years, although some may last even longer. However, the process of applying veneers involves removing a small amount of enamel from your natural teeth, making it an irreversible procedure. This means that once you have undergone treatment for veneers, you will always need to cover them. This could take the form of more veneers down the line or exploring other options for restoration.</p>\n<h3>What Happens to the Teeth Under Veneers?</h3>\n<p>Veneers act as shields for your treated teeth, protecting the front surface. Because of this, the teeth under your veneers will remain healthy and functional if you maintain good oral hygiene. It's crucial to continue regular brushing and flossing at home as well as attending bi-annual dental checkups to prevent decay and gum disease. While the front of your teeth will be more protected, the back side is still vulnerable to oral bacteria and acidic food and drinks as well as plaque buildup. So, try to moderate your sugar intake in addition to your oral hygiene routine to ensure your veneers last for a very long time.</p>\n<h3>Is There Anything I Can&rsquo;t Eat with Veneers?</h3>\n<p>While veneers are designed to be durable, it&rsquo;s best to avoid certain foods to prolong their lifespan. Hard foods like ice, hard candies, and nuts can potentially chip or damage the porcelain material. Additionally, if you want to keep your enhanced smile nice and bright, reduce your intake of dark-pigmented food and drinks like coffee, tea, red wine, and berries. You don&rsquo;t have to avoid these treats altogether, just be mindful of their potential to discolor your veneers and rinse your mouth with water after having them. In addition, try to resist the urge to use your teeth to open packages or chew on non-food items. Doing this is one of the fastest ways to chip or crack your enhancements.</p>\n<h3>Can You Whiten Veneers?</h3>\n<p>Veneers themselves cannot be whitened with traditional teeth whitening treatments because they are made from porcelain, which doesn&rsquo;t respond to whitening agents. If your veneers become stained or discolored, we can offer professional cleaning which may help to some extent. However, if they become severely discolored, the best solution is to replace them. If you want your veneers to match with the rest of your smile, be sure to tell us that whitening is part of your plan. We can arrange your treatment plan so that your whitening treatment comes first. This way, your veneers can be color-matched to your teeth after they&rsquo;ve been lightened.</p>\n</div>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a> <a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\" href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a> <a class=\"btn\" href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a> <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>   <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a> <a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+export default function VeneersPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Porcelain Veneers?</h2>
+  <ul>
+    <li>Hand-Crafted, Ultra-Thin Porcelain Shells</li>
+    <li>Conceals Chips, Cracks, Gaps &amp; Deep Discoloration</li>
+    <li>Stain-Resistant Materials for a Lasting Hollywood Smile</li>
+    <li>Custom Smile Design with 0% Interest CareCredit® Financing</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What Are Porcelain Veneers?</h2>
+  <p>
+    <img
+      alt="Illustration of veneer being placed on tooth"
+      class="elem-left"
+      src="/assets/images/veneer-1.jpg"
+    />
+    Dental veneers are ultra-thin shells of medical-grade porcelain custom-crafted to cover the front surface of your teeth. Because porcelain mimics the light-reflecting properties and translucency of natural tooth enamel, veneers create an immaculate, symmetrical smile that looks completely real. In as few as two comfortable visits, veneers can resolve multiple cosmetic concerns all at once.
+  </p>
+
+  <h2>The Veneer Process</h2>
+  <p>
+    <img
+      alt="Patient smiling while dentist selects shade of veneer"
+      class="elem-left"
+      src="/assets/images/veneer-2.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>1. Cosmetic Consultation & Smile Design:</strong> We discuss your aesthetic goals, take digital scans, and customize the ideal shape, length, and shade of your dream smile.</li>
+    <li><strong>2. Gentle Enamel Preparation:</strong> A microscopic sliver of enamel (roughly the thickness of a contact lens) is gently shaped to ensure your veneers sit flush without feeling bulky. We provide temporary veneers while our master ceramists craft your permanent ones.</li>
+    <li><strong>3. Final Bonding:</strong> At your second visit, we bond your permanent porcelain veneers securely in place, polish them to perfection, and send you out with a stunning new smile.</li>
+  </ul>
+
+  <h2>The Benefits of Porcelain Veneers</h2>
+  <p>
+    <img
+      alt="Woman's smile compared with porcelain veneers shade chart"
+      class="elem-left"
+      src="/assets/images/veneers-1.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Comprehensive Cosmetic Fix:</strong> Conceals chips, stubborn intrinsic stains, mild misalignments, uneven lengths, and unwanted gaps simultaneously.</li>
+    <li><strong>Stain Resistance:</strong> Non-porous dental ceramic resists discoloration from coffee, red wine, and tea far better than natural enamel.</li>
+    <li><strong>Long-Lasting Results:</strong> High-quality porcelain veneers routinely last 15 to 20 years with proper daily brushing, flossing, and regular cleanings.</li>
+  </ul>
+
+  <h2>Porcelain Veneers FAQs</h2>
+  <div class="accordion">
+    <h3>Are Porcelain Veneers Permanent?</h3>
+    <p>
+      Because a micro-thin layer of enamel is removed to seat the veneer flush with your gumline, the procedure is irreversible. While the restorations are permanent, the veneers themselves last 15+ years before requiring replacement or maintenance.
+    </p>
+
+    <h3>What Happens to the Teeth Underneath Veneers?</h3>
+    <p>
+      Your natural teeth remain healthy and fully functional underneath. Practicing good daily oral hygiene ensures that the back of the teeth and gum margins stay free from plaque and decay.
+    </p>
+
+    <h3>Can You Whiten Porcelain Veneers?</h3>
+    <p>
+      Porcelain does not react to teeth whitening chemicals. If you would like your entire smile to be brighter, we recommend doing a Zoom! teeth whitening treatment before your veneers are crafted so the porcelain matches your brightest desired shade!
+    </p>
+  </div>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/cosmetic-dentistry">Cosmetic Dentistry Overview</a>
+    <a class="btn" href="/teeth-whitening">Professional Teeth Whitening</a>
+    <a class="btn" href="/cosmetic-bonding">Cosmetic Bonding</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Veneers &ndash; Copperas Cove, TX"}
-        subtitle={"A Great Way to Improve Your Grin in Just a Couple of Visits"}
-        description={"If you&rsquo;re thinking of improving your smile, a number of different procedures might pop into your head, like cosmetic bonding or teeth whitening. But why worry about undergoing multiple cosmetic procedures when you can simply take care of everything that bothers you about your teeth in one fell swoop? <a href=\"contact.html\">Get in touch</a> with Cove Choice Dental today to learn more about veneers in Copperas Cove, TX."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Porcelain Veneers in Copperas Cove, TX"
+      subtitle="Complete Cosmetic Smile Makeovers in Just Two Visits"
+      description="Unhappy with chips, gaps, or dark stains on your front teeth? Custom porcelain veneers provide an instant, radiant, red-carpet smile tailored to your unique facial features."
+      breadcrumbLabel="Porcelain Veneers"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Cosmetic Smile Evaluation",
+        price: "Consult",
+        notes: "Digital Smile Analysis & Comprehensive Aesthetic Review",
+        href: "/request-an-appointment",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

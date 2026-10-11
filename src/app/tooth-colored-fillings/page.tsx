@@ -1,24 +1,98 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Tooth-Colored Fillings Copperas Cove | Repair Teeth | Cove Choice Dental",
-  description: "Do you have cavities and need to repair your teeth? At Cove Choice Dental, we offer an effective solution with tooth-colored fillings in Copperas Cove.",
+  title: "Tooth-Colored Fillings Copperas Cove, TX | Composite Restorations | Cove Choice Dental",
+  description:
+    "Repair cavities seamlessly with metal-free, tooth-colored composite fillings in Copperas Cove, TX at Cove Choice Dental. Natural, safe, and biocompatible.",
 };
 
-export default function ToothColoredFillingsPagePage() {
-  const contentHtml = "\n      \n\n<p>Many people have experienced a cavity at some point in their life. While these can be typically unnoticeable when initially developing, they can lead to serious oral health issues if left untreated, such as infections or severe toothaches. To address this, our team at Cove Choice Dental provides tooth-colored fillings in Copperas Cove. This treatment can seamlessly <a href=\"/restorative-dentistry\">repair teeth</a> from decay or replace amalgam (metal) fillings to create a healthier and more natural-looking smile. If you have a cavity, don&rsquo;t hesitate to reach out to <a href=\"/contact\">our team</a> and schedule an appointment today!</p>\n<div class=\"why\">\n<h2>Why Choose Cove Choice Dental For Tooth-Colored Fillings?</h2>\n<ul>\n<li>Professional &amp; Caring Dental Team</li>\n<li>Effective &amp; Durable Restoration Treatment</li>\n<li>In-Network With Multiple Insurance Providers</li>\n</ul>\n</div>\n<div class=\"page-divider\">\n<h2>What Are Tooth-Colored Fillings?</h2>\n<p><img alt=\"illustration of tooth-colored fillings in Copperas Cove\" class=\"elem-left\" src=\"/assets/images/fillings-1.jpg\"/></p>\n<p>Dental fillings used to be constructed out of amalgam&mdash;a mixture containing metals like nickel, silver, gold, and small amounts of mercury. While durable, these often leave a metallic appearance on your teeth and can lead to dental complications later on.</p>\n<p>Nowadays, we use composite resin to repair teeth safely, effectively, and flawlessly. They have no harmful chemicals or metals, and they also match the color of your enamel, seamlessly blending into your smile! Since they can more accurately fit your natural tooth structure, they&rsquo;re more likely to prevent sensitivity and future decay in the area.</p>\n<h2>The Process of Getting a Tooth-Colored Filling</h2>\n<p><img alt=\"patient smiling after getting tooth-colored fillings in Copperas Cove\" class=\"elem-left\" src=\"/assets/images/fillings-2.jpg\"/></p>\n<p>Whether you have one or three cavities, our team can typically repair your teeth with a tooth-colored filling in just a single visit. We&rsquo;ll first numb your mouth to make sure you&rsquo;re comfortable and pain-free. Your dentist in Copperas Cove will then remove the decayed enamel and thoroughly sanitize the area before continuing.</p>\n<p>We&rsquo;ll decide on a color of composite resin that best matches the rest of your teeth and fill the cleaned-out area with it. A special UV light will be used to harden the results. Afterward, we&rsquo;ll polish your repaired tooth and check that it fits your bite pattern. You&rsquo;ll be able to leave our office with your newly repaired smile in no time!</p>\n<h2>The Benefits of Tooth-Colored Fillings</h2>\n<p><img alt=\"woman smiling with tooth-colored fillings in Copperas Cove\" class=\"elem-left\" src=\"/assets/images/fillings-3.jpg\"/></p>\n<p>While there are various methods for treating a cavity, most dentists agree that a tooth-colored filling is the best way to do it. Compared to other solutions, this treatment can provide the following benefits:</p>\n<ul>\n<li>Improved ability to close out tooth sensitivity.</li>\n<li>More effective at avoiding future infection and decay.</li>\n<li>Nearly unnoticeable once placed.</li>\n<li>Biocompatible and mercury-free.</li>\n<li>Best for patients with metal sensitivities or allergies.</li>\n</ul>\n</div>\n    ";
+export default function ToothColoredFillingsPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Tooth-Colored Fillings?</h2>
+  <ul>
+    <li>100% Metal-Free &amp; Biocompatible Composite Resin</li>
+    <li>Matched to Your Exact Natural Enamel Shade</li>
+    <li>Preserves More Healthy Tooth Structure Than Silver Amalgams</li>
+    <li>Gentle, One-Visit Cavity Treatment with Local Anesthetics</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What Are Tooth-Colored Fillings?</h2>
+  <p>
+    <img
+      alt="Tooth-colored filling illustration in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/fillings-1.jpg"
+    />
+    For decades, dark gray amalgam fillings containing mercury and silver were the standard for cavity repair. While durable, metal amalgams expand and contract with temperature changes, causing micro-fractures in surrounding teeth over time.
+  </p>
+  <p>
+    Today, Cove Choice Dental uses advanced composite resin fillings made of biocompatible glass particles and high-grade resin. They bond directly to your natural enamel, sealing out harmful bacteria and blending invisibly with your smile.
+  </p>
+
+  <h2>The Process of Getting a Tooth-Colored Filling</h2>
+  <p>
+    <img
+      alt="Patient smiling after getting tooth-colored fillings in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/fillings-2.jpg"
+    />
+    Receiving a composite filling is quick, painless, and completed in just one comfortable appointment:
+  </p>
+  <ul>
+    <li><strong>Gentle Numbing:</strong> Local anesthetic completely desensitizes the tooth so you don't feel a thing.</li>
+    <li><strong>Decay Removal &amp; Sanitization:</strong> The decayed area is meticulously cleaned and sterilized.</li>
+    <li><strong>Layering &amp; Bonding:</strong> Shaded composite resin is applied in micro-layers, precisely filling the cavity.</li>
+    <li><strong>UV Light Curing:</strong> A specialized curing light hardens the material in seconds.</li>
+    <li><strong>Bite Alignment &amp; Polish:</strong> We polish the restoration to a silky smooth sheen and confirm your bite feels 100% natural.</li>
+  </ul>
+
+  <h2>Benefits of Composite Resin Fillings</h2>
+  <p>
+    <img
+      alt="Woman smiling with tooth-colored fillings"
+      class="elem-left"
+      src="/assets/images/fillings-3.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Invisible Aesthetics:</strong> No one can tell where your natural tooth ends and the filling begins.</li>
+    <li><strong>Temperature Insulation:</strong> Shields tooth nerves from extreme hot and cold sensations.</li>
+    <li><strong>Conservative Dentistry:</strong> Bonds directly to enamel, requiring less drilling than metal fillings.</li>
+    <li><strong>Safe for Everyone:</strong> Mercury-free and hypoallergenic for patients with metal sensitivities.</li>
+  </ul>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn" href="/root-canal-therapy">Root Canal Therapy</a>
+    <a class="btn" href="/preventive-dentistry">Dental Checkups &amp; Cleanings</a>
+    <a class="btn" href="/childrens-dentistry">Children's Dentistry</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Tooth-Colored Fillings &ndash; Copperas Cove, TX"}
-        subtitle={"Flawless Solution for Repairing Cavities"}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Tooth-Colored Fillings in Copperas Cove, TX"
+      subtitle="Modern, Mercury-Free Composite Cavity Restorations"
+      description="Cavities are common, but they shouldn't compromise your smile. Our tooth-colored composite resin fillings repair decay seamlessly, restoring dental strength while preserving your natural aesthetics."
+      breadcrumbLabel="Tooth-Colored Fillings"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "$100 New Patient Exam Special",
+        price: "$100",
+        notes: "Includes Comprehensive Exam, Digital X-Rays & Whitening Pen",
+        href: "/offers-promotions",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

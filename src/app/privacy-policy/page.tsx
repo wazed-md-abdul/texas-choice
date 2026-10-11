@@ -1,24 +1,50 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Cove Choice Dental",
-  description: "Review our privacy policy to learn more about how the skilled emergency dentist in Copperas Cove, Texas and the Cove Choice Dental team protect the privacy of patients.",
+  title: "Privacy Policy | Cove Choice Dental | Copperas Cove, TX",
+  description: "Review our website privacy notice to learn how Cove Choice Dental in Copperas Cove, Texas protects your online privacy and data.",
 };
 
-export default function PrivacyPolicyPagePage() {
-  const contentHtml = "\n<p>\n\tPlease note that this Privacy Notice only applies to data that we collect when you visit our website.</p>\n<h3>\n\t1. What data we collect and how we use it</h3>\n<p>\n\tWe may collect the following categories of information on our website and use them for the purposes explained below.</p>\n<ul>\n\t<li>\n\t\tWebsite activity: Data about your browsing activity on our website.</li>\n\t<li>\n\t\tDevice and browser information: Technical information about the device or browser you use to access our website. For example, your device&#39;s IP address, and (in the case of mobile devices) your device type and mobile device&#39;s unique identifier such as the Apple IDFA or Android Advertising ID.</li>\n\t<li>\n\t\tContact Information: If you choose to provide your name, email address or phone number.</li>\n\t<li>\n\t\tCustomer Service Information: Information you may provide to customer service including survey responses.</li>\n\t<li>\n\t\tFinancial Information: Credit card number or other payment account information.</li>\n\t<li>\n\t\tThird party information: We may collect additional information about you from third party sources where we have the rights to do so.</li>\n</ul>\n<p>\n\tWe use this data to:</p>\n<ul>\n\t<li>\n\t\tCustomize, measure, and improve our website and services.</li>\n\t<li>\n\t\tDeliver targeted marketing to you.</li>\n</ul>\n<h3>\n\t2. Data Sharing</h3>\n<p>\n\tWe may disclose information about you:</p>\n<ul>\n\t<li>\n\t\tWith our service providers: Companies we contract with who help with parts of our business operations. We require that our service providers only use your information in connection with the services they perform for us.</li>\n\t<li>\n\t\tWith your service providers: Companies under contract with, or acting on your behalf, who handle data (such as a customer lists) on your behalf.</li>\n\t<li>\n\t\tWith our subsidiaries and related companies.</li>\n\t<li>\n\t\tIn connection with legal proceedings: When we are under a legal obligation to do so, for example to comply with a binding order of a court, or where disclosure is necessary to exercise, establish or defend our legal rights, our Advertisers or any other third party.</li>\n\t<li>\n\t\tIn connection with a sale of our business: If a third party acquires some or all of our business or assets, we may disclose your information in connection with the sale.</li>\n\t<li>\n\t\tWe also share technical data that we collect about your browsing habits and your device (such as data relating to our cookies, tracking pixels and similar technologies) with advertising companies in the digital advertising ecosystem.<br />\n\t\tFinally, we may disclose aggregated, anonymized information to third parties.</li>\n</ul>\n<h3>\n\t3. Cookies and related technologies</h3>\n<p>\n\tThis website uses cookies, tracking pixels and related technologies. Cookies are small data files that are served by our platform and stored on your device. Our site uses cookies dropped by us or third parties for a variety of purposes including to operate and personalize the website. Also, cookies may also be used to track how you use the site to target ads to you on other websites.</p>\n<h3>\n\t4. Your choices and opting-out</h3>\n<p>\n\tWe recognize how important your online privacy is to you, so we offer the following options for controlling the targeted ads you receive and how we use your data:</p>\n<ul>\n\t<li>\n\t\tWe comply with the Self-Regulatory Principles for Online Behavioral Advertising as managed by the Digital Advertising Alliance (DAA). You may opt out of receiving targeted ads from companies that perform ad targeting services, including some that we may work with via the DAA website <a href=\"http://optout.aboutads.info/#!/\" target=\"_blank\">here.</a></li>\n\t<li>\n\t\tWe also comply with the Canadian Self-regulatory Principles for Online Behavioral Advertising as managed by the Digital Advertising Alliance of Canada (DAAC). You may opt out of receiving targeted ads from companies that perform ad targeting services, via the DAAC website <a href=\"http://youradchoices.ca/choices/\" target=\"_blank\">here.</a></li>\n\t<li>\n\t\tWe also adhere to the European Interactive Advertising Digital Alliance (EDAA) guidelines for online advertising and you may opt out via their <a href=\"http://www.youronlinechoices.com/\" target=\"_blank\">Your Online Choices website.</a></li>\n\t<li>\n\t\tPlease note that when using the ad industry opt-out tools described above:\n\t\t<ul class=\"bullet\">\n\t\t\t<li>\n\t\t\t\t- If you opt-out we may still collect some data about your online activity for operational purposes, but it won&#39;t be used by us for the purpose of targeting ads to you.</li>\n\t\t\t<li>\n\t\t\t\t- If you use multiple browsers or devices you may need to execute this opt out on each browser or device.</li>\n\t\t\t<li>\n\t\t\t\t- Other ad companies&rsquo; opt-outs may function differently than our opt-out.</li>\n\t\t</ul>\n\t</li>\n\t<li>\n\t\tYou can request that we stop email marketing to you by contacting our office.\n\t\t<ul class=\"bullet\">\n\t\t\t<li>\n\t\t\t\t- Some internet browsers allow users to send a &quot;Do Not Track&quot; signal to websites they visit. We do not respond to this signal.</li>\n\t\t\t<li>\n\t\t\t\t- In addition, if you are located in the European Economic Area you may also have the right to access, correct or update some of the information we hold about you. You can also request that we delete your information.</li>\n\t\t</ul>\n\t</li>\n</ul>\n<h3>\n\t5. Data Retention</h3>\n<p>\n\tIdentifiable information about you is held no longer than necessary for our business purposes or to meet legal requirements.</p>\n<h3>\n\t6. Security</h3>\n<p>\n\tWe apply technical, administrative and organizational security measures to protect the data we collect against accidental or unlawful destruction and loss, alteration, unauthorized disclosure or access, in particular where the processing involves the transmission of data over a network, and against other unlawful forms of processing.</p>\n<h3>\n\t7. International transfers</h3>\n<p>\n\tWe may transfer the information we collect about you to countries other than the country where we originally collected it for the purposes of storage and processing of data and operating our services. Those countries may not have the same data protection laws as your country. However, when we transfer your information to other countries, we will protect that information as described in this Privacy Notice and take steps, where necessary, to ensure that international transfers comply with applicable laws. For example, if we transfer your information from the European Economic Area to a country outside it, such as the United States, we will seek to take additional steps such as entering into EU compliant data transfer agreements with the data importer where necessary.</p>\n<h3>\n\t8. Changes to this Privacy Notice</h3>\n<p>\n\tChanges to this Privacy Notice will be posted on this page. If we make a material change to our privacy practices, we will provide notice on the site or by other means as appropriate.</p>\n<h3>\n\t9. Contact us about questions or concerns</h3>\n<p>\n\tIf you have any questions about this Privacy Notice or our privacy practices, you can contact our office.</p>\n    ";
+export default function PrivacyPolicyPage() {
+  const contentHtml = `
+<div class="page-divider">
+  <p>Please note that this Privacy Notice applies to information collected when you visit our website.</p>
+
+  <h2>1. What Data We Collect and How We Use It</h2>
+  <p>We may collect the following categories of information on our website:</p>
+  <ul>
+    <li><strong>Website Activity:</strong> Data regarding pages visited, duration, and user interaction patterns.</li>
+    <li><strong>Device &amp; Browser Information:</strong> Technical details such as IP address, operating system, and browser version.</li>
+    <li><strong>Contact Information:</strong> Names, phone numbers, and email addresses voluntarily submitted via appointment request forms.</li>
+    <li><strong>Customer Service Records:</strong> Inquiries submitted regarding dental care, insurance, or general questions.</li>
+  </ul>
+  <p>We use this data solely to enhance user experience, optimize site performance, process appointment requests, and communicate important dental health updates.</p>
+
+  <h2>2. Data Protection &amp; Sharing</h2>
+  <p>We treat all patient data with the utmost confidentiality. We do not sell your personal or healthcare information to third parties. Data is only shared with HIPAA-compliant service vendors who assist in operational systems like appointment scheduling, digital forms, and secure communication.</p>
+
+  <h2>3. Cookies and Tracking Technologies</h2>
+  <p>This website utilizes standard cookies and analytics tags to measure web traffic and ensure seamless site navigation. You can adjust your browser settings at any time to block or delete cookies.</p>
+
+  <h2>4. Data Security</h2>
+  <p>We implement stringent technical, administrative, and physical safeguards to prevent unauthorized access, disclosure, or alteration of personal data collected through our website.</p>
+
+  <h2>5. Contact Us Regarding Your Privacy</h2>
+  <p>If you have any questions or concerns regarding our privacy practices, please contact our office directly at <a href="tel:2542712882">(254) 271-2882</a> or visit our <a href="/contact">contact page</a>.</p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Privacy Policy"}
-        subtitle={undefined}
-        description={"We have prepared this Privacy Notice to explain how, why, and when we collect data from you on our website."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Website Privacy Policy"
+      subtitle="How Cove Choice Dental Protects Your Personal Information"
+      description="We have prepared this Privacy Notice to explain how, why, and when we collect data from you on our website."
+      breadcrumbLabel="Privacy Policy"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="appointment"
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

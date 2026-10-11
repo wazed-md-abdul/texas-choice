@@ -1,24 +1,84 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "New Patients | Dental Insurance | Cove Choice Dental",
-  description: "Prepare for your first appointment with information for new patients, dental insurance, and more from the skilled dentist in Copperas Cove, TX and the Cove Choice Dental team.",
+  title: "New Patients | Dental Insurance | Cove Choice Dental Copperas Cove, TX",
+  description: "Prepare for your first dental visit with new patient information, dental insurance details, and financing options at Cove Choice Dental in Copperas Cove, TX.",
 };
 
-export default function ForPatientsPagePage() {
-  const contentHtml = "\n<div class=\"page-divider\">\n\t<p>\n\t\t<a name=\"first\"></a></p>\n\t<h2>\n\t\tYour First Dental Visit</h2>\n\t<p>\n\t\tAfter our front desk staff greets you, you&rsquo;ll be given some forms to fill out (assuming you didn&rsquo;t already complete them ahead of time). This paperwork will give us context about your medical history and any dental concerns that you currently have. Once everything has been properly processed, you&rsquo;ll be called to our treatment area. We&rsquo;ll take the time to listen to any concerns you have and will develop a treatment plan for you based on the immediate dental concerns we find during your routine examination and cleaning.</p>\n\t<!--<p>\n\t\t<a name=\"forms\"></a></p>\n\t<h2>\n\t\tNew Patient Forms</h2>\n\t<p>\n\t\tInstead of waiting until the day of your visit, you can complete your new patient forms right now by downloading them via the link below. Doing so will save you a lot of time down the road, as it speeds up the process on our end and cuts down on the waiting period before the actual appointment.</p>\n\t<h3 style=\"text-align: center;\">\n\t\tEnglish Language forms</h3>\n\t<p style=\"text-align: center;\">\n\t\t<a class=\"btn\" href=\"assets/docs/adult-health-english.pdf\" target=\"_blank\">Adult Health Form</a> <a class=\"btn\" href=\"assets/docs/child-health-english.pdf\" target=\"_blank\">Child Health Form</a> <a class=\"btn\" href=\"assets/docs/dental-health-english.pdf\" target=\"_blank\">Dental Health Form</a> <a class=\"btn\" href=\"assets/docs/HIPPA-english.pdf\" target=\"_blank\">HIPPA Form</a> <a class=\"btn\" href=\"assets/docs/informed-consent-form.pdf\" target=\"_blank\">Informed Consent Form</a> <a class=\"btn\" href=\"assets/docs/COVID.pdf\" target=\"_blank\">COVID Form</a></p>\n\t<h3 style=\"text-align: center;\">\n\t\tSpanish Language Forms</h3>\n\t<p style=\"text-align: center;\">\n\t\t<a class=\"btn\" href=\"assets/docs/adult-health-spanish.pdf\" target=\"_blank\">Adult Health Form</a> <a class=\"btn\" href=\"assets/docs/child-health-spanish.pdf\" target=\"_blank\">Child Health Form</a> <a class=\"btn\" href=\"assets/docs/dental-health-spanish.pdf\" target=\"_blank\">Dental Health Form</a> <a class=\"btn\" href=\"assets/docs/HIPPA-spanish.pdf\" target=\"_blank\">HIPPA Form</a> <a class=\"btn\" href=\"assets/docs/office-policies-spanish.pdf\" target=\"_blank\">Dental Office Policies Form</a></p>\n-->\t\n<p>\n\t\t<a name=\"insurance\"></a></p>\n\t<h2>\n\t\tDental Insurance Welcome</h2>\n\t<p>\n\t\tWhat good is high quality dental care if you can&rsquo;t afford it? We want our services to be accessible to as many families as possible, which is why we accept such a wide variety of dental plans. If you give us your policy information, we can go over your benefits with you so that you fully understand the kind of savings you can expect before your visit. Regardless of what plan you have, we&rsquo;ll go ahead and file the necessary claim paperwork for you.</p>\n\t<h3>\n\t\tWe proudly accept the following dental insurance plans:</h3>\n\t<ul class=\"two-col\">\n\t\t<li>\n\t\t\tAetna</li>\n\t\t<li>\n\t\t\tAmeritas</li>\n\t\t<li>\n\t\t\tBlue Cross Blue Shield</li>\n\t\t<li>\n\t\t\tCigna</li>\n\t\t<li>\n\t\t\tDelta Dental</li>\n\t\t<li>\n\t\t\tGuardian</li>\n\t\t<li>\n\t\t\tHumana</li>\n\t\t<li>\n\t\t\tMetLife</li>\n\t\t<li>\n\t\t\t<a href=\"/medicaid-and-chip\">Medicaid/Chips</a></li>\n\t\t<li>\n\t\t\tUnited Concordia</li>\n\t\t<li>\n\t\t\tUnited Healthcare</li>\n\t\t<li>\n\t\t\t...and many more!</li>\n\t</ul>\n\t<p>\n\t\tAsk our friendly team if we take your plan.</p>\n\t<p>\n\t\t<a class=\"btn\" href=\"/dental-insurance\">Learn More About Dental Insurance</a></p>\n\t<p>\n\t\t<a name=\"finance\"></a></p>\n\t<h2>\n\t\tSunbit &amp; CareCredit Financing&nbsp;</h2>\n\t<p>\n\t\tEven with dental insurance, some families have trouble covering the entire cost of care at once. With Sunbit or CareCredit, we can make the price more digestible by allowing you to pay in a series of monthly installments. The amount you pay depends on the plan you select, and there&rsquo;s little to no interest to worry about. You can use the link below to see if you&rsquo;re eligible; feel free to get in touch with us if there&rsquo;s anything you don&rsquo;t understand about the process.</p>\n\t<p>\n\t\t<a class=\"btn\" href=\"https://www.carecredit.com/doctor-locator/General-Dentist-in-COPPERAS-COVE-TX-76522/Cove-Choice-Dental/\" target=\"_blank\">Apply for CareCredit</a></p>\n\t<p>\n\t\t<a name=\"medicaid\"></a></p>\n\t<h2>\n\t\tWe Accept Medicaid</h2>\n\t<p>\n\t\tJoint federal and state programs provide healthcare for many families in the area. In order for more Copperas Cove patients to benefit from high-quality dentistry, our dental office is proud to accept Medicaid. Get in touch with us today if you&#39;re unsure what dental services are coverered under Medicaid. We&#39;re happy to answer any quesitons regarding the program and assist in helping you plan to pay for healthcare without having to worry!</p>\n</div>\n    ";
+export default function ForPatientsPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>What to Expect at Cove Choice Dental</h2>
+  <ul>
+    <li>Warm, Welcoming &amp; Caring Dental Team</li>
+    <li>Wide Range of Dental Insurance Plans Accepted + Medicaid &amp; CHIP</li>
+    <li>Flexible Monthly Financing with CareCredit &amp; Sunbit</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>Your First Dental Visit</h2>
+  <p>From the moment you walk through our doors, our front desk team greets you with a warm welcome. If you haven't filled out your new patient registration forms beforehand, we will provide them upon arrival. Once checked in, one of our gentle assistants will escort you to your treatment suite. We take the time to listen to your health history, dental goals, and concerns before performing a thorough, gentle cleaning and examination.</p>
+
+  <h2>Dental Insurance Welcomed</h2>
+  <p>Quality dental care should be affordable and accessible for every family. We are proud to accept a wide variety of dental insurance policies. Our team will verify your benefits, explain your coverage, and submit all claims directly on your behalf to minimize your out-of-pocket costs.</p>
+
+  <h3>We Proudly Work with Leading Dental Insurance Providers:</h3>
+  <ul class="two-col">
+    <li>Aetna PPO</li>
+    <li>Ameritas</li>
+    <li>Blue Cross Blue Shield</li>
+    <li>Cigna Dental</li>
+    <li>Delta Dental Premier &amp; PPO</li>
+    <li>Guardian</li>
+    <li>Humana Dental</li>
+    <li>MetLife</li>
+    <li>Texas Medicaid &amp; CHIP</li>
+    <li>United Concordia (Military &amp; Civilian)</li>
+    <li>United Healthcare</li>
+    <li>...and many more!</li>
+  </ul>
+  <p>Don't see your carrier listed? Give our friendly team a call at <a href="tel:2542712882">(254) 271-2882</a> — chances are we accept your plan!</p>
+  <p><a class="btn" href="/dental-insurance">Explore Dental Insurance Details</a></p>
+
+  <h2>Sunbit &amp; CareCredit Flexible Financing</h2>
+  <p>Even with insurance, copays for major dental restorations can be tough on a monthly budget. With third-party healthcare financing from CareCredit and Sunbit, you can break your treatment costs into convenient, low-interest or interest-free monthly installments. Applications take just minutes with instant approval decisions.</p>
+  <p><a class="btn" href="https://www.carecredit.com/doctor-locator/General-Dentist-in-COPPERAS-COVE-TX-76522/Cove-Choice-Dental/" target="_blank" rel="noopener noreferrer">Apply for CareCredit Online</a></p>
+
+  <h2>Medicaid &amp; CHIP Welcome</h2>
+  <p>To ensure all children and teens in Copperas Cove have access to pristine oral healthcare, Cove Choice Dental proudly welcomes Texas Medicaid and CHIP. Checkups, cleanings, X-rays, and cavity restorations are 100% covered for eligible children.</p>
+  <p><a class="btn" href="/medicaid-and-chip">Learn More About Medicaid &amp; CHIP</a></p>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/faqs">Frequently Asked Questions</a>
+    <a class="btn" href="/dental-insurance">Insurance &amp; Financing</a>
+    <a class="btn" href="/preventive-dentistry">Preventive Dental Care</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Dental Patient Information - Copperas Cove, TX"}
-        subtitle={"Dedicated to Your<br /> Enjoyable Visit"}
-        description={"Our team at Cove Choice Dental loves seeing patients enjoy their newly refreshed smiles. To that end, we will do everything we can to make your visit a pleasant one, from answering any questions you have about the process to making sure that the appointment goes as smoothly and simply as possible. This page contains some important information about the logistics of your visit; if there&rsquo;s anything you don&rsquo;t understand, please <a href=\"contact.html\">call us</a> before your appointment."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Dental Patient Information"
+      subtitle="Dedicated to Making Your Visit Comfortable & Smooth in Copperas Cove, TX"
+      description="Welcome to Cove Choice Dental! Learn about your first visit, insurances accepted, financing options, and what to expect during your appointment."
+      breadcrumbLabel="Patient Information"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="appointment"
+      specialOffer={{
+        title: "New Patient Special",
+        price: "$59",
+        description: "Includes Comprehensive Examination, Digital X-Rays & Consultation.",
+        link: "/request-an-appointment",
+        badge: "Welcome Offer",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

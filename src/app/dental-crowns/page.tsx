@@ -1,24 +1,131 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Dental Crowns Copperas Cove | Broken Tooth | Cove Choice Dental",
-  description: "Fix chipped or broken teeth in a single appointment with same-day dental crowns in Copperas Cove, TX from Cove Choice Dental!",
+  title: "Dental Crowns Copperas Cove, TX | Same-Day Restorations | Cove Choice Dental",
+  description:
+    "Repair chipped, cracked, or broken teeth with custom porcelain dental crowns in Copperas Cove, TX from the experienced dentists at Cove Choice Dental.",
 };
 
-export default function DentalCrownsPagePage() {
-  const contentHtml = "\n      \n<h2>Seamlessly Repair Damaged Pearly Whites</h2>\n<p>\n  Tooth enamel is incredibly strong &ndash; even more so than bone &ndash; but\n  your teeth can still become worn-down, weakened, or broken over the years.\n  Luckily, you don&rsquo;t have to suffer through chewing with a broken tooth\n  any longer. At Cove Choice Dental, we can\n  <a href=\"/restorative-dentistry\"\n    >restore</a\n  >\n  the tooth&rsquo;s structure and protect it from additional damage by placing a\n  customized dental crown on top of it. In some cases, these lifelike solutions\n  can be designed, created, and placed in a single visit!\n  <a href=\"/contact\">Contact us</a> today\n  to schedule a consultation with one of\n  <a href=\"/meet-the-dentists\"\n    >our dentists</a\n  >\n  and learn how dental crowns in Copperas Cove can revitalize your smile.\n</p>\n<div class=\"why\">\n  <h2>Why Choose Cove Choice Dental for Dental Crowns?</h2>\n  <ul>\n    <li>Dental Crown Treatment Completed in One Appointment</li>\n    <li>Compassionate, Bilingual Dental Team</li>\n    <li>\n      Insurance-Friendly Dental Practice &amp; Low-Interest Financing Available\n    </li>\n  </ul>\n</div>\n<div class=\"page-divider\">\n  <h2>What Is a Dental Crown?</h2>\n  <p>\n    <img\n      alt=\"dental crown in Copperas Cove being placed over a tooth\"\n      class=\"elem-left\"\n      src=\"/assets/images/dental-crowns-1.jpg\"\n    />\n  </p>\n  <p>\n    A dental crown is a sort of &ldquo;cap&rdquo; that protects a tooth by\n    fitting over its entire structure that has emerged from the gums. No two\n    crowns are exactly alike, as each one is personalized to snugly cover the\n    tooth while also blending in with the rest of a patient&rsquo;s smile.\n    Traditionally, dental crowns were made from precious metals like silver and\n    gold, but we prefer to use tooth-colored materials like ceramic instead.\n    Often, these crowns are just as durable as metal ones without sticking out\n    like a sore thumb in your grin.\n  </p>\n  <p>\n    Dental crowns are quite a versatile treatment. Your dentist in Copperas Cove\n    may recommend a crown in order to:\n  </p>\n  <ul>\n    <li>Hold the pieces of a broken tooth together.</li>\n    <li>Shield an already vulnerable tooth from further damage.</li>\n    <li>Secure a dental bridge in place.</li>\n    <li>\n      Restore a single\n      <a href=\"/dental-implants\"\n        >dental implant</a\n      >.\n    </li>\n    <li>\n      Correct cosmetic flaws, like a severely discolored or misshapen tooth.\n    </li>\n  </ul>\n  <p>\n    After we&rsquo;ve looked over your teeth, we can help you determine whether\n    a dental crown is the ideal solution for your unique smile.\n  </p>\n  <h2>The Dental Crown Process</h2>\n  <p>\n    <img\n      alt=\"dentist in Copperas Cove showing a patient how their crown will look on a computer screen\"\n      class=\"elem-left\"\n      src=\"/assets/images/dental-crowns-2.jpg\"\n    />\n  </p>\n  <p>\n    Most dental offices take two appointments to complete the crown process: one\n    to take impressions, and another a few weeks later when the crown arrives\n    from the lab. Not only does this method require you to take time out of your\n    schedule to book two separate visits, but you also have to worry about\n    caring for a temporary crown. When you visit Cove Choice Dental for a crown,\n    though, you can typically receive your restoration on that very same day!\n    All we have to do is prepare the tooth in question, capture impressions,\n    wait for our in-house milling machine to craft your crown to your exact\n    specifications, and cement it onto your tooth. The whole process only takes\n    about an hour or two!\n  </p>\n  <h2>The Benefits of Getting a Dental Crown</h2>\n  <p>\n    <img\n      alt=\"woman admiring her smile in a mirror after getting a dental crown\"\n      class=\"elem-left\"\n      src=\"/assets/images/dental-crowns-3.jpg\"\n    />\n  </p>\n  <p>\n    You can look forward to enjoying many benefits when you get a dental crown,\n    such as:\n  </p>\n  <ul>\n    <li>You&rsquo;ll be able to once again bite and chew without pain.</li>\n    <li>Your results will look 100% natural.</li>\n    <li>\n      The tooth will be protected from damage that may otherwise have required\n      it to be extracted. In the long run, you&rsquo;ll save money by not having\n      to remove and replace that tooth!\n    </li>\n    <li>\n      A crown can easily last for 15+ years if you take care of it with good\n      oral hygiene and regular dental checkups.\n    </li>\n  </ul>\n<h2>Understanding the Cost of Dental Crowns</h2>\n<p><img class=\"elem-left\" src=\"/assets/images/cost-crown-1.jpg\" /></p>\n<p>While a dental crown may be the best way to restore your damaged tooth, it&rsquo;s still reasonable to want to know what the treatment will cost before you commit to it. During your consultation, the staff at Cove Choice Dental will explain what your treatment process will entail as well as the associated costs. Here&rsquo;s a brief guide to how dental crowns are typically priced at our Copperas Cove office, but please <a href=\"/contact\">contact our staff</a> if you have any questions.</p>\n<button class=\"btn togg\">Read More</button>\n\t<div class=\"section-toggle\">\n<h3>Factors That Affect the Cost of Dental Crowns</h3>\n      <img class=\"elem-sm\" src=\"/assets/images/cost-crown-2.jpg\" />\n<p>The cost of your dental crown will be determined by several factors like:</p>\n<ul>\n<li><strong>The severity of the damage:</strong> Larger and costlier dental crowns may be necessary to address severe decay or injuries.</li>\n<li><strong>Preliminary procedures:</strong> You may need a restorative treatment such as a root canal before you can receive a crown, and its price will be represented on your final bill.</li>\n<li><strong>Material:</strong> Your crown may be made from gold, porcelain, amalgam, or another material.</li>\n<li><strong>Manufacturing:</strong> The way your dental crown is manufactured can affect its final price.</li>\n</ul>\n<p>When it comes to dental restorations, the cheapest option is not typically the ideal one. Crowns that will look great and function well for many years are best for your appearance and your oral health, and our staff will be happy to help you find a way to pay for your restoration that makes sense for you and your budget.</p>\n<h3>Does Dental Insurance Cover Dental Crowns?</h3>\n<img class=\"elem-sm\" src=\"/assets/images/cost-crown-3.jpg\" />\n<p>Most dental insurance plans consider dental crowns to be necessary restorative procedures and cover them at about 50%. However, the actual rate of coverage can vary considerably between dental plans, so our staff will be happy to help you go over your policy during your consultation so you can understand exactly what it will pay for.</p>\n<h3>Options for Making Dental Crowns Affordable</h3>\n<img class=\"elem-sm\" src=\"/assets/images/cost-crown-4.jpg\" />\n<p>We understand that many patients who need dental crowns may have some difficulty fitting their restorations into their budgets. That&rsquo;s why we partner with CareCredit, a trusted third-party lender that can break the cost of your crown into small monthly installments that are easy to manage. We also accept Medicaid from qualifying patients.</p>\n<p>The best way to receive a proper cost estimate for your dental crown treatment is to schedule a consultation at our office. During your visit, our staff will help you understand your insurance and financing options so you can find the best way to fit your appliance into your budget.</p>\n</div>\n<h2>Dental Crowns FAQs</h2>\n<div class=\"accordion\">\n<h3>What Are Dental Crowns Made Of?</h3>\n<p>Historically, restorations like fillings and dental crowns were made from metallic materials that, though durable, weren&rsquo;t necessarily biocompatible. These repairs could withstand the force of biting and chewing, but often made teeth look dark or gray and could cause sensitivity when exposed to hot and cold temperatures.</p>\n<p>Today, our Cove Choice Dental team in Copperas Cove uses resilient ceramic to provide one-visit crowns the same day as your initial appointment. Not only is this material often equally as long-lasting as previous amalgam mixtures, but it can also be customized to match the shade, shape, and size of your natural teeth for more seamless results.</p>\n<h3>Are Dental Crowns Permanent?</h3>\n<p>Many patients wonder whether dental crowns are intended to be frequently removed and reinserted for meals and cleanings the way dentures are. However, these restorations are not intended to be taken off once they&rsquo;re cemented in place except by a qualified professional.</p>\n<p>With that said, being fitted with one of these tooth-shaped caps involves an irreversible change to your grin. For it to fit correctly over the abutment tooth without seeming too large or bulky, our team must remove some of the enamel from the underlying tooth. This protective outer layer doesn&rsquo;t grow back, meaning you&rsquo;ll need to have a dental crown or some other appropriate restoration in place to continue using your tooth normally.</p>\n<h3>Do Dental Crowns Get Cavities?</h3>\n<p>Your one-visit dental crown is made from resilient porcelain that, though porous, does not develop decay. You thankfully don&rsquo;t have to worry that it&rsquo;ll develop a cavity, though that doesn&rsquo;t mean you no longer need to maintain your at-home dental hygiene routine. These restorations are dependent on the underlying teeth, which can indeed develop caries. If the enamel is damaged, it can weaken the tooth enough that your crown becomes destabilized or dislodged.</p>\n<p>You can prevent this by brushing and flossing your teeth twice daily and scheduling routine checkups and cleanings with our team in Copperas Cove every six months.</p>\n<h3>How Long Do Dental Crowns Usually Last?</h3>\n<p>Typically, you can expect your new tooth to remain in good condition for anywhere from 5 to 15 or more years, though it can depend significantly on your unique circumstances. Different factors that can potentially impact its longevity include:</p>\n<ul>\n<li><strong>Where they&rsquo;re placed.</strong> Crowns over molars sustain more pressure from chewing and might wear down faster.</li>\n<li><strong>Your diet.</strong> Eating hard, crunchy, or sticky foods can break your restoration or push it out of place.</li>\n<li><strong>Your oral hygiene.</strong> Brushing and flossing twice daily is essential for preventing cavities and gum disease that can cause the tooth-shaped cap to fail.</li>\n<li><strong>Other habits</strong>. Bruxism, or chronic teeth grinding, can result in additional damage to your prosthetic, and alcoholic beverages can erode the cement anchoring it over your tooth.</li>\n</ul>\n</div>\n</div>\n<div class=\"more-to-explore\">\n  <span>More to Explore</span>\n  <p>\n    <a class=\"btn\" href=\"/preventive-dentistry\"\n      >I Need a Dental Checkup &amp; Cleaning</a\n    >\n    <a class=\"btn\" href=\"/childrens-dentistry\"\n      >I Need a Dentist for My Child</a\n    >\n    <a class=\"btn\" href=\"/gum-disease-treatment\"\n      >I am Worried About Bleeding Gums</a\n    >\n    <a class=\"btn\" href=\"/restorative-dentistry\"\n      >I Have a Cavity or Broken Tooth</a\n    >\n    <a class=\"btn\" href=\"/replace-missing-teeth\"\n      >I am Missing One or More Teeth</a\n    >\n    <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>\n     \n    <a class=\"btn\" href=\"/emergency-dentistry\"\n      >I am in Pain &amp; Need Help</a\n    >\n    <a class=\"btn\" href=\"/wisdom-teeth-removal\"\n      >I Need My Wisdom Teeth Removed</a\n    >\n    <a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a>\n    <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n  </p>\n</div>\n    ";
+export default function DentalCrownsPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Dental Crowns?</h2>
+  <ul>
+    <li>Lifelike, Custom-Shaded Ceramic & Porcelain Materials</li>
+    <li>Same-Day Diagnostics & Precision Fitting</li>
+    <li>Protects Cracked, Broken, or Root-Canaled Teeth</li>
+    <li>In-Network with Major Dental PPOs, Medicaid & 0% CareCredit®</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What Is a Dental Crown?</h2>
+  <p>
+    <img
+      alt="Dental crown being placed over tooth in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/dental-crowns-1.jpg"
+    />
+    A dental crown is a custom-fitted cap that covers the entire visible portion of a compromised tooth down to the gumline. While historic crowns relied heavily on visible dark metals, we craft beautiful, tooth-colored porcelain and ceramic crowns that match the translucency and color of your natural teeth.
+  </p>
+  <p>
+    Our Copperas Cove dentists commonly recommend a dental crown to:
+  </p>
+  <ul>
+    <li>Hold fractured or severely broken teeth together.</li>
+    <li>Shield weak teeth with large fillings from cracking.</li>
+    <li>Protect a tooth following root canal therapy.</li>
+    <li>Anchor a traditional dental bridge across missing teeth.</li>
+    <li>Complete and restore a permanent single dental implant post.</li>
+    <li>Improve cosmetic appearance of severely misshapen or stained teeth.</li>
+  </ul>
+
+  <h2>The Dental Crown Process</h2>
+  <p>
+    <img
+      alt="Dentist in Copperas Cove showing patient digital crown scan"
+      class="elem-left"
+      src="/assets/images/dental-crowns-2.jpg"
+    />
+    First, our dentist gently removes any decay and shapes the tooth so the crown fits naturally along your bite. High-definition digital impressions are captured without messy putty trays. A temporary crown protects your tooth while the lab crafts your custom porcelain restoration. Once your permanent crown is ready, we bond it securely into place and make micro-adjustments for an effortless bite.
+  </p>
+
+  <h2>The Benefits of Getting a Dental Crown</h2>
+  <p>
+    <img
+      alt="Woman smiling after getting custom dental crown"
+      class="elem-left"
+      src="/assets/images/dental-crowns-3.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Full Chewing Power:</strong> Bite into steaks, crunchy vegetables, and apples without pain or sensitivity.</li>
+    <li><strong>100% Natural Appearance:</strong> Seamlessly blended to match the exact shade and contour of neighboring teeth.</li>
+    <li><strong>Saves Natural Teeth:</strong> Prevents fractures from reaching the roots, avoiding costly tooth extractions.</li>
+    <li><strong>Long-Lasting Durability:</strong> With proper brushing, flossing, and regular cleanings, crowns typically last 15+ years.</li>
+  </ul>
+
+  <h2>Understanding the Cost of Dental Crowns</h2>
+  <div class="section-toggle">
+    <h3>Insurance &amp; Financing Options</h3>
+    <img
+      alt="Dental crowns financing options"
+      class="elem-left"
+      src="/assets/images/cost-crown-1.jpg"
+    />
+    <p>
+      Dental insurance plans typically cover dental crowns at 50% to 80% as a major restorative procedure. We review your benefits in detail and file all paperwork for you. For uninsured patients or remaining balances, <strong>CareCredit®</strong> flexible financing allows you to spread out payments into affordable monthly installments.
+    </p>
+  </div>
+
+  <h2>Dental Crowns FAQs</h2>
+  <div class="accordion">
+    <h3>What Are Dental Crowns Made Of?</h3>
+    <p>
+      We use advanced biocompatible dental porcelain, zirconia, and ceramic materials that mimic natural tooth enamel in both strength and optical appearance.
+    </p>
+
+    <h3>Do Dental Crowns Get Cavities?</h3>
+    <p>
+      The porcelain crown itself cannot decay, but the natural tooth structure underneath and around the gumline can still develop cavities. Good daily brushing and flossing are essential to keep the margin clean and healthy.
+    </p>
+
+    <h3>How Long Do Dental Crowns Last?</h3>
+    <p>
+      Most crowns last between 10 and 15 years, and many last even longer with good oral hygiene and avoiding habits like chewing ice or clenching without a nightguard.
+    </p>
+  </div>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-bridges">Dental Bridges</a>
+    <a class="btn" href="/root-canal-therapy">Root Canal Therapy</a>
+    <a class="btn" href="/dental-implants">Dental Implants</a>
+    <a class="btn" href="/tooth-colored-fillings">Tooth-Colored Fillings</a>
+    <a class="btn" href="/cosmetic-dentistry">Cosmetic Dentistry</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Dental Crowns &ndash; Copperas Cove, TX"}
-        subtitle={undefined}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Dental Crowns in Copperas Cove, TX"
+      subtitle="Restorative & Cosmetic Tooth Caps for Cracked or Broken Teeth"
+      description="Tooth enamel is strong, but teeth can still wear down, crack, or break over time. Our custom porcelain crowns restore natural beauty, reinforce structural strength, and let you smile and chew with ease."
+      breadcrumbLabel="Dental Crowns"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Free Dental Restorative Consult",
+        price: "Consult",
+        notes: "Comprehensive Evaluation & Digital Imaging Included",
+        href: "/request-an-appointment",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

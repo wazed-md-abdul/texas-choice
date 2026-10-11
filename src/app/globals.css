@@ -261,3 +261,133 @@ body {
   max-height: 44px;
   width: auto;
 }
+
+/* Legacy & Prose Elements inside Dental Content */
+.dental-content .more-to-explore {
+  background: linear-gradient(135deg, #16304c 0%, #204369 100%);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  margin: 3.5rem 0 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(22, 48, 76, 0.25);
+  clear: both;
+}
+
+.dental-content .more-to-explore > span {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.dental-content .more-to-explore p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.dental-content .more-to-explore .btn,
+.dental-content .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dental-content .more-to-explore .btn:hover {
+  background-color: #e64b38;
+  border-color: #e64b38;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 75, 56, 0.35);
+}
+
+.dental-content .more-to-explore .btn-alt,
+.dental-content .btn-alt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #e64b38;
+  border: 1px solid #e64b38;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dental-content .more-to-explore .btn-alt:hover,
+.dental-content .btn-alt:hover {
+  background-color: #c93b2a;
+  border-color: #c93b2a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(201, 59, 42, 0.4);
+}
+
+/* Standalone buttons in content */
+.dental-content a.btn {
+  background-color: #204369;
+  border-color: #204369;
+  margin: 0.5rem 0;
+  color: #ffffff !important;
+}
+.dental-content a.btn:hover {
+  background-color: #e64b38;
+  border-color: #e64b38;
+  color: #ffffff !important;
+}
+
+/* Accordions and FAQs inside content */
+.dental-content .accordion {
+  margin: 1.5rem 0 2rem;
+  clear: both;
+}
+
+.dental-content .accordion h3 {
+  background: #f8fafc;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  color: #204369;
+  border-left: 4px solid #e64b38;
+}
+
+.dental-content .section-toggle {
+  background: #f8fafc;
+  border-radius: 1.25rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.75rem;
+  margin: 2rem 0;
+  clear: both;
+}
+
+.dental-content button.togg {
+  display: none;
+}
+
+.dental-content img.elem-sm {
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px -4px rgba(11, 37, 69, 0.08);
+  margin: 0.5rem 1.5rem 1.25rem 0;
+  max-width: 260px;
+  float: left;
+}

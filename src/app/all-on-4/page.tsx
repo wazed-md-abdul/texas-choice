@@ -1,24 +1,104 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "All-on-4 Copperas Cove | Cove Choice Dental",
-  description: "Replace an entire row of teeth with just four well-placed dental implants thanks to All-on-4 from the team at Cove Choice Dental.",
+  title: "All-on-4 Dental Implants Copperas Cove, TX | Full Arch Teeth | Cove Choice Dental",
+  description:
+    "Replace an entire arch of missing teeth with just 4 strategically placed dental implants. Permanent, non-removable All-on-4 implants in Copperas Cove, TX at Cove Choice Dental.",
 };
 
-export default function AllOn4PagePage() {
-  const contentHtml = "\n<div class=\"why\">\n<h2>Why Choose Cove Choice Dental for All-on-4?</h2>\n<ul>\n<li>Dental Implants Placed In-Office</li>\n<li>Expertly Personalized Replacement Teeth</li>\n<li>Saturday Appointment Times Available</li>\n</ul>\n</div>\n<div class=\"page-divider\">\n<h2>How Do All-on-4 Implants Work?</h2>\n<p><img alt=\"Illustration of All-on-4 in Copperas Cove, TX for upper arch\" class=\"elem-left\" src=\"/assets/images/all-4-1.jpg\"/><p>\n<p>The All-on-4 procedure involves surgically placing four dental implants into your jawbone so that they can act as the foundation for a personalized denture. The key to the treatment is to let the dental implants fuse with the parts of the jaw where the bone is the thickest. To that end, each post will be inserted at very specific angles in carefully chosen parts of the jaw.</p>\n<h2>Am I a Candidate for All-on-4 Implants?</h2>\n<p><img alt=\"Senior man leaning back in chair and smiling up at dentist\" class=\"elem-left\" src=\"/assets/images/all-4-2.jpg\"/><p>\n<p>All-on-4 is recommended for patients who are missing an entire arch of teeth. However, before you can get dental implants, our team will need to make sure that your mouth is healthy. We&rsquo;ll check for signs of gum disease and other oral health issues that will need to be treated before beginning the All-on-4 process.</p>\n<p>Note that if you have experienced bone loss in your jaw, you could still be a candidate for All-on-4 even without bone grafting. The way the dental implants are placed means less bone density is required.</p>\n<h2>Benefits of All-on-4 Implants</h2>\n<p><img alt=\"Woman standing outside and showing off smile\" class=\"elem-left\" src=\"/assets/images/all-4-3.jpg\"/><p>\n<p>One advantage of the All-on-4 procedure is that your replacement teeth will be anchored in place at all times. Not only does this prevent them from slipping out of place at awkward moments, but it also lets you brush and floss them as if they were your real teeth.</p>\n<p>Furthermore, the implant posts themselves will provide enough bite force to let you enjoy all kinds of foods without issue. On top of that, the stimulation from the implant posts makes them the only form of tooth replacement that can actively help prevent bone loss in the jaw.</p>\n<h2>All-On-4 vs. Traditional Implants</h2>\n<p><img alt=\"Illustration of dentures being attached to All-on-4 dental implants\" class=\"elem-left\" src=\"/assets/images/all-4-4.jpg\"/><p>\n<p>What makes All-on-4 different from traditional dental implant placement? For one thing, All-on-4 lets our team replace an entire row of teeth with fewer posts. With traditional dental implants, as many as eight posts might be needed to support a full denture.</p>\n<p>Additionally, All-on-4 can often be performed without bone grafting, resulting in a shorter treatment plan. And when it comes to receiving new teeth, All-on-4 often makes it possible to have a denture placed on the same day that the implant posts are surgically inserted into your jaw.</p>\n</div>\n    ";
+export default function AllOn4Page() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for All-on-4?</h2>
+  <ul>
+    <li>Full-Arch Teeth Replacement in a Single Procedure</li>
+    <li>Dental Implants Surgically Placed In-Office</li>
+    <li>No Bone Grafting Needed for Most Patients</li>
+    <li>Permanently Anchored Teeth That Never Slip or Click</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>How Do All-on-4 Implants Work?</h2>
+  <p>
+    <img
+      alt="Illustration of All-on-4 dental implants in Copperas Cove, TX"
+      class="elem-left"
+      src="/assets/images/all-4-1.jpg"
+    />
+    The groundbreaking All-on-4 system replaces an entire upper or lower arch of missing teeth using only four strategically tilted titanium implant posts. By angling the rear implants at 45 degrees, we maximize contact with naturally dense parts of your jawbone, eliminating the need for invasive bone grafting procedures in most patients.
+  </p>
+
+  <h2>Am I a Candidate for All-on-4 Implants?</h2>
+  <p>
+    <img
+      alt="Senior man smiling happily at dental appointment"
+      class="elem-left"
+      src="/assets/images/all-4-2.jpg"
+    />
+    All-on-4 is ideal for patients who:
+  </p>
+  <ul>
+    <li>Are currently missing all or most of their teeth along the upper or lower arch.</li>
+    <li>Struggle with loose, ill-fitting traditional dentures that slip, cause sores, or require messy pastes.</li>
+    <li>Have suffered significant bone density loss in the jaw but wish to avoid bone graft surgery.</li>
+    <li>Want a permanent, non-removable full arch of teeth that looks, feels, and acts like real teeth.</li>
+  </ul>
+
+  <h2>Benefits of All-on-4 Implants</h2>
+  <p>
+    <img
+      alt="Woman showing off full smile after All-on-4 implants"
+      class="elem-left"
+      src="/assets/images/all-4-3.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Permanent &amp; Non-Removable:</strong> Cleaned like natural teeth with normal brushing and flossing; no taking teeth out at night.</li>
+    <li><strong>Restore 95%+ Bite Power:</strong> Enjoy hearty steaks, raw vegetables, nuts, and crisp apples without hesitation.</li>
+    <li><strong>Preserves Facial Structure:</strong> Implant posts actively stimulate jawbone regeneration, preventing the sunken facial look associated with tooth loss.</li>
+    <li><strong>Same-Day Transformation:</strong> Walk in with failing teeth or loose dentures and leave with a securely attached, beautiful smile.</li>
+  </ul>
+
+  <h2>All-on-4 vs. Traditional Implants</h2>
+  <p>
+    <img
+      alt="Denture attaching to All-on-4 dental implants"
+      class="elem-left"
+      src="/assets/images/all-4-4.jpg"
+    />
+    While traditional full-arch implant restoration may require six to eight individual implant posts and extensive sinus lifts or bone grafts, All-on-4 accomplishes complete rehabilitation with fewer implants, less healing time, and lower overall treatment costs.
+  </p>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-implants">Dental Implants Overview</a>
+    <a class="btn" href="/dentures">Modern Dentures</a>
+    <a class="btn" href="/implant-dentures">Implant-Supported Dentures</a>
+    <a class="btn" href="/replace-missing-teeth">Replace Missing Teeth</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"All-on-4 &ndash; Copperas Cove, TX"}
-        subtitle={"Replacing an Entire Row of Teeth at Once"}
-        description={"How can you replace an entire row of teeth with <a href=\"dental-implants.html\">dental implants</a>? Some patients mistakenly believe that they&rsquo;ll need to get a separate implant post for each tooth that they lost. But with All-on-4 from Cove Choice Dental, the entire arch can be rebuilt with just four dental implant posts that have been inserted into precisely the right spots in the jaw. Give us a <a href=\"contact.html\">call</a> today if you would like to learn more about All-on-4 and how it could help you enjoy a complete smile again."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="All-on-4® Dental Implants in Copperas Cove, TX"
+      subtitle="Rebuild an Entire Row of Permanent Teeth with Just 4 Implants"
+      description="Tired of loose dentures or missing teeth? The revolutionary All-on-4 dental implant technique restores an entire arch of permanent, natural-looking teeth with maximum stability and minimal surgery."
+      breadcrumbLabel="All-on-4"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "All-on-4 Implant Consultation",
+        price: "Consult",
+        notes: "Full 3D Digital Imaging & Comprehensive Assessment",
+        href: "/request-an-appointment",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

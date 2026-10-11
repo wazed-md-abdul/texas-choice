@@ -1,24 +1,67 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "United Healthcare Dentist in Copperas Cove, TX | Dental Insurance | Cove Choice Dental",
-  description: "You can achieve optimal oral health without breaking the bank by visiting your United Healthcare dentist in Copperas Cove.",
+  description: "Achieve optimal oral health without breaking the bank by visiting your United Healthcare dentist in Copperas Cove, TX. Learn how we maximize your benefits.",
 };
 
-export default function UnitedHealthcarePagePage() {
-  const contentHtml = "\n<div class=\"page-divider\">\n<h2>United Healthcare Coverage Availability &amp; Fees</h2>\n<p><img alt=\"Smiling woman in dentist’s chair\" class=\"elem-left\" src=\"/assets/images/united-1.jpg\"/></p>\n<p>United Healthcare is a leading provider of comprehensive dental plans for individuals and families. They offer coverage for preventive services and medically necessary treatments. Although every plan differs, your premiums give you access to:</p>\n<ul>\n<li>100% coverage for preventive dental services</li>\n<li>80% coverage for basic dental services</li>\n<li>50% coverage for major dental services</li>\n</ul>\n<p>You can visit your dentist every 6 months for a cleaning and checkup, as recommended by the American Dental Association. You can benefit from the power of prevention and early detection for a co-payment. United Healthcare will cover 100% of the expenses to stop common oral health issues from occurring, so you'll be less likely to need costly dental work later. Researchers have found that $1 of preventive care can save up to $50 on restorative fees.</p>\n<p>If your dentist finds anything concerning, don't worry. United Healthcare will cover some of the expenses after meeting your annual deductible. You can use your yearly allowance to lower the amount you will pay.</p>\n<p>United Healthcare recommends choosing an in-network dentist to benefit from more coverage. They have pre-negotiated rates with preferred dental practices to limit out-of-pocket expenses. You can still use your insurance on an out-of-network dentist. You'll enjoy more freedom to choose dentists, specialists, and services, but you may pay more out-of-pocket.</p>\n<p>Unfortunately, your dental insurance does not last forever. Your policy resets at the end of the calendar year. You will lose any benefits you have not used. Nothing will accumulate, and you won't be reimbursed for your premiums or deductibles. With less than 3% of Americans meeting or exceeding their annual limits, billions of dollars are lost in unused dental benefits every year.</p>\n<p>We don't want to see you throw money down the drain. We will help you invest in a healthy, beautiful smile by utilizing your dental insurance in Copperas Cove.</p>\n<h2>Speak to Our Front Desk Team</h2>\n<p><img alt=\"Dentist appointment and toothbrush on calendar \" class=\"elem-left\" src=\"/assets/images/united-2.jpg\"/></p>\n<p>A member of our dental team will work on your behalf with United Healthcare to maximize your insurance benefits. They will explain how your coverage is being used and discuss your payment options for any out-of-pocket expenses, like monthly installments with CareCredit. They will help you find flexible financial solutions to keep a healthy smile affordable.</p>\n<p><a href=\"/request-an-appointment\">Request an appointment</a> through our website or call our office at (254) 271-2882.</p>\n  \n  \n  \n</div>\n    ";
+export default function UnitedHealthcarePage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for United Healthcare?</h2>
+  <ul>
+    <li>Contracted Savings for United Healthcare Dental Members</li>
+    <li>100% Coverage for Preventive Dental Exams &amp; Cleanings</li>
+    <li>We Direct-Bill United Healthcare &amp; Assist with Claims</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>United Healthcare Coverage Availability &amp; Typical Fees</h2>
+  <p><img alt="Smiling woman in dentist’s chair" class="elem-left" src="/assets/images/united-1.jpg"/></p>
+  <p>United Healthcare is a leading provider of comprehensive dental coverage for individuals and employers. While policies vary, most United Healthcare PPO plans provide generous tiered coverage:</p>
+  <ul>
+    <li><strong>Preventive Care (100% Covered):</strong> Bi-annual checkups, cleanings, and diagnostic X-rays are typically fully covered without out-of-pocket costs.</li>
+    <li><strong>Basic Dental Services (Up to 80% Covered):</strong> Cavity fillings, simple extractions, and non-surgical procedures.</li>
+    <li><strong>Major Dental Services (Up to 50% Covered):</strong> Crowns, bridges, dentures, and surgical extractions.</li>
+  </ul>
+  <p>Did you know that dental research reveals every $1 spent on preventive care saves up to $50 on future restorative treatments? Taking advantage of your bi-annual covered checkups keeps your teeth strong and stops small concerns before they turn into major problems.</p>
+
+  <h2>Speak with Our Front Desk Team</h2>
+  <p><img alt="Dentist appointment and toothbrush on calendar" class="elem-left" src="/assets/images/united-2.jpg"/></p>
+  <p>Unused dental insurance benefits reset every year on December 31st — whatever remains does not roll over. Our team at Cove Choice Dental helps ensure you make the most of every dollar in your annual maximum before it expires. We explain your benefits clearly and offer flexible third-party financing through CareCredit for any remaining copays.</p>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-insurance">Dental Insurance Guide</a>
+    <a class="btn" href="/preventive-dentistry">Preventive Care</a>
+    <a class="btn" href="/restorative-dentistry">Restorative Dentistry</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"United Healthcare &ndash; Copperas Cove, TX"}
-        subtitle={"Learn More About the Benefits of United Healthcare"}
-        description={"Your oral health and overall wellness are connected, which means a healthy smile is important. Although brushing and flossing can lessen your risk of cavities and gum disease, they aren't enough to keep your mouth healthy. Thanks to your <a href=\"dental-insurance.html\">dental insurance</a>, you can visit your dentist regularly without worrying about a large bill. As your United Healthcare dentist in Copperas Cove, we will help you achieve optimal oral health by maximizing your dental coverage."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="United Healthcare Dentist"
+      subtitle="Maximize Your United Healthcare Dental Benefits in Copperas Cove, TX"
+      description="Protect your oral health and budget with your United Healthcare dental benefits at Cove Choice Dental."
+      breadcrumbLabel="United Healthcare"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="insurance"
+      specialOffer={{
+        title: "United Healthcare Welcome",
+        price: "$0 Copay",
+        description: "Routine checkups, exams, and cleanings are typically 100% covered under United Healthcare dental plans.",
+        link: "/request-an-appointment",
+        badge: "In-Network Provider",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

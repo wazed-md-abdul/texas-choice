@@ -1,24 +1,75 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Tooth-Colored Fillings for Kids Copperas Cove TX | Cavity Treatment for Kids | Cove Choice Dental",
-  description: "Tooth-colored fillings for kids in Copperas Cove present a quick and seamless way to treat cavities.",
+  description: "Tooth-colored fillings for kids in Copperas Cove present a quick and seamless way to treat cavities with natural-looking composite resin.",
 };
 
-export default function ChildrensToothColoredFillingsPagePage() {
-  const contentHtml = "\n    <div class=\"why\">\n<h2>Why Choose Cove Choice Dental for Tooth-Colored Fillings?</h2>\n<ul>\n<li>Skilled &amp; Compassionate Dental Team</li>\n<li>Seamless, Aesthetically Pleasing Cavity Repair</li>\n<li>Dental Insurance Welcome</li>\n</ul>\n</div>\n<div class=\"page-divider\">\n<h2>What Are Tooth-Colored Fillings?</h2>\n<p><img alt=\"Happy, smiling little girl in dental treatment chair\" class=\"elem-left\" src=\"/assets/images/tooth-colored-2.jpg\" />\n<p>When bacteria attack the tooth enamel, they can weaken it and eventually cause small holes, known as cavities or\n    caries, to form. The purpose of a filling is to fill in a cavity and prevent the decay from spreading. In the past,\n    fillings were always made of a metal-based material known as silver amalgam, which had a very dark color.</p>\n<p>In contrast, tooth-colored fillings are made of a composite resin that can be shade-matched to blend in beautifully\n    with the surrounding tooth enamel. The resin is metal-free; it is made of ultra-fine plastic and glass particles.\n</p>\n<h2>The Process of Getting a Tooth-Colored Filling</h2>\n<p><img alt=\"Curing light being used to harden a child’s tooth-colored filling\" class=\"elem-left\" src=\"/assets/images/tooth-colored-3.jpg\" />\n<p>Placing a tooth-colored filling is a quick process that usually takes just a single appointment. First, we will numb\n    your child&rsquo;s tooth (if a cavity is relatively shallow, it might not even be necessary to administer local\n    anesthesia). Then, we prepare the tooth by removing decayed tissue from within the cavity.</p>\n<p>Next, we insert the shade-matched resin and harden it with a special curing light. To finish, we polish and shape the\n    filling so it will not interfere with your child&rsquo;s bite or feel strange in their mouth. They will be able to\n    eat and drink immediately afterward, but it may be best for them to avoid hot, cold, and chewy foods for a while due\n    to a temporary increase in dental sensitivity.</p>\n<h2>The Benefits of Tooth-Colored Fillings</h2>\n<p><img alt=\"Laughing young girl wearing white t-shirt\" class=\"elem-left\" src=\"/assets/images/tooth-colored-4.jpg\" />\n<p>Tooth-colored fillings have some substantial benefits for children:</p>\n<ul>\n    <li><strong>Seamless appearance. </strong>Your child will be able to smile with confidence; there will be no dark\n        spots to mar their smile!</li>\n    <li><strong>No metal or mercury.</strong> Some parents are worried about the presence of mercury in silver amalgam\n        fillings. Tooth-colored fillings are free of all metals, including mercury.</li>\n    <li><strong>Minimal tooth preparation.</strong> Tooth-colored fillings require less tissue removal than amalgam\n        fillings.</li>\n    <li>Tooth-colored fillings have the potential to last for several years.</li>\n    <li><strong>Reduced sensitivity.</strong> Unlike metal fillings, tooth-colored fillings do not conduct temperatures\n        to the inner layers of teeth, resulting in a lower risk of dental sensitivity.</li>\n</ul>\n</div>\n<div class=\"more-to-explore\">\n    <span>More to Explore</span>\n    <p>\n      <a class=\"btn\" href=\"/preventive-dentistry\"\n        >I Need a Dental Checkup &amp; Cleaning</a\n      >\n      <a class=\"btn\" href=\"/childrens-dentistry\"\n        >I Need a Dentist for My Child</a\n      >\n      <a class=\"btn\" href=\"/gum-disease-treatment\"\n        >I am Worried About Bleeding Gums</a\n      >\n      <a class=\"btn\" href=\"/restorative-dentistry\"\n        >I Have a Cavity or Broken Tooth</a\n      >\n      <a class=\"btn\" href=\"/replace-missing-teeth\"\n        >I am Missing One or More Teeth</a\n      >\n      <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>\n       \n      <a class=\"btn\" href=\"/emergency-dentistry\"\n        >I am in Pain &amp; Need Help</a\n      >\n      <a class=\"btn\" href=\"/wisdom-teeth-removal\"\n        >I Need My Wisdom Teeth Removed</a\n      ><a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a>\n      <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n    </p>\n  </div>\n    ";
+export default function ChildrensToothColoredFillingsPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Kids' Tooth-Colored Fillings?</h2>
+  <ul>
+    <li>Skilled, Gentle &amp; Kid-Friendly Dental Team</li>
+    <li>100% Metal-Free &amp; Mercury-Free Biocompatible Composite</li>
+    <li>Dental Insurance, Medicaid &amp; CHIP Welcomed</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What Are Tooth-Colored Fillings for Kids?</h2>
+  <p><img alt="Happy, smiling little girl in dental treatment chair" class="elem-left" src="/assets/images/tooth-colored-2.jpg" /></p>
+  <p>When oral bacteria produce acids that erode tooth enamel, small cavities form. To keep decay from spreading deeper into the tooth's sensitive nerve or neighboring teeth, cavities must be promptly cleaned and sealed. In contrast to dark metal silver fillings of the past, modern tooth-colored fillings are composed of biocompatible composite resin made from ultra-fine glass and ceramic particles. We custom-tint the resin to perfectly match the exact shade of your child's natural tooth enamel.</p>
+
+  <h2>The Process of Placing a Tooth-Colored Filling</h2>
+  <p><img alt="Curing light being used to harden a child’s tooth-colored filling" class="elem-left" src="/assets/images/tooth-colored-3.jpg" /></p>
+  <p>Placing a composite filling is quick, painless, and typically completed in a single comfortable visit:</p>
+  <ul>
+    <li><strong>Gentle Comfort:</strong> If needed, we numb the surrounding area with gentle local anesthesia so your child stays completely comfortable. For very shallow cavities, anesthesia is often not even needed!</li>
+    <li><strong>Decay Removal:</strong> Our dentist precisely removes any infected or weakened tooth structure while keeping as much healthy enamel intact as possible.</li>
+    <li><strong>Direct Bonding:</strong> We apply the shade-matched composite in layers, using a specialized blue curing light that hardens the material in seconds.</li>
+    <li><strong>Finishing &amp; Polish:</strong> We shape and polish the filling to match your child's natural bite so it feels completely natural and smooth to their tongue.</li>
+  </ul>
+
+  <h2>Key Benefits of Composite Fillings for Children</h2>
+  <p><img alt="Laughing young girl wearing white t-shirt" class="elem-left" src="/assets/images/tooth-colored-4.jpg" /></p>
+  <ul>
+    <li><strong>Natural Appearance:</strong> Your child can laugh and smile without unsightly dark metal marks showing.</li>
+    <li><strong>Mercury-Free &amp; Biocompatible:</strong> Made without any mercury or metallic compounds.</li>
+    <li><strong>Conserves Natural Tooth Structure:</strong> Composite resin bonds directly to enamel, requiring significantly less drilling than metal fillings.</li>
+    <li><strong>Reduced Temperature Sensitivity:</strong> Composite resin insulates the tooth against sudden hot and cold food shocks.</li>
+  </ul>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/childrens-dentistry">Children's Dentistry</a>
+    <a class="btn" href="/childrens-dental-checkups-and-cleanings">Checkups &amp; Cleanings</a>
+    <a class="btn" href="/emergency-pediatric-dentist">Emergency Pediatric Dentist</a>
+    <a class="btn" href="/medicaid-and-chip">Medicaid &amp; CHIP</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Tooth-Colored Fillings for Kids &ndash; Copperas Cove, TX&nbsp;"}
-        subtitle={"Seamless Cavity Repair for Young Smiles"}
-        description={"It is no secret that kids love sugary and starchy foods. That fact, combined with children&rsquo;s developing ability to thoroughly brush and floss their teeth, means that cavities are quite common among young smiles. Without treatment, those little spots of decay could develop into major problems! Fortunately, our Copperas Cove team offers <a href=\"childrens-dentistry.html\">seamless cavity repair</a> with tooth-colored fillings.&nbsp;Continue reading below to learn more about this fast and easy restorative treatment."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Tooth-Colored Fillings for Kids"
+      subtitle="Seamless, Gentle Cavity Repair for Young Smiles in Copperas Cove, TX"
+      description="Protect your child's dental health and preserve their natural smile with fast, comfortable, and metal-free tooth-colored fillings at Cove Choice Dental."
+      breadcrumbLabel="Kids Tooth-Colored Fillings"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Children's Dental Exam",
+        price: "$59",
+        description: "Pediatric Examination, Digital X-Rays & Preventive Fluoride Treatment.",
+        link: "/request-an-appointment",
+        badge: "Kids & Teens",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

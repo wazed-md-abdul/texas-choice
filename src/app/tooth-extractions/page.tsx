@@ -1,24 +1,121 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Tooth Extractions Copperas Cove, TX | Emergency Dentist | Cove Choice Dental",
-  description: "Learn more about why we may recommend tooth extractions in Copperas Cove, TX from the skilled emergency dentist in Copperas Cove and the dentistry team at Cove Choice Dental.",
+  title: "Tooth Extractions Copperas Cove, TX | Gentle Extractions | Cove Choice Dental",
+  description:
+    "Gentle, stress-free tooth extractions in Copperas Cove, TX from Cove Choice Dental. Emergency tooth removal, wisdom teeth, and immediate restorative replacement options.",
 };
 
-export default function ToothExtractionsPagePage() {
-  const contentHtml = "\n<div class=\"why\">\n\t<h2>\n\t\tWhy Choose Cove Choice Dental for Tooth Extractions?</h2>\n\t<ul>\n\t\t<li>\n\t\t\tPartnered with Expert Specialists</li>\n\t\t<li>\n\t\t\tHigh Quality Tooth Replacement Options</li>\n\t</ul>\n</div>\n<div class=\"page-divider\">\n\t<h2>\n\t\tCommon Reasons for Tooth Extraction</h2>\n\t<p>\n\t\t<img alt=\"Man in need of tooth extraction holding his cheek\" class=\"elem-left\" src=\"/assets/images/extractions-1.jpg\" /></p>\n\t<p>\n\t\tTooth extraction is a last resort that is only recommended in specific situations, such as the following:</p>\n\t<ul>\n\t\t<li>\n\t\t\tThe tooth is too physically damaged to support a restoration.</li>\n\t\t<li>\n\t\t\tThe enamel is decayed beyond repair, and root canal therapy would no longer be enough to stop the spread of the damage.</li>\n\t\t<li>\n\t\t\tGum disease has destroyed the bone tissue supporting the teeth.</li>\n\t\t<li>\n\t\t\tThere is not enough room in the mouth for dentures or orthodontic treatment.</li>\n\t\t<li>\n\t\t\tYour child has a baby tooth that is currently in the way of a permanent tooth.</li>\n\t</ul>\n\t<h2>\n\t\tHow Tooth Extractions Work</h2>\n\t<p>\n\t\t<img alt=\"Man in dental chair holding cheek before tooth extraction\" class=\"elem-left\" src=\"/assets/images/extractions-2.jpg\" /></p>\n\t<p>\n\t\tDuring a simple extraction, the tooth is loosened with an instrument called an elevator. We can then gently rock it back and forth with forceps until it comes out. In cases where a surgical approach is required, some gum and bone tissue will have to be removed, and the tooth itself may need to be divided in order to be removed safely. During either type of extraction, your mouth is numbed so that you won&rsquo;t experience discomfort. (You can expect soreness afterwards, but it can be controlled through medication and will wear off in time.)</p>\n\t<h2>\n\t\tUnderstanding the Cost of Tooth Extractions&nbsp;</h2>\n\t<p>\n\t\t<img alt=\"Tooth with dental instruments and money\" class=\"elem-left\" src=\"/assets/images/cost-extractions-1.jpg\" /></p>\n\t<p>\n\t\tThe cost of tooth extractions depends on a few factors. During your consultation, we will be able to discuss specific numbers. Most patients can afford their tooth extractions without too much stress. We make the financial aspect of your care even easier by offering convenient payment options. For example, we are happy to accept most types of dental insurance. We also work with CareCredit to provide low-interest payment plans.</p>\n\t<button class=\"btn togg\">Read More</button>\n\t<div class=\"section-toggle\">\n\t\t<h3>\n\t\t\tFactors That Can Affect Tooth Extraction Cost&nbsp;</h3>\n\t\t<img alt=\"Dental patient with toothache, waiting for care\" class=\"elem-sm\" src=\"/assets/images/cost-extractions-2.jpg\" />\n\t\t<p>\n\t\t\tThe cost of your tooth extraction procedure may depend on a number of factors:</p>\n\t\t<ul>\n\t\t\t<li>\n\t\t\t\t<strong>The type and location of the tooth that must be removed. </strong>Some teeth are more challenging to remove than others. Therefore, they may incur higher fees.</li>\n\t\t\t<li>\n\t\t\t\t<strong>The number of teeth that need to be removed.</strong> Logically, it costs more to get several teeth extracted than to get just one removed.</li>\n\t\t\t<li>\n\t\t\t\t<strong>The overall complexity of the case.</strong> Some patients have complicating factors that make their case more challenging and more expensive.</li>\n\t</ul>\n\t\t<h3>\n\t\t\tDoes Dental Insurance Cover Tooth Extractions?</h3>\n\t\t<img alt=\"Dental insurance information on laptop screen\" class=\"elem-sm\" src=\"/assets/images/cost-extractions-3.jpg\" />\n\t\t<p>\n\t\t\tYes, dental insurance usually does cover tooth extractions. Simple extractions are often 80% covered, while surgical extractions might be just 50% covered. Our team is happy to accept most policies, so be sure to ask us how we can help you maximize your benefits. We will also assist you as you use your policy to make sure all the necessary forms get filed in a timely manner. We will always be upfront with you about the portion of the bill that will come out of your pocket.</p>\n\t\t<h3>\n\t\t\tOther Options for Making Tooth Extractions Affordable</h3>\n\t\t<img alt=\"“Payment” key on computer keyboard\" class=\"elem-sm\" src=\"/assets/images/cost-extractions-4.jpg\" />\n\t\t<p>\n\t\t\tIn addition to insurance, there are a couple of provisions that might make it easier for you to afford your procedure:</p>\n\t\t<ul>\n\t\t\t<li>\n\t\t\t\tCareCredit is third-party lender that provides low-interest and no-interest payment plans for dental and medical services. The application process is fast, and most patients are approved for a monthly payment amount that works with their personal budget.</li>\n\t\t\t<li>\n\t\t\t\tIf you have a dental emergency, you can get a limited exam for only $65. After that, you will be well-informed about your situation and be able to make a confident decision about whether you should get a tooth removed.</li>\n\t\t</ul>\n\t\t<p>\n\t\t\tWould you like to learn more about tooth extractions and their cost? Get in touch with our team today to ask questions or book a consultation. We are eager to speak with you!</p>\n\t</div>\n\t<h2>\n\t\tTooth Extractions FAQs</h2>\n\t<p>\n\t\t<img alt=\"3D render of a tooth extraction\" class=\"elem-left\" src=\"/assets/images/extractions-faq.jpg\" /></p>\n\t<p>\n\t\tNo matter how experienced or comfortable you are with dental care, the prospect of a tooth extraction may still make you a little bit nervous. You might have questions about what the treatment will entail, and we&rsquo;ll be happy to talk to you about anything you&rsquo;d like to know before removing the tooth.</p>\n\t<p>\n\t\tWe get all kinds of questions from our patients, so if you want to learn more about tooth extractions, here are answers to some of the ones that we get the most often.</p>\n\t<button class=\"btn togg\">Read More</button>\n\t<div class=\"section-toggle\">\n\t\t<h3>\n\t\t\tIs There an Alternative to a Tooth Extraction?</h3>\n\t\t<p>\n\t\t\tAt Cove Choice Dental, we believe in conservative dentistry. We want to preserve your natural teeth just as much as you do, so we wouldn&rsquo;t typically recommend a tooth extraction unless it was completely necessary.</p>\n\t\t<p>\n\t\t\tThere are other treatments, like root canal therapy, that can deal with severely infected teeth. In the case of gum disease, you may also benefit from gum disease treatment. However, in some cases, a tooth extraction is the only way to restore your oral health to a decent condition.</p>\n\t\t<h3>\n\t\t\tWhat Are My Options for Replacing a Missing Tooth?</h3>\n\t\t<p>\n\t\t\tSome people are tempted to just leave a gap in their smile once their tooth has been removed, but we would strongly recommend against this. Even missing a single tooth may make it a little bit difficult to eat and could cause other teeth to move out of position.</p>\n\t\t<p>\n\t\t\tFor that reason, we will usually pair a tooth extraction with some method of replacing it. If you&rsquo;ve only removed a few teeth, a dental bridge or dental implant may be able to help you. If you need to replace most or all of the teeth you have on a given ridge, dentures or implant dentures may be a better choice. In either case, we&rsquo;ll be happy to talk to you about all the options available to you when we meet in person.</p>\n\t\t<h3>\n\t\t\tCan I Smoke After Getting a Tooth Extracted?</h3>\n\t\t<p>\n\t\t\tSmoking damages gum tissue and prevents blood circulation in the mouth. Taking a drag of a cigarette also creates negative pressure in the mouth, which can pull the emerging clot out of place. For these reasons, we strongly recommend against smoking in the days after a tooth extraction.</p>\n\t\t<p>\n\t\t\tWhile quitting smoking entirely is obviously the best thing you can do, it&rsquo;s recommended that you refrain for at least two weeks after your procedure. If you think you&rsquo;ll have trouble quitting, talk to us and we can recommend options that may be able to help you.</p>\n\t\t<h3>\n\t\t\tHow Should I Prepare for My Tooth Extraction?</h3>\n\t\t<p>\n\t\t\tBefore the tooth extraction we&rsquo;ll take the time to talk to you about any questions you may have. This is an essential part of being fully prepared for the treatment, so don&rsquo;t be shy at your consultation.</p>\n\t\t<p>\n\t\t\tWe&rsquo;ll also talk to you about any medications you&rsquo;re taking in order to make sure that anesthetics won&rsquo;t be a problem for you. You should also plan to have someone drive you home after your treatment, as it&rsquo;s common to be groggy after the procedure.</p>\n\t\t<p>\n\t\t\tWe&rsquo;ll be sure to give you more detailed instructions when we meet you, so be sure to follow them if you want to be prepared.</p>\n\t</div>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a> <a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\" href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a> <a class=\"btn\" href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a> <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a> <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a><a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+export default function ToothExtractionsPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Tooth Extractions?</h2>
+  <ul>
+    <li>Gentle, Pain-Free Anesthetics & Sedation Options</li>
+    <li>Same-Day Emergency Extractions Available</li>
+    <li>Immediate Tooth Replacement Planning (Implants, Bridges & Dentures)</li>
+    <li>Medicaid, Major PPOs & CareCredit® 0% Financing Accepted</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>Common Reasons for Tooth Extraction</h2>
+  <p>
+    <img
+      alt="Man in need of tooth extraction holding his cheek"
+      class="elem-left"
+      src="/assets/images/extractions-1.jpg"
+    />
+    At Cove Choice Dental, preserving your natural teeth is always our top priority. However, in certain clinical situations where a tooth cannot be saved, removing it is the safest choice to protect your surrounding teeth, gums, and overall health:
+  </p>
+  <ul>
+    <li><strong>Irreparable Physical Damage:</strong> Fractures that extend beneath the gumline where a crown cannot be anchored.</li>
+    <li><strong>Severe, Deep Tooth Decay:</strong> Enamel and dentin have deteriorated beyond the restorative limits of a root canal.</li>
+    <li><strong>Advanced Periodontal Disease:</strong> Gum disease has dissolved the supporting alveolar jawbone, leaving the tooth loose.</li>
+    <li><strong>Crowding & Orthodontic Preparation:</strong> Creating space for dentures or aligning neighboring teeth.</li>
+    <li><strong>Stubborn Primary Teeth:</strong> Baby teeth that fail to fall out on schedule and block emerging permanent teeth.</li>
+  </ul>
+
+  <h2>How Tooth Extractions Work</h2>
+  <p>
+    <img
+      alt="Man in dental chair holding cheek before tooth extraction"
+      class="elem-left"
+      src="/assets/images/extractions-2.jpg"
+    />
+    During a simple extraction, the area is completely numbed with local anesthetic. Using specialized instruments called an elevator and forceps, the tooth is gently loosened and removed without discomfort. If a tooth is impacted beneath the gums (such as wisdom teeth), a surgical extraction is performed with precision incisions. Afterwards, we provide clear post-operative instructions, pain management guidance, and gauze to ensure a smooth, quick recovery.
+  </p>
+
+  <h2>Understanding the Cost of Tooth Extractions</h2>
+  <p>
+    <img
+      alt="Tooth with dental instruments and money showing transparent pricing"
+      class="elem-left"
+      src="/assets/images/cost-extractions-1.jpg"
+    />
+    The cost of a tooth extraction depends on whether it is a simple or surgical procedure, the tooth's location, and how many teeth need removal. We provide upfront, transparent estimates before starting any work.
+  </p>
+
+  <div class="section-toggle">
+    <h3>Insurance Coverage & Payment Options</h3>
+    <img
+      alt="Dental insurance information on laptop screen"
+      class="elem-left"
+      src="/assets/images/cost-extractions-3.jpg"
+    />
+    <p>
+      Dental insurance plans usually cover 50% to 80% of tooth extraction costs. We gladly file claims on your behalf. Additionally, we offer a <strong>$65 Emergency Limited Exam &amp; X-Ray</strong> special for new patients, as well as zero-interest monthly payment plans through <strong>CareCredit®</strong>.
+    </p>
+  </div>
+
+  <h2>Tooth Extractions FAQs</h2>
+  <div class="accordion">
+    <h3>Is There an Alternative to a Tooth Extraction?</h3>
+    <p>
+      We always explore conservative alternatives like root canal therapy or deep periodontal cleaning first. Extraction is only recommended when saving the tooth is clinically impossible or poses health risks.
+    </p>
+
+    <h3>What Are My Options for Replacing a Missing Tooth?</h3>
+    <p>
+      We strongly recommend replacing extracted teeth quickly to keep surrounding teeth from shifting. Options include permanent dental implants, customized dental bridges, or partial dentures.
+    </p>
+
+    <h3>Can I Smoke or Use Straws After Getting a Tooth Extracted?</h3>
+    <p>
+      No! Suction from smoking or drinking through straws can dislodge the healing blood clot, leading to a painful condition called "dry socket." Avoid smoking and straws for at least 72 hours.
+    </p>
+  </div>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/wisdom-teeth-removal">Wisdom Teeth Removal</a>
+    <a class="btn" href="/dental-implants">Dental Implants</a>
+    <a class="btn" href="/dentures">Modern Dentures</a>
+    <a class="btn" href="/emergency-dentistry">Emergency Relief</a>
+    <a class="btn" href="/root-canal-therapy">Root Canal Therapy</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Tooth Extractions &ndash; Copperas Cove, TX"}
-        subtitle={"Making Extractions Stress-Free"}
-        description={"When our experts at Cove Choice Dental have a choice, they&rsquo;ll always take the option that lets you keep all of your natural teeth. Sadly, this won&rsquo;t always be the case; there are times where extraction is the only real option we have. But not to worry; with a local anesthetic, you&rsquo;ll feel practically nothing during the treatment, and we&rsquo;ll begin the process of helping you find a suitable replacement right away. <a href=\"contact.html\">Call us today </a>to learn more about our straightforward, stress-free approach to tooth extractions in Copperas Cove, TX."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Tooth Extractions in Copperas Cove, TX"
+      subtitle="Gentle, Stress-Free Tooth Removal & Immediate Replacement"
+      description="When a tooth cannot be saved due to severe infection, fractures, or overcrowding, our experienced team provides gentle, virtually painless tooth extractions with same-day emergency appointments."
+      breadcrumbLabel="Tooth Extractions"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "$65 Emergency Exam Special",
+        price: "$65",
+        notes: "Includes Emergency Examination & Diagnostic Digital X-Ray",
+        href: "/offers-promotions",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

@@ -1,24 +1,109 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Dental Bridge Copperas Cove, TX | Tooth Replacement | Cove Choice Dental",
-  description: "Looking to replace one or several missing teeth in a row? At Cove Choice Dental, we offer lifelike dental bridges in Copperas Cove, TX.",
+  title: "Dental Bridges Copperas Cove, TX | Missing Tooth Replacement | Cove Choice Dental",
+  description:
+    "Replace one or more consecutive missing teeth with custom porcelain dental bridges in Copperas Cove, TX. Traditional and implant-supported bridges at Cove Choice Dental.",
 };
 
-export default function DentalBridgesPagePage() {
-  const contentHtml = "\n      \n\n<p>\n\tAre you one of the millions of Americans who have lost at least one adult tooth? Maybe you wish you could replace your tooth without having to undergo oral surgery like you would with a dental implant. In that case,\n\t<a href=\"/meet-the-dentists\">\n\t\t our team\n\t</a>\n\t at Cove Choice Dental often recommends dental bridges. This restoration relies on your remaining teeth to stay firmly in place for years to come. Plus, we make our bridges from porcelain and other lifelike materials, ensuring seamless results. When you visit our practice for a tooth replacement consultation, we can discuss which type of dental bridge in Copperas Cove, TX is right for you and set you on the path to complete your smile.\n\t<a href=\"/contact\">\n\t\t Call us today\n\t</a>\n\t to schedule your appointment!\n</p>\n<div class=\"why\">\n<h2>\n\tWhy Choose Cove Choice Dental for Dental Bridges?\n</h2>\n<ul>\n\t<li>\n\t\tDental Implant Bridges Placed &amp; Restored In-House\n\t</li>\n\t<li>\n\t\tConvenient Saturday Appointment Times Available\n\t</li>\n\t<li>\n\t\tNatural-Looking, Long-Lasting Materials Used\n\t</li>\n</ul>\n</div>\n<div class=\"page-divider\">\n<p>\n\t<a name=\"what\"></a></p>\n<h2>\n\tWhat Is a Dental Bridge?\n</h2>\n<p>\n\t<img alt=\"dental bridge in Copperas Cove, TX replacing a single missing tooth\" class=\"elem-left\" src=\"/assets/images/dental-bridges-1.jpg\" /></p>\n<p>\n\tA dental bridge is a set of prosthetic teeth that is fixed in your mouth to literally &ldquo;bridge&rdquo; the gap left behind when one or more teeth has been lost. It consists of several dental crowns fused together, with the crowns on the ends secured onto your remaining natural teeth. Alternatively, a bridge can be anchored onto\n\t<a href=\"/dental-implants\">\n\t\t dental implants\n\t</a>\n\t if three or more consecutive teeth need to be replaced. In either case, a dental bridge lets you enjoy having a confident, complete smile that flawlessly blends in with the rest of your pearly whites.\n</p>\n<p>\n\t<a name=\"type\"></a></p>\n<h2>\n\tTypes of Dental Bridges &nbsp;\n</h2>\n<p>\n\t<img alt=\"three-unit dental bridge in front of a black background\" class=\"elem-left\" src=\"/assets/images/dental-bridges-2.jpg\" /></p>\n<p>\n\tWhen you meet with your dentist in Copperas Cove, you&rsquo;ll go over your medical history, the current state of your oral health, and the specific goals you wish to accomplish with your smile. From there, our team can let you know which of the two types of dental bridges would be better suited for your unique needs.\n</p>\n<button class=\"btn togg\">Read More</button>\n    <div class=\"section-toggle\">\n<h3>\n\tTraditional Dental Bridge\n</h3>\n<img alt=\"dental bridge replacing a single missing tooth\" class=\"elem-sm\"\n                src=\"/assets/images/dental-bridges-3.jpg\" />\n<p>\n\tWith a traditional dental bridge, a crown is bonded to each of the healthy teeth on the ends of the empty space in your grin. Multiple artificial teeth are strung between them, which will rest on top of your gums. This solution doesn&rsquo;t involve oral surgery, so it&rsquo;s considered less invasive and more affordable up-front than a dental implant bridge.\n</p>\n<h3>\n\tImplant Bridge\n</h3>\n<img alt=\"dental bridge being anchored onto two dental implants \" class=\"elem-sm\"\n                src=\"/assets/images/dental-bridges-4.jpg\" />\n<p>\n\tInstead of relying on your natural teeth (which can weaken them over time), an implant bridge is secured onto two dental implants. One of these titanium posts is surgically placed at each end of the gap to hold a bridge in place. Not only do implant bridges not require the removal of healthy enamel, but they also stimulate your jawbone to prevent facial collapse.\n</p>\n</div>\n<h2>\n\tThe Benefits of Getting a Dental Bridge\n\t<em>\n\t\t &nbsp;\n\t</em>\n</h2>\n<p>\n\t<img alt=\"smiling woman eating a salad\" class=\"elem-left\" src=\"/assets/images/dental-bridges-5.jpg\" /></p>\n<p>\n\tTooth loss can hinder your self-confidence, diet, oral health, and overall quality of life. By addressing the issue with a dental bridge, you can look forward to benefits like:\n</p>\n<ul>\n\t<li>\n\t\tPrevention of your remaining teeth from drifting out of place\n\t</li>\n\t<li>\n\t\tThe ability to chew your favorite foods with ease\n\t</li>\n\t<li>\n\t\tBoosted confidence\n\t</li>\n\t<li>\n\t\tA minimally invasive treatment (traditional bridge)\n\t</li>\n\t<li>\n\t\tA near-permanent tooth replacement (implant bridge)\n\t</li>\n\t<li>\n\t\tA prosthetic that can last for five to 10 years (traditional) or upwards of 30 (implant)\n\t</li>\n</ul>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\" href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a> <a class=\"btn\" href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a> <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>   <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a> <a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+export default function DentalBridgesPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Dental Bridges?</h2>
+  <ul>
+    <li>Traditional &amp; Implant-Supported Bridges Placed In-House</li>
+    <li>Custom-Shaded Porcelain for Seamless Esthetics</li>
+    <li>Restores Chewing Ability &amp; Prevents Teeth from Shifting</li>
+    <li>Medicaid, PPOs &amp; Low-Interest Financing Available</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What Is a Dental Bridge?</h2>
+  <p>
+    <img
+      alt="Dental bridge in Copperas Cove replacing missing tooth"
+      class="elem-left"
+      src="/assets/images/dental-bridges-1.jpg"
+    />
+    A dental bridge is a fixed dental prosthetic that literally "bridges" the space created by one or more missing teeth. It consists of artificial teeth (pontics) suspended between two custom dental crowns anchored to either healthy neighboring teeth or titanium dental implants.
+  </p>
+
+  <h2>Types of Dental Bridges</h2>
+  <p>
+    <img
+      alt="Three-unit porcelain dental bridge"
+      class="elem-left"
+      src="/assets/images/dental-bridges-2.jpg"
+    />
+  </p>
+  <div class="section-toggle">
+    <h3>1. Traditional Dental Bridges</h3>
+    <img
+      alt="Dental bridge replacing single tooth"
+      class="elem-sm"
+      src="/assets/images/dental-bridges-3.jpg"
+    />
+    <p>
+      In a traditional bridge, the teeth on either side of the gap are gently shaped to receive supporting crowns. The prosthetic is permanently cemented in place, requiring no surgery and restoring your smile quickly and affordably.
+    </p>
+
+    <h3>2. Implant-Supported Bridges</h3>
+    <img
+      alt="Dental bridge anchored to dental implants"
+      class="elem-sm"
+      src="/assets/images/dental-bridges-4.jpg"
+    />
+    <p>
+      If you are missing three or four teeth in a row, an implant bridge is anchored onto two sturdy dental implant posts rather than natural teeth. This preserves your healthy neighboring enamel and prevents bone loss in the jaw.
+    </p>
+  </div>
+
+  <h2>The Benefits of Getting a Dental Bridge</h2>
+  <p>
+    <img
+      alt="Smiling woman enjoying healthy meal after dental bridge"
+      class="elem-left"
+      src="/assets/images/dental-bridges-5.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Prevents Dental Drift:</strong> Stops remaining teeth from tilting and throwing off your bite alignment.</li>
+    <li><strong>Effortless Chewing:</strong> Restores full ability to chew meats, vegetables, and crunchy foods comfortably.</li>
+    <li><strong>Natural Appearance:</strong> Hand-crafted ceramic matches the color and shine of your natural teeth.</li>
+    <li><strong>Durable Longevity:</strong> Traditional bridges last 10+ years, while implant bridges can last a lifetime with good hygiene.</li>
+  </ul>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-implants">Dental Implants</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn" href="/dentures">Modern Dentures</a>
+    <a class="btn" href="/replace-missing-teeth">Replace Missing Teeth</a>
+    <a class="btn" href="/preventive-dentistry">Checkups &amp; Cleanings</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Dental Bridges &ndash; Copperas Cove, TX"}
-        subtitle={"The Simplest Way to Fill Your Smile&rsquo;s Gaps"}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Dental Bridges in Copperas Cove, TX"
+      subtitle="Complete Your Smile &amp; Restore Missing Teeth"
+      description="Missing teeth can cause neighboring teeth to drift, alter your bite, and make chewing difficult. Our custom porcelain dental bridges restore full dental function and natural beauty with precision."
+      breadcrumbLabel="Dental Bridges"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Tooth Replacement Consultation",
+        price: "Consult",
+        notes: "Detailed Exam & Restorative Options Review",
+        href: "/request-an-appointment",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

@@ -9,11 +9,15 @@ interface ServicePageLayoutProps {
   bgImage?: string;
   breadcrumbLabel: string;
   children: React.ReactNode;
+  sidebarType?: string;
   specialOffer?: {
     title: string;
     price: string;
-    notes: string;
-    href: string;
+    notes?: string;
+    description?: string;
+    href?: string;
+    link?: string;
+    badge?: string;
   };
 }
 
@@ -93,15 +97,15 @@ export default function ServicePageLayout({
               {specialOffer && (
                 <div className="mt-6 pt-5 border-t border-white/15 bg-white/5 rounded-2xl p-4 border border-white/10">
                   <span className="text-[11px] font-bold text-[#febb21] uppercase tracking-wider block mb-1">
-                    Special Offer
+                    {specialOffer.badge || "Special Offer"}
                   </span>
                   <div className="flex items-center justify-between mb-1">
                     <h4 className="font-bold text-sm text-white">{specialOffer.title}</h4>
                     <span className="text-[#febb21] font-extrabold text-base">{specialOffer.price}</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-3">{specialOffer.notes}</p>
+                  <p className="text-xs text-slate-300 mb-3">{specialOffer.notes || specialOffer.description}</p>
                   <Link
-                    href={specialOffer.href}
+                    href={specialOffer.href || specialOffer.link || "/offers-promotions"}
                     className="text-xs text-[#9c8f6d] hover:text-white font-bold flex items-center gap-1"
                   >
                     View All Specials →

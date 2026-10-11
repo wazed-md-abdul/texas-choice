@@ -1,24 +1,67 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Restorative Dentistry Copperas Cove, TX | Dental Crowns | Tooth-Colored Fillings",
   description: "Repair damaged smiles with restorative dentistry in Copperas Cove, TX, including dental crowns and tooth-colored fillings from the trusted dentistry team and dentist at Cove Choice Dental.",
 };
 
-export default function RestorativeDentistryPagePage() {
-  const contentHtml = "\n<div class=\"why\">\n\t<h2>\n\t\tWhy Choose Cove Choice Dental for Restorative Dentistry?</h2>\n\t<ul>\n\t\t<li>\n\t\t\tRestorations Done in One Visit</li>\n\t\t<li>\n\t\t\tDiscounts for Making Cash Payments</li>\n\t\t<li>\n\t\t\tEmphasis on Excellent Service</li>\n\t</ul>\n</div>\n<div class=\"page-divider\">\n\t<p>\n\t\t<a name=\"fill\"></a></p>\n\t<h2>\n\t\tTooth-Colored Fillings</h2>\n\t<p>\n\t\t<img alt=\"Dentist checking patient's tooth-colored filling\" class=\"elem-left\" src=\"/assets/images/broken-tooth-1.jpg\" /></p>\n\t<p>\n\t\tIf you&rsquo;ve ever had a metal amalgam filling, then you know the impact that a dark-colored tooth can have on your self-confidence. Thanks to the tooth-colored materials that are available today, we can repair your tooth in a way that looks natural without having to sacrifice the strength or durability of the restoration itself. The composite resin that makes up the filling will bond directly with the tooth, meaning more of the natural structure is saved.</p>\n<p><a href=\"/tooth-colored-fillings\" class=\"btn\">Learn More About Tooth-Colored Fillings</a></p>\n\t<p>\n\t\t<a name=\"crown\"></a></p>\n\t<h2>\n\t\tDental Crowns</h2>\n\t<p>\n\t\t<img alt=\"Dental crown restoration resting on fingertip\" class=\"elem-left\" src=\"/assets/images/broken-tooth-2.jpg\" /></p>\n\t<p>\n\t\tDental crowns, as their name suggests, are placed on top of teeth, hiding them completely. You can have many reasons for getting a dental crown. Common examples include a sudden injury where a large part of the tooth was broken off, extensive decay that goes beyond what a filling could fix, or a weakened tooth that needs additional protection and support. In some cases, you might also be able to get a crown to make cosmetic corrections, such as hiding unresponsive stains.</p>\n\t<p>\n\t\t<a class=\"btn\" href=\"/dental-crowns\">Learn More About Dental Crowns</a></p>\n\t<p>\n\t\t<a name=\"one\"></a></p>\n\t<h2>\n\t\tOne-Visit Dental Restorations</h2>\n\t<p>\n\t\t<img alt=\"Man sharing healthy smile after one-visit dental restoration\" class=\"elem-left\" src=\"/assets/images/broken-tooth-3.jpg\" /></p>\n\t<p>\n\t\tAt many dental offices, getting a dental crown is a drawn-out process that takes weeks and requires at least two separate visits. Consequently, you would have to worry about taking care of a temporary restoration while the permanent one is made at a dental lab by people you don&rsquo;t know. At Cove Choice Dental, however, your restoration can be ready in as little as one day, meaning you&rsquo;ll walk in with a damaged tooth and walk out with a brighter, healthier, more confident smile.</p>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a> <a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\" href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a> <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>   <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a><a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+export default function RestorativeDentistryPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Restorative Dentistry?</h2>
+  <ul>
+    <li>High-Strength, Natural-Looking Tooth-Colored Materials</li>
+    <li>Same-Day &amp; One-Visit Restorations Available</li>
+    <li>Flexible Financing &amp; Direct Insurance Billing</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>Tooth-Colored Fillings</h2>
+  <p><img alt="Dentist checking patient's tooth-colored filling" class="elem-left" src="/assets/images/broken-tooth-1.jpg" /></p>
+  <p>If you've ever had a dark metal amalgam filling, you know how it can show when you smile or laugh. Thanks to modern biocompatible composite resins, we can repair cavities and minor fractures with restorations that blend seamlessly with your natural enamel. The composite material bonds directly to your tooth structure, requiring far less enamel removal and preserving more of your natural tooth.</p>
+  <p><a href="/tooth-colored-fillings" class="btn">Learn More About Tooth-Colored Fillings</a></p>
+
+  <h2>Custom Dental Crowns</h2>
+  <p><img alt="Dental crown restoration resting on fingertip" class="elem-left" src="/assets/images/broken-tooth-2.jpg" /></p>
+  <p>A dental crown acts as a protective, custom-shaded "cap" fitted over a compromised tooth. Crowns are ideal when extensive decay, large fractures, or severe wear weaken the tooth beyond what a filling can support, or following root canal therapy. Crafted from premium porcelain, zirconia, or ceramic, our crowns replicate the natural translucency, contours, and chewing strength of healthy teeth.</p>
+  <p><a class="btn" href="/dental-crowns">Learn More About Dental Crowns</a></p>
+
+  <h2>One-Visit Dental Restorations</h2>
+  <p><img alt="Man sharing healthy smile after one-visit dental restoration" class="elem-left" src="/assets/images/broken-tooth-3.jpg" /></p>
+  <p>At many traditional dental offices, getting a crown requires multiple appointments, gooey impression trays, and wearing fragile temporaries for weeks. At Cove Choice Dental, modern digital dentistry lets us evaluate, design, and place durable, beautiful restorations efficiently so you can walk out with a restored, confident smile with minimal downtime.</p>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/tooth-colored-fillings">Tooth-Colored Fillings</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn" href="/dental-bridges">Dental Bridges</a>
+    <a class="btn" href="/root-canal-therapy">Root Canal Therapy</a>
+    <a class="btn" href="/dental-implants">Dental Implants</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Restorative Dentistry &ndash; Copperas Cove, TX"}
-        subtitle={"Revitalizing Your<br /> Unique Smile"}
-        description={"There&rsquo;s no need to be ashamed of worn down or broken teeth; even those who take excellent care of their smiles may experience dental damage every once in a while. At Cove Choice Dental, our caring team will quickly evaluate the damage and figure out what type of restoration is needed so that your teeth continue to function properly.<a href=\"contact.html\"> Call us</a> today to schedule a visit for restorative dentistry in Copperas Cove, TX if you feel like your grin is in need of repair."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Restorative Dentistry"
+      subtitle="Revitalizing Damaged & Decayed Smiles in Copperas Cove, TX"
+      description="There is no need to live with broken, worn, or painful teeth. At Cove Choice Dental, our caring team restores optimal function and lifelike aesthetics with advanced tooth-colored restorations."
+      breadcrumbLabel="Restorative Dentistry"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Restorative Special",
+        price: "$59",
+        description: "New Patient Exam, Full X-Ray Series & Treatment Consultation.",
+        link: "/request-an-appointment",
+        badge: "Special Offer",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

@@ -1,24 +1,67 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "United Concordia Dentist Copperas Cove TX | In-Network Dentist | Cove Choice Dental",
-  description: "As an in-network United Concordia dentist in Copperas Cove, TX, our team is pleased to help patients maximize their insurance benefits.",
+  description: "As an in-network United Concordia dentist in Copperas Cove, TX, our team is pleased to help patients maximize their dental insurance benefits.",
 };
 
-export default function UnitedConcordiaDentistPagePage() {
-  const contentHtml = "\n    <div class=\"page-divider\">\n<h2>United Concordia Coverage Availability &amp; Fees</h2>\n<p>\n    <img\n      alt=\"dental patient holding mirror smiling at her reflection\"\n      class=\"elem-left\"\n      src=\"/assets/images/united-1.jpg\"\n    />\n  </p>\n<p>United Concordia offers a number of different dental plans; you may have been able to choose between a few of them\n    when you signed up for dental benefits through your employer. Many of their available plans are PPO in nature,\n    meaning that they allow you to visit any licensed dentist or specialist without a referral.</p>\n<p>You will need to look at the details of your plan to find out for sure how it works. In the meantime, here is an\n    overview of the coverage that is standard with many PPO dental policies:</p>\n<ul>\n    <li><strong>Preventive services, </strong>such as cleanings, exams, and X-rays, are usually 100% covered.</li>\n    <li><strong>Basic services, </strong>often including fillings and non-surgical extractions, are often up to 80%\n        covered.</li>\n    <li><strong>Major services, </strong>such as crowns, dentures, and other extensive procedures, are usually up to 50%\n        covered.</li>\n</ul>\n<p>Keep in mind that your plan may also have a deductible and a waiting period before you can use it for certain\n    restorative services. Additionally, you may be subject to an annual maximum, which places a yearly limit on how much\n    United Concordia will pay for approved services within a calendar year.</p>\n<p>As an in-network United Concordia dentist, we have a contract with your insurance company that helps to keep your\n    out-of-pocket costs to a minimum. We may even be able to schedule major treatments in a way that makes it possible\n    for you to use two annual maximums instead of just one.</p>\n<h2>Speak to Our Front Desk Team</h2>\n<p>\n    <img\n      alt=\"patient and dental team member standing at dental office front desk\"\n      class=\"elem-left\"\n      src=\"/assets/images/united-2.jpg\"\n    />\n  </p>\n<p>Our entire Copperas Cove dental team is eager to help you get the most out of your United Concordia plan. Our\n    friendly and knowledgeable staff can assist you as you strive to figure out how your benefits apply in any given\n    situation. We can also make sure that all claims get filed correctly so you do not have to worry about whether you\n    will receive all the benefits that you are entitled to. <a\n        href=\"/contact\">Give us a call</a> to learn more about how we may be able\n    to serve you!</p>\n</div>\n<div class=\"more-to-explore\">\n    <span>More to Explore</span>\n    <p>\n      <a class=\"btn\" href=\"/preventive-dentistry\"\n        >I Need a Dental Checkup &amp; Cleaning</a\n      >\n      <a class=\"btn\" href=\"/childrens-dentistry\"\n        >I Need a Dentist for My Child</a\n      >\n      <a class=\"btn\" href=\"/gum-disease-treatment\"\n        >I am Worried About Bleeding Gums</a\n      >\n      <a class=\"btn\" href=\"/restorative-dentistry\"\n        >I Have a Cavity or Broken Tooth</a\n      >\n      <a class=\"btn\" href=\"/replace-missing-teeth\"\n        >I am Missing One or More Teeth</a\n      >\n      <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>\n       \n      <a class=\"btn\" href=\"/emergency-dentistry\"\n        >I am in Pain &amp; Need Help</a\n      >\n      <a class=\"btn\" href=\"/wisdom-teeth-removal\"\n        >I Need My Wisdom Teeth Removed</a\n      ><a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a>\n      <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n    </p>\n  </div>\n    ";
+export default function UnitedConcordiaDentistPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental as Your United Concordia Dentist?</h2>
+  <ul>
+    <li>Contracted In-Network Provider for United Concordia Plans</li>
+    <li>100% Coverage for Routine Preventive Cleanings &amp; Exams</li>
+    <li>Full Claim Submission, Transparent Estimates &amp; Military-Friendly Care</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>United Concordia Coverage Availability &amp; Typical Fees</h2>
+  <p><img alt="dental patient holding mirror smiling at her reflection" class="elem-left" src="/assets/images/united-1.jpg"/></p>
+  <p>United Concordia provides trusted dental benefits to individuals, families, and military families nationwide. Most United Concordia PPO policies feature a helpful tiered benefit design:</p>
+  <ul>
+    <li><strong>Preventive Services (Often 100% Covered):</strong> Comprehensive oral evaluations, bi-annual cleanings, bitewing X-rays, and fluoride treatments.</li>
+    <li><strong>Basic Services (Up to 80% Covered):</strong> Composite fillings, tooth extractions, and non-surgical treatments.</li>
+    <li><strong>Major Services (Up to 50% Covered):</strong> Porcelain crowns, bridges, dentures, and periodontal deep cleanings.</li>
+  </ul>
+  <p>Visiting an in-network United Concordia dentist guarantees you receive pre-established, contracted rates, ensuring you keep more money in your pocket while receiving top-tier dental care.</p>
+
+  <h2>Speak with Our Copperas Cove Front Desk Team</h2>
+  <p><img alt="patient and dental team member standing at dental office front desk" class="elem-left" src="/assets/images/united-2.jpg"/></p>
+  <p>Our team is dedicated to helping you maximize your annual benefits before they expire on December 31st. We verify your coverage, handle all electronic claim filings, and help plan your treatment timeline so you get the most out of your dental plan. Contact our Copperas Cove team today to schedule your visit!</p>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-insurance">Dental Insurance Guide</a>
+    <a class="btn" href="/preventive-dentistry">Preventive Care</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn" href="/restorative-dentistry">Restorative Dentistry</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"United Concordia Dentist &ndash; Copperas Cove, TX"}
-        subtitle={"Learn More About the Benefits of United Concordia"}
-        description={"Do you have a United Concordia <a href=\"dental-insurance.html\">dental insurance</a> plan? If so, you should certainly use it. It can allow you to enjoy low-cost preventive care and possibly even reduce the financial strain that can come with major restorative procedures. But how can you make sure you get the greatest possible value from your dental insurance? Our Copperas Cove dental team is ready and eager to assist you. As an in-network United Concordia dentist, we are in the perfect position to help you maximize your benefits."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="In-Network United Concordia Dentist"
+      subtitle="Maximize Your United Concordia Dental Benefits in Copperas Cove, TX"
+      description="Proudly serving civilian and military families. Cove Choice Dental is an in-network United Concordia dental provider."
+      breadcrumbLabel="United Concordia"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="insurance"
+      specialOffer={{
+        title: "United Concordia Welcome",
+        price: "$0 Copay",
+        description: "Routine checkups, exams, and cleanings are typically 100% covered under United Concordia PPO plans.",
+        link: "/request-an-appointment",
+        badge: "In-Network Provider",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

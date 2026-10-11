@@ -1,24 +1,101 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Implant Dentures Copperas Cove | Replace Missing Teeth | Cove Choice Dental",
-  description: "Traditional dentures are known to slip on occasion, but the implant dentures offered at Cove Choice Dental will always stay in place.",
+  title: "Implant-Supported Dentures Copperas Cove, TX | Stable Dentures | Cove Choice Dental",
+  description:
+    "End slipping dentures forever with implant-supported dentures in Copperas Cove, TX. Fixed and snap-in dentures that restore 100% stability at Cove Choice Dental.",
 };
 
-export default function ImplantDenturesPagePage() {
-  const contentHtml = "\n<div class=\"why\">\n<h2>Why Choose Cove Choice Dental for Implant Dentures?</h2>\n<ul>\n<li>Dental Implant Surgery Performed In-House</li>\n<li>Appointments Available on Saturdays</li>\n<li>Lifelike, Long-Lasting Partial and Full Dentures</li>\n</ul>\n</div>\n<div class=\"page-divider\">\n<h2>What Are Implant Dentures?</h2>\n<p><img alt=\"Six implants for supporting implant dentures in Copperas Cove, TX\" class=\"elem-left\" src=\"/assets/images/implant-dentures-1.jpg\"/></p>\n<p>Like traditional dentures, implant dentures are meant to mimic your natural teeth so that you can eat and speak normally again. The big difference is that they are supported by several dental implant posts that have been placed in specific areas of the jawbone. The addition of dental implants will let your dentures look, feel, and function more like your natural teeth. There are two types to choose from:</p>\n<h3>Fixed/Permanent Implant Dentures</h3>\n<p>A fixed implant denture is made to stay in your mouth for 24 hours a day. Your dentist may remove it during your routine appointments, but otherwise, it will be a permanent fixture in your mouth. This type of denture requires more posts, so it&rsquo;s usually only recommended for patients with high jawbone density.</p>\n<h3>Removable Implant Dentures</h3>\n<p>Removable implant dentures can be easily taken out of your mouth so that you can brush the gums under them. The advantage of this type of denture is that fewer implants are required, so it may be a viable option even if you have low jawbone density.</p>\n<h2>The Implant Denture Process</h2>\n<p><img alt=\" Senior man with glasses, beard, and implant dentures in Copperas Cove, TX\" class=\"elem-left\" src=\"/assets/images/implant-dentures-2.jpg\"/></p>\n<p>We begin the implant denture process with a consultation. We&rsquo;ll confirm that you&rsquo;re a good candidate for the treatment and go over the steps we&rsquo;ll need to take, including any preparatory procedures that are required before the appointment. On the day of the implant surgery, a specific number of posts will be inserted into key areas of the jaw. Protective caps will be attached to help preserve the shape of the gums during the healing process.</p>\n<p>A process called osseointegration allows the implants to join with the bone and gum tissue. Abutments will be attached to the posts after the mouth has healed, and the denture will be designed based on an impression of your mouth. We&rsquo;ll attach said denture during one final appointment after making any last-minute adjustments.</p>\n<h2>Am I a Candidate for Implant Dentures?</h2>\n<p><img alt=\"Senior man with implant dentures in Copperas Cove, TX outside and smiling\" class=\"elem-left\" src=\"/assets/images/implant-dentures-3.jpg\"/></p>\n<p>You may be a candidate for implant dentures if you:</p>\n<ul>\n<li>Have lost most or all of the teeth in a single arch.</li>\n<li>Are healthy enough for minor surgical treatments.</li>\n<li>Don&rsquo;t have any oral health issues that might get in the way of implants.</li>\n<li>Are willing to stick to the dental implant process for several months.</li>\n</ul>\n<h2>Benefits of Combining Dentures &amp; Dental Implants</h2>\n<p><img alt=\"Senior couple with implant dentures in Copperas Cove, TX standing and smiling\" class=\"elem-left\" src=\"/assets/images/implant-dentures-4.jpg\"/></p>\n<p>In many ways, implant dentures are more convenient than traditional dentures because they can be left in your mouth at all times. Fixed dentures can even be brushed as if they were your natural teeth. You won&rsquo;t have to worry about your dentures slipping at inopportune moments, and you&rsquo;ll be able to enjoy all of your favorite foods thanks to the chewing power the posts provide. And of course, implants have several health advantages, such as stimulating the jaw to stop the bone from resorbing.</p>\n</div>\n    ";
+export default function ImplantDenturesPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Implant Dentures?</h2>
+  <ul>
+    <li>Implant Placement Surgery Performed Completely In-House</li>
+    <li>Fixed (Permanent) &amp; Snap-On Removable Options</li>
+    <li>Locks Securely in Place—Zero Slipping, Clicking, or Pastes</li>
+    <li>Flexible Monthly Payments with 0% Interest CareCredit®</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What Are Implant Dentures?</h2>
+  <p>
+    <img
+      alt="Six implants supporting implant dentures in Copperas Cove, TX"
+      class="elem-left"
+      src="/assets/images/implant-dentures-1.jpg"
+    />
+    Traditional dentures rely solely on suction and messy adhesives along the gums, which often leads to slipping, painful rubbing, and embarrassing speech issues. Implant dentures solve this by anchoring customized full or partial dentures securely onto titanium implant posts fused into your jawbone.
+  </p>
+
+  <h2>Two Types of Implant Dentures</h2>
+  <div class="section-toggle">
+    <h3>1. Fixed / Permanent Implant Dentures</h3>
+    <p>
+      Fixed implant dentures remain permanently locked in place 24/7. Only your dentist removes them during routine checkups. They look, feel, and function just like natural teeth and are brushed in place normally.
+    </p>
+
+    <h3>2. Removable "Snap-In" Overdentures</h3>
+    <p>
+      Snap-in overdentures clip firmly onto two to four implant ball-and-socket attachments. They provide absolute chewing stability throughout the day, yet can be snapped off at night for effortless cleaning.
+    </p>
+  </div>
+
+  <h2>The Implant Denture Process</h2>
+  <p>
+    <img
+      alt="Senior man smiling happily with implant dentures in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/implant-dentures-2.jpg"
+    />
+    From your initial 3D digital scan to surgical implant placement and final denture seating, our skilled dentists manage every step of your transformation under one roof in Copperas Cove. After the implants fuse to your jawbone during osseointegration, custom-shaded, lifelike teeth are fabricated and fastened securely into place.
+  </p>
+
+  <h2>Benefits of Combining Dentures &amp; Dental Implants</h2>
+  <p>
+    <img
+      alt="Senior couple enjoying dinner with stable implant dentures"
+      class="elem-left"
+      src="/assets/images/implant-dentures-4.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Zero Slipping:</strong> Speak, laugh, and smile with 100% confidence without fear of loose teeth.</li>
+    <li><strong>Eat Whatever You Want:</strong> Bite into crisp apples, crunchy vegetables, and juicy steaks with restored bite strength.</li>
+    <li><strong>Preserves Jawbone Health:</strong> Implant posts stimulate bone density, preventing premature facial sagging.</li>
+    <li><strong>Superior Comfort:</strong> Eliminates painful gum sores caused by shifting traditional dentures.</li>
+  </ul>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/all-on-4">All-on-4 Dental Implants</a>
+    <a class="btn" href="/dentures">Traditional Dentures</a>
+    <a class="btn" href="/dental-implants">Dental Implants Overview</a>
+    <a class="btn" href="/replace-missing-teeth">Replace Missing Teeth</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Implant Dentures &ndash; Copperas Cove, TX"}
-        subtitle={"Replacing All of Your Teeth with Implants"}
-        description={"Saying that it&rsquo;s difficult to eat, speak, or smile when an entire row of teeth is missing is an understatement. You need to replace the arch with a denture if you want to maintain a healthy lifestyle and a confident grin. But instead of getting traditional dentures that might slip out of place, why not get new teeth that are anchored to dental implants? <a href=\"contact.html\">Call</a> Cove Choice Dental today to schedule a consultation and see if implant dentures are the long-lasting tooth replacement solution that&rsquo;s right for you."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Implant-Supported Dentures in Copperas Cove, TX"
+      subtitle="Say Goodbye to Slipping Dentures with Rock-Solid Implant Stability"
+      description="Enjoy the comfort and confidence of teeth that never slip or click. Our in-house implant-supported dentures combine the lifelike beauty of modern prosthetics with the unbreakable strength of dental implants."
+      breadcrumbLabel="Implant Dentures"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Implant Denture Consultation",
+        price: "Consult",
+        notes: "Full Digital Scan & Restorative Treatment Plan",
+        href: "/request-an-appointment",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

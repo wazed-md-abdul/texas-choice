@@ -1,24 +1,136 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Root Canal Therapy Copperas Cove, TX | Emergency Dentist | Cove Choice Dental",
-  description: "Relieve toothache pain and save damaged teeth with root canal therapy in Copperas Cove, TX performed by the skilled dentistry team and emergency dentist at Cove Choice Dental.",
+  title: "Root Canal Therapy Copperas Cove, TX | Gentle Tooth Relief | Cove Choice Dental",
+  description:
+    "Relieve toothache pain and save infected teeth with gentle root canal therapy in Copperas Cove, TX performed by the experienced dentists at Cove Choice Dental.",
 };
 
-export default function RootCanalTherapyPagePage() {
-  const contentHtml = "\n<div class=\"why\">\n\t<h2>\n\t\tWhy Choose Cove Choice Dental for Root Canal Therapy?</h2>\n\t<ul>\n\t\t\n\t\t<li>\n\t\t\tConvenient Appointment Times</li>\n\t\t<li>\n\t\t\tFocus on Excellent Customer Care</li>\n\t</ul>\n</div>\n<div class=\"page-divider\">\n\t<h2>\n\t\tThe Root Canal Procedure</h2>\n\t<p>\n\t\t<img alt=\"Man in need of root canal holding cheek in pain\" class=\"elem-left\" src=\"/assets/images/root-canal-1.jpg\" /></p>\n\t<p>\n\t\tAt the beginning of the root canal procedure, a local anesthetic is used to numb your mouth.  We&rsquo;ll create a small opening in your tooth in order to get at the soft pulp inside. The pulp will be removed along with the bacteria causing the infection, and we&rsquo;ll use special files to clean the inside of the tooth. Because the tooth is likely to be weakened by the end of the treatment, we&rsquo;ll usually place a crown over it.</p>\n\t<h2>\n\t\tReasons for a<br />\n\t\tRoot Canal</h2>\n\t<p>\n\t\t<img alt=\"Animated tooth in need of root canal therapy\" class=\"elem-left\" src=\"/assets/images/root-canal-2.jpg\" /></p>\n\t<p>\n\t\tThe pulp inside your tooth is usually safe beneath the enamel, but it can easily become infected if exposed to harmful bacteria. This can easily happen as a result of deep decay that was not treated in a timely manner; it can also be a consequence of a crack or chip in the tooth that remains exposed for too long. If you received a faulty crown at another dental office, there is also a chance that the restoration could inadvertently invite inflammation to the pulp.&nbsp;</p>\n\t<h2>\n\t\tUnderstanding the Cost of Root Canals</h2>\n\t<p>\n\t\t<img alt=\"Tooth and stacks of coins on wooden balance\" class=\"elem-left\" src=\"/assets/images/root-cost-1.jpg\" /></p>\n\t<p>\n\t\tIf you&rsquo;ve recently learned that you need a root canal, you&rsquo;re probably curious about how much the procedure will cost. Because every patient&rsquo;s situation is slightly different, there is no one-size-fits-all cost for a <a href=\"/root-canal-therapy\">root canal</a> in Copperas Cove. Several factors, such as insurance coverage, tooth location, and the severity of damage, can all influence how much you end up paying. During your consultation, your dentist will be able to provide you with an accurate cost estimate. In the meantime, you can learn more about the cost of root canals by reading the information below.</p>\n\t<button class=\"btn togg\">Read More</button>\n\t<div class=\"section-toggle\">\n\t\t<h3>\n\t\t\tFactors That Can Affect Root Canal Cost</h3>\n\t\t<img alt=\"Four model teeth showing canals on gray desk\" class=\"elem-left\" src=\"/assets/images/root-cost-2.jpg\" />\n\t\t<p>\n\t\t\tSome of the primary factors that can influence the cost of root canal therapy include:</p>\n\t\t<ul>\n\t\t\t<li>\n\t\t\t\t<strong>Tooth Location</strong> &ndash; Back molars have more root canals than front teeth and therefore usually cost more to treat. While a back molar can cost between $500 to $2,000 each, front teeth run about $300 to $1,000 each.</li>\n\t\t\t<li>\n\t\t\t\t<strong>Complexity</strong> &ndash; Some root canals are simpler than others. Complex roots canals that require a visit to a specialist usually cost more than an average root canal.</li>\n\t\t\t<li>\n\t\t\t\t<strong>Additional Services</strong> &ndash; Your dentist may recommend placing a crown over the root canaled tooth for protection, adding to your overall costs.</li>\n\t\t</ul>\n\t\t<p>\n\t\t\tBefore getting started, your dentist will carefully assess the tooth or teeth in question, discuss your personalized treatment plan, and share the total cost and payments options.</p>\n\t\t<h3>\n\t\t\tIs it Cheaper to Pull My Tooth?</h3>\n\t\t<img alt=\"Older man holding jaw in pain on white background\" class=\"elem-left\" src=\"/assets/images/root-cost-3.jpg\" />\n\t\t<p>\n\t\t\tIn general, extracting a tooth costs less upfront than root canal therapy. However, removing a tooth now could lead to higher dental care costs later on. Missing even a single tooth can lead to bite problems, oral hygiene issues, difficulties eating, and general discomfort. To prevent these issues, your dentist may recommend a bridge or dental implant to replace an extracted tooth. Of course, a dental restoration will come with an additional cost. For this reason, it may be more cost-effective to save your natural tooth now rather than remove and replace it. If you do need a root canal, don&rsquo;t wait too long! Otherwise, your situation could worsen and you could wind up needing to visit an emergency dentist in Copperas Cove.</p>\n\t\t<h3>\n\t\t\tDoes Dental Insurance Cover Root Canal Therapy?</h3>\n\t\t<img alt=\"Dental insurance paperwork on wooden desk\" class=\"elem-left\" src=\"/assets/images/root-cost-4.jpg\" />\n\t\t<p>\n\t\t\tMost dental insurance plans consider root canal therapy a major procedure and cover anywhere from 50% to 80% of the cost. However, every insurance plan is slightly different. Before scheduling your root canal, be sure to contact your insurance company and confirm your coverage. Our team will be happy to help you maximize your dental insurance benefits. We are in-network for most major PPO providers and Medicaid/CHIP, and we&rsquo;ll even file insurance claim paperwork for you.</p>\n\t\t<h3>\n\t\t\tOther Options for Making Root Canal Therapy Affordable</h3>\n\t\t<img alt=\"Businessman giving thumbs up after root canal in Copperas Cove\" class=\"elem-left\" src=\"/assets/images/root-cost-5.jpg\" />\n\t\t<p>\n\t\t\tYou don&rsquo;t need dental insurance to access affordable root canal therapy. At Cove Choice Dental, we partner with CareCredit to offer qualified patients flexible dental financing. With CareCredit, you can split up the total cost of a root canal into smaller monthly payments. Many CareCredit plans have little-to-no interest attached, making them ideal for almost any budget.</p>\n\t\t<p>\n\t\t\tOur team is committed to helping patients protect and restore their smiles without worrying about their wallet. Don&rsquo;t hesitate to contact our office if you have questions about the cost of a root canal in Copperas Cove or to schedule a consultation.</p>\n\t</div>\n\t<h2>\n\t\tRoot Canal FAQs</h2>\n\t<p>\n\t\t<img alt=\"White world bubble says FAQ on yellow background\" class=\"elem-left\" src=\"/assets/images/root-faq.jpg\" /></p>\n\t<p>\n\t\tIf you&rsquo;ve never gotten a root canal in Copperas Cove before, you likely have a few questions. We&rsquo;ve got answers! From how long root canals last to how to prevent one in the future, this FAQ section covers the biggest patient concerns. If you have any additional questions or concerns about <a href=\"/root-canal-therapy\">root canal therapy</a>, do not hesitate to contact our office.</p>\n\t<button class=\"btn togg\">Read More</button>\n\t<div class=\"section-toggle\">\n\t\t<h3>\n\t\t\tHow Long Does a Root Canal Take?</h3>\n\t\t<p>\n\t\t\tWhile every case is slightly different, root canal therapy can usually be completed in one appointment. When two appointments are necessary, the first visit involves placing a temporary antibacterial medicine in the tooth to relieve pain. Your dentist will later clean in the inside of your tooth during the second visit. The length of a root canal can take anywhere from 30 to 90 minutes or more, depending on the location of the tooth within the mouth. Since molars have more root canals that must be disinfected compared to front teeth, root canals typically take longer the farther back in the mouth you go.</p>\n\t\t<h3>\n\t\t\tAre Root Canals Painful?</h3>\n\t\t<p>\n\t\t\tRoot canals may have a reputation as being painful, but the truth is that root canal therapy is actually designed to <em>relieve </em>pain by eliminating the infection within a tooth. Root canal therapy may have been unpleasant in the past, but modern dental technology and techniques have come a long way. These days, the procedure is about as comfortable as getting a cavity filled. Your dentist will numb your mouth to ensure you&rsquo;re comfortable before beginning. You may experience some soreness or sensitivity around the affected tooth after your root canal in Copperas Cove. However, any discomfort should be mild and start to fade away after two or three days. In the meantime, you can take over-the-counter pain relievers like ibuprofen and apply a cold compress to your cheek in ten-minute intervals. If your pain worsens instead of getting better after three days, call your dentist. This may be a sign of a complication.</p>\n\t\t<h3>\n\t\t\tHow Long Do Root Canals Last?</h3>\n\t\t<p>\n\t\t\tWhen performed by an experienced dentist in Copperas Cove, root canals have a remarkably high success rate. In fact, most teeth that have undergone a root canal go on to provide full chewing function for many years, or even a lifetime. The long-term success of your root canal will depend on various factors, such as the extent of damage to the tooth and how much time elapsed between placing the temporary and the permanent crown/filling. If too much time has passed, the tooth may be vulnerable to reinfection. Be sure to follow your dentist&rsquo;s post-op instructions and practice excellent oral hygiene to help your root canal last as long as possible.</p>\n\t\t<h3>\n\t\t\tCan Root Canals Be Prevented?</h3>\n\t\t<p>\n\t\t\tYes. Even if you need a root canal now, you can still prevent the need for another one in the future. To maintain a healthy smile, brush your teeth twice a day, floss daily, and rinse with mouthwash regularly. In addition, you should visit your dentist every six months for a routine dental exam and cleaning. These habits will minimize the risk of bacteria reaching a tooth&rsquo;s pulp. You should also maintain a healthy diet by limiting sugar, eating lots of nutritious foods, and drinking plenty of water. Finally, protect your teeth from chips and cracks by wearing a mouthguard when playing sports and a nightguard while sleeping if you have bruxism. Bacteria have an easier time accessing the pulp through chipped or cracked teeth.</p>\n\t</div>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a> <a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a> <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a> <a class=\"btn\" href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a> <a class=\"btn\" href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a> <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a> <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a> <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a> <a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n\n    ";
+export default function RootCanalTherapyPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Root Canal Therapy?</h2>
+  <ul>
+    <li>Same-Day Pain Relief & Gentle Anesthetics</li>
+    <li>Advanced Digital Diagnostics & In-House Restorations</li>
+    <li>Focus on Preserving Your Natural Tooth Structure</li>
+    <li>Medicaid, PPOs & 0% CareCredit® Financing Accepted</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>The Root Canal Procedure</h2>
+  <p>
+    <img
+      alt="Man in need of root canal holding cheek in pain"
+      class="elem-left"
+      src="/assets/images/root-canal-1.jpg"
+    />
+    At the beginning of root canal therapy, gentle local anesthetic completely numbs your mouth so you feel relaxed and pain-free. We create a tiny opening in your tooth to access the infected pulp tissue. The pulp and harmful bacteria are gently removed, and specialized micro-files thoroughly disinfect and shape the inner root canals. Because the tooth is weakened by the infection, we place a custom-crafted porcelain crown over it to restore 100% of its chewing strength and beauty.
+  </p>
+
+  <h2>Reasons for a Root Canal</h2>
+  <p>
+    <img
+      alt="Diagram of infected tooth pulp in need of root canal therapy"
+      class="elem-left"
+      src="/assets/images/root-canal-2.jpg"
+    />
+    The pulp inside your tooth is safely sealed beneath enamel and dentin, but it can become inflamed or infected when exposed to bacteria. Common culprits include deep, untreated cavities, sudden fractures or chips, repeated dental procedures on the same tooth, or faulty crowns placed in the past. If you notice throbbing pain, sensitivity to hot and cold, or swelling around the gums, prompt root canal therapy is crucial to save the tooth from needing an extraction.
+  </p>
+
+  <h2>Understanding the Cost of Root Canals</h2>
+  <p>
+    <img
+      alt="Tooth and stacks of coins showing affordable root canal treatment"
+      class="elem-left"
+      src="/assets/images/root-cost-1.jpg"
+    />
+    Because every patient’s tooth anatomy and degree of infection are unique, the cost of root canal therapy depends on a few straightforward factors:
+  </p>
+
+  <div class="section-toggle">
+    <h3>Factors That Affect Root Canal Cost</h3>
+    <img
+      alt="Model teeth showing root canal anatomy"
+      class="elem-left"
+      src="/assets/images/root-cost-2.jpg"
+    />
+    <ul>
+      <li><strong>Tooth Location:</strong> Front teeth have a single canal and are simpler to treat, while back molars feature three or four curved canals requiring more delicate disinfection.</li>
+      <li><strong>Complexity & Infection Severity:</strong> Severe infections or prior failed treatments require meticulous care.</li>
+      <li><strong>Protective Dental Crown:</strong> Placing a custom dental crown ensures your tooth doesn’t crack under everyday chewing pressure.</li>
+    </ul>
+
+    <h3>Is It Cheaper to Pull the Tooth?</h3>
+    <p>
+      While extracting a tooth may seem cheaper upfront, missing a natural tooth causes neighboring teeth to drift, bone to dissolve, and requires a dental bridge or dental implant down the road. Saving your natural tooth with root canal therapy is almost always more cost-effective and healthier in the long term.
+    </p>
+
+    <h3>Does Dental Insurance Cover Root Canals?</h3>
+    <p>
+      Most dental insurance plans classify root canal therapy as a basic or major restorative procedure, commonly covering 50% to 80% of costs after deductibles. Our Copperas Cove team files all insurance claims directly on your behalf to minimize out-of-pocket expenses.
+    </p>
+
+    <h3>Flexible Financing with CareCredit®</h3>
+    <p>
+      For any remaining balance or patients without insurance, we offer convenient CareCredit® 0% interest monthly payment plans so you can relieve pain immediately without financial strain.
+    </p>
+  </div>
+
+  <h2>Root Canal FAQs</h2>
+  <div class="accordion">
+    <h3>How Long Does a Root Canal Take?</h3>
+    <p>
+      Most root canals can be completed in a single comfortable visit of 60 to 90 minutes. In cases of severe infection, we may place an antibacterial medication inside the tooth and seal it permanently at a second visit.
+    </p>
+
+    <h3>Are Root Canals Painful?</h3>
+    <p>
+      No! Root canal therapy doesn’t cause pain—it eliminates pain. With modern anesthetics and advanced dental techniques, having a root canal is no more uncomfortable than receiving a routine filling.
+    </p>
+
+    <h3>How Long Do Root Canals Last?</h3>
+    <p>
+      With proper oral hygiene and regular checkups, teeth restored with a root canal and dental crown can last for decades or even a lifetime.
+    </p>
+
+    <h3>Can Root Canals Be Prevented?</h3>
+    <p>
+      Yes! Brush twice daily, floss every night, wear a mouthguard during sports, and visit Cove Choice Dental every six months so small cavities are caught long before they reach the pulp.
+    </p>
+  </div>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/emergency-dentistry">Emergency Pain Relief</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn" href="/tooth-extractions">Tooth Extractions</a>
+    <a class="btn" href="/dental-implants">Dental Implants</a>
+    <a class="btn" href="/preventive-dentistry">Dental Checkups &amp; Cleanings</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Root Canal Therapy &ndash; Copperas Cove, TX"}
-        subtitle={"Save Your Teeth with a Root Canal"}
-        description={"A toothache is often a sign that a tooth has become infected, and in many cases the only way to save it is with root canal therapy. Despite its reputation, root canal therapy isn&rsquo;t especially painful compared to other dental treatments; in fact, it&rsquo;d be more accurate to say that it&rsquo;s a solution for the discomfort that an infected tooth can cause! Is there a problem with the pulp at the center of your tooth? <a href=\"contact.html\">Get in touch</a> with us today for root canal therapy in Copperas Cove, TX!"}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Root Canal Therapy in Copperas Cove, TX"
+      subtitle="Fast, Gentle Toothache Relief & Tooth Preservation"
+      description="A toothache is often a sign of an infected nerve or pulp inside your tooth. Our experienced dentists provide gentle, immediate relief with modern root canal therapy, saving your natural tooth from extraction."
+      breadcrumbLabel="Root Canal Therapy"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "$65 Emergency Visit Special",
+        price: "$65",
+        notes: "Emergency Diagnostic Exam & Digital X-Ray Included",
+        href: "/offers-promotions",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

@@ -1,24 +1,79 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Medicaid and CHIP Copperas Cove, TX | Affordable Dentistry | Cove Choice Dental",
-  description: "Looking for a Medicaid dentist in Copperas Cove? Feel confident in your decision to choose Cove Choice Dental to care for your child’s dental health.",
+  description: "Looking for a Medicaid dentist in Copperas Cove? Feel confident choosing Cove Choice Dental for high-quality, compassionate pediatric dental care with Medicaid & CHIP.",
 };
 
-export default function MedicaidAndChipPagePage() {
-  const contentHtml = "\n      \n\n<p>\n  Do you have Medicaid or CHIP to cover your child&rsquo;s dental care? If so,\n  you may be wondering if you&rsquo;ll ever find a trusted professional who will\n  accept your plan. At Cove Choice Dental, you&rsquo;ll be pleased to learn that\n  we welcome both of these plans and are here to not only ensure your child\n  receives high-quality dental care but that you also save money each time you\n  visit. As a\n  <a href=\"/contact\"\n    >Medicaid dentist in Copperas Cove</a\n  >, we will go above and beyond to help you maximize these benefits and ensure\n  the health and longevity of your child&rsquo;s smile. Contact us today to find\n  out how we can help you save on your little one&rsquo;s oral healthcare.\n</p>\n<div class=\"page-divider\">\n  <h2>What is Medicaid?</h2>\n  <p>\n    <img\n      alt=\"A little girl holding a teddy bear and giving her dental hygienist a high-five\"\n      class=\"elem-left\"\n      src=\"/assets/images/chip-1.jpg\"\n    />\n  </p>\n  <p>\n    Medicaid is an alternative program that is designed to help low-income\n    families receive affordable dental care. Your eligibility is based on your\n    income but if approved, your child can be covered for preventive, general,\n    and restorative dentistry services. No matter their age, infants, toddlers,\n    children, or teens, your child can receive the necessary care to ensure\n    their smiles last a lifetime.\n  </p>\n  <h2>What is CHIP?</h2>\n  <p>\n    <img\n      alt=\"A dentist and dental assistant showing a young boy how to properly brush his teeth\"\n      class=\"elem-left\"\n      src=\"/assets/images/chip-2.jpg\"\n    />\n  </p>\n  <p>\n    For families that have higher income brackets but do not have private dental\n    insurance, it may be possible to enroll in the CHIP program, which stands\n    for the Children&rsquo;s Health Insurance Program. While your child must be\n    under the age of 18 and a U.S. citizen or legal permanent resident, the CHIP\n    program is an ideal way to get your child the dental care they need that\n    will carry with them until their reach adulthood.\n  </p>\n  <h2>Medicaid and CHIP for Dental Care</h2>\n  <p>\n    <img\n      alt=\"A young boy smiling after receiving a positive report from his dentist\"\n      class=\"elem-left\"\n      src=\"/assets/images/chip-3.jpg\"\n    />\n  </p>\n  <p>\n    In choosing to see a dentist in Copperas Cove that accepts Medicaid and\n    CHIP, you can expect your child to receive coverage when undergoing regular\n    dental checkups and cleanings. They are also covered should they require:\n  </p>\n  <ul>\n    <li>Dental X-rays</li>\n    <li>Fluoride treatments</li>\n    <li>Dental sealants</li>\n    <li>Dental fillings</li>\n    <li>Root canal therapy</li>\n    <li>Emergency dental care</li>\n  </ul>\n  <p>\n    Much like traditional dental insurance, these services are designed to\n    prevent more serious oral health problems. Preventive care is important no\n    matter a person&rsquo;s age, and both Medicaid and CHIP want children to\n    possess good oral health throughout their life. However, should a problem\n    occur, our team at Cove Choice Dental will make sure to repair and restore\n    their broken or decayed teeth so their smiles will function normally.\n    We&rsquo;ll also see them for any dental emergencies that may occur along\n    the way.\n  </p>\n  <h2>Why Prevention Matters</h2>\n  <p>\n    <img\n      alt=\"An up-close view of a little girl having her teeth cleaned by her dentist in Copperas Cove\"\n      class=\"elem-left\"\n      src=\"/assets/images/chip-4.jpg\"\n    />\n  </p>\n  <p>\n    Children are no strangers to cavities. Their minimal dexterity when it comes\n    to brushing and flossing makes it difficult to reach certain areas of the\n    mouth, and their on-the-go nature can make it difficult to get them focused\n    on taking care of their oral health. Fortunately, you can help them take\n    control of their oral hygiene by encouraging them to practice good dental\n    habits at home as well as keep their regular six-month checkups and\n    cleanings.\n  </p>\n  <p>\n    With the help of Medicaid or CHIP, you can rest easy knowing their smiles\n    are protected and your wallet remains full.\n  </p>\n</div>\n<div class=\"more-to-explore\">\n  <span>More to Explore</span>\n  <p>\n    <a class=\"btn\" href=\"/preventive-dentistry\"\n      >I Need a Dental Checkup &amp; Cleaning</a\n    >\n    <a class=\"btn\" href=\"/childrens-dentistry\"\n      >I Need a Dentist for My Child</a\n    >\n    <a class=\"btn\" href=\"/gum-disease-treatment\"\n      >I am Worried About Bleeding Gums</a\n    >\n    <a class=\"btn\" href=\"/restorative-dentistry\"\n      >I Have a Cavity or Broken Tooth</a\n    >\n    <a class=\"btn\" href=\"/replace-missing-teeth\"\n      >I am Missing One or More Teeth</a\n    >\n    <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>\n     \n    <a class=\"btn\" href=\"/emergency-dentistry\"\n      >I am in Pain &amp; Need Help</a\n    >\n    <a class=\"btn\" href=\"/wisdom-teeth-removal\"\n      >I Need My Wisdom Teeth Removed</a\n    ><a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a>\n    <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n  </p>\n</div>\n    ";
+export default function MedicaidAndChipPage() {
+  const contentHtml = `
+<p>Do you have Medicaid or CHIP to cover your child's dental care? If so, you may be wondering if you'll find a trusted dental practice that welcomes your plan with warmth and open arms. At Cove Choice Dental, we proudly accept both Texas Medicaid and CHIP! We are committed to ensuring your child receives top-tier dental care while keeping your out-of-pocket costs at zero or near zero. Contact us today to find out how easily your child can receive checkups, cleanings, and restorative treatments.</p>
+
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Medicaid &amp; CHIP?</h2>
+  <ul>
+    <li>Proudly In-Network with Texas Medicaid &amp; CHIP Plans</li>
+    <li>Comprehensive Preventive, Pediatric &amp; Emergency Care</li>
+    <li>Zero Judgment, Warm, Compassionate Family Environment</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>What is Medicaid Dental Coverage?</h2>
+  <p><img alt="A little girl holding a teddy bear and giving her dental hygienist a high-five" class="elem-left" src="/assets/images/chip-1.jpg"/></p>
+  <p>Texas Medicaid is a state and federal healthcare program designed to help eligible families access essential medical and dental care. For enrolled children and teens, Medicaid typically covers 100% of preventive and medically necessary dental care, including routine six-month checkups, cleanings, X-rays, fluoride treatments, sealants, fillings, and emergency dentistry.</p>
+
+  <h2>What is the CHIP Program?</h2>
+  <p><img alt="A dentist and dental assistant showing a young boy how to properly brush his teeth" class="elem-left" src="/assets/images/chip-2.jpg"/></p>
+  <p>For families who earn too much to qualify for Medicaid but cannot afford private dental insurance, CHIP (Children's Health Insurance Program) provides an affordable solution. CHIP covers dental care for children under age 19, requiring only nominal co-pays or low enrollment fees while ensuring your child receives comprehensive dental checkups and treatments.</p>
+
+  <h2>Dental Services Covered by Medicaid &amp; CHIP</h2>
+  <p><img alt="A young boy smiling after receiving a positive report from his dentist" class="elem-left" src="/assets/images/chip-3.jpg"/></p>
+  <p>When you visit Cove Choice Dental with your Medicaid or CHIP plan, covered services generally include:</p>
+  <ul>
+    <li>Bi-annual dental cleanings and comprehensive exams</li>
+    <li>Digital diagnostic X-rays</li>
+    <li>Protective fluoride varnishes and tooth sealants</li>
+    <li>Tooth-colored fillings for cavities</li>
+    <li>Pediatric crowns and pulp therapy</li>
+    <li>Tooth extractions and emergency dental exams</li>
+  </ul>
+
+  <h2>Why Preventive Care Matters for Children</h2>
+  <p><img alt="An up-close view of a little girl having her teeth cleaned by her dentist in Copperas Cove" class="elem-left" src="/assets/images/chip-4.jpg"/></p>
+  <p>Young teeth are especially susceptible to decay. By bringing your child in every six months for their covered checkups and cleanings, we can stop cavities before they cause toothaches and missed school days. Our friendly staff takes care of all billing paperwork so you can relax and focus on your child's radiant smile!</p>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/childrens-dentistry">Children's Dentistry</a>
+    <a class="btn" href="/childrens-dental-checkups-and-cleanings">Kids Checkups &amp; Cleanings</a>
+    <a class="btn" href="/childrens-tooth-colored-fillings">Tooth-Colored Fillings</a>
+    <a class="btn" href="/dental-insurance">Dental Insurance &amp; Financing</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Medicaid and CHIP &ndash; Copperas Cove, TX"}
-        subtitle={"Discover the Benefits of Medicaid and CHIP"}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Medicaid & CHIP Dental Coverage"
+      subtitle="Affordable, High-Quality Dental Care for Children in Copperas Cove, TX"
+      description="We proudly accept Texas Medicaid and CHIP! Give your children healthy smiles without financial stress at Cove Choice Dental."
+      breadcrumbLabel="Medicaid & CHIP"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="insurance"
+      specialOffer={{
+        title: "Medicaid & CHIP Welcome",
+        price: "$0",
+        description: "100% covered preventive checkups, cleanings & exams for eligible children.",
+        link: "/request-an-appointment",
+        badge: "Texas Medicaid",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

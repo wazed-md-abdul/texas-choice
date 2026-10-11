@@ -1,24 +1,98 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Sitemap | Cove Choice Dental",
-  description: "Explore the sitemap for the Cove Choice Dental of Copperas Cove, TX online dental office for easier navigation to any page on our website and to learn more about available dental services.",
+  title: "Sitemap | Cove Choice Dental Copperas Cove, TX",
+  description: "Explore the comprehensive sitemap for Cove Choice Dental in Copperas Cove, TX for easy navigation to all dental services and patient resources.",
 };
 
-export default function SitemapPagePage() {
-  const contentHtml = "\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/\" title=\"Dentist Copperas Cove, TX\">Home</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/about-us\" title=\"About Us\">About Us</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/about-us\" title=\"What Sets Us Apart\">What Sets Us Apart</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/advanced-safety-protocol\" title=\"Advanced Safety Protocol\">COVID-19 Dental Office Safety Protocol</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/meet-the-dentists\" title=\"Meet Our Dentists\">Meet Your Dentists</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/dr-daood-alvi\" title=\"Meet Dr. Alvi\">Dr. Daood Alvi</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/dr-assemu\" title=\"Meet Dr. Assemu\">Dr. Sileshi Assemu</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/dr-sharma\" title=\"Meet Dr. Sharma\">Dr. Shruti Sharma</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/dr-simrat-sehmi\" title=\"Copperas Cove, TX Dentist Dr. Simrat Sehmi\">Dr. Simrat Sehmi</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/meet-the-team\" title=\"Meet Our Dental Team\">Meet Your Dental Team</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/tour-our-office\" title=\"Tour Our Dental Office\">Tour Our Dental Office</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/advanced-dental-technology\" title=\"Advanced Dental Services & Technology\">Advanced Dental Technology</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/blog\" title=\"Blog\">Blog</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/dental-services\" title=\"Dental Services\">Our Services</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/preventive-dentistry\" title=\"Preventive Dentistry\">I Need a Checkup & Cleaning</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/childrens-dentistry\" title=\"Children’s Dentistry\">I Need a Dentist for My Child</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/childrens-dental-checkups-and-cleanings\" title=\"Children’s Dental Checkups & Cleanings\">Childrens Dental Checkups and Cleanings</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/childrens-tooth-colored-fillings\" title=\"Tooth-Colored Fillings\">Childrens Tooth-Colored Fillings</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/emergency-pediatric-dentist\" title=\"\">Emergency Pediatric Dentist</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/gum-disease-treatment\" title=\"Periodontal Therapy\">I am Worried About Bleeding Gums</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/restorative-dentistry\" title=\"Restorative Dentistry\">I Have a Cavity or Broken Tooth</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/tooth-colored-fillings\" title=\"Tooth-Colored Fillings\">Tooth-Colored Fillings</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/dental-crowns\" title=\"Dental Crowns\">Dental Crowns</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/replace-missing-teeth\" title=\"Missing Teeth\">I am Missing One or More Teeth</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/dentures\" title=\"Dentures\">Dentures</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/dental-implants\" title=\"Dental Implants\">Dental Implants</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/dental-implant-failure-and-salvage\" title=\"Dental Implant Failure & Salvage\">Dental Implant Failure and Salvage</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/all-on-4\" title=\"All-on-4\">All-on-4</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/implant-dentures\" title=\"Implant Dentures\">Implant Dentures</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/dental-bridges\" title=\"Dental Bridges\">Dental Bridges</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/cosmetic-dentistry\" title=\"Cosmetic Dentistry\">I am Unhappy with My Smile</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/teeth-whitening\" title=\"\">Teeth Whitening</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/veneers\" title=\"Porcelain Veneers\">Veneers</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/cosmetic-bonding\" title=\"Cosmetic Bonding\">Cosmetic Bonding</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/emergency-dentistry\" title=\"Emergency Dentist\">I am In Pain & Need Help</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/tooth-extractions\" title=\"Tooth Extractions\">Tooth Extractions</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/root-canal-therapy\" title=\"Root Canal Therapy\">Root Canal Therapy</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/wisdom-teeth-removal\" title=\"Wisdom Tooth Extractions\">I Need My Wisdom Teeth Removed</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/tmj-therapy\" title=\"TMJ Therapy\">I Have Head/Neck/Jaw Pain</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/for-patients\" title=\"New Patients\">For Patients</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/for-patients#first\" title=\"Your First Visit\">Your First Visit</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/for-patients#forms\" title=\"Patient Forms\">Patient Forms</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/for-patients#insurance\" title=\"Insurance & Financing\">Insurance & Financing</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/faqs\" title=\"Dentistry FAQ\">FAQs</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/offers-promotions\" title=\"Special Offers\">Special Offers</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/dental-insurance\" title=\"Dental Insurance\">Dental Insurance</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/medicaid-and-chip\" title=\"Medicaid and CHIP\">Medicaid and Chip</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/delta-dental-dentist\" title=\"Delta Dental Dentist\">Delta Dental Dentist</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/united-concordia-dentist\" title=\"United Concordia Dentist\">United Concordia Dentist</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/humana-dentist\" title=\"Humana Dentist\">Humana Dentist</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/united-healthcare\" title=\"United Healthcare\">United Healthcare</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/aetna-dentist\" title=\"Aetna Dentist\">Aetna Dentist</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n\t<li>\n\t\t<a href=\"/reviews\" title=\"Reviews\">Reviews</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/contact\" title=\"Contact Us\">Contact</a>\n\t</p>\n<ul>\n\t\n\t<li>\n\t\t<a href=\"/contact\" title=\"Office Info\">Office Info</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/request-an-appointment\" title=\"Request an Appointment\">Request an Appointment</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/dentist-near-lampasas\" title=\"\">Dentist Near Lampasas</a>\n\t</li> \n\t<li>\n\t\t<a href=\"/careers\" title=\"Careers\">Careers</a>\n\t</li> \n</ul>\n<p>\n\t</li> \n</ul>\n<p>\n\t</p>\n<p>\n\t<a href=\"sitemap.xml\">XML Sitemap</a></p>\n    ";
+export default function SitemapPage() {
+  const contentHtml = `
+<div class="page-divider">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 10px;">
+    
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px;">
+      <h3 style="color: #0f3d4c; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #38bdf8; padding-bottom: 8px;">Main Pages</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+        <li><a href="/" style="color: #0284c7; text-decoration: none; font-weight: 500;">Home</a></li>
+        <li><a href="/about-us" style="color: #0284c7; text-decoration: none; font-weight: 500;">About Our Practice</a></li>
+        <li><a href="/meet-the-dentists" style="color: #0284c7; text-decoration: none; font-weight: 500;">Meet Our Dentists</a></li>
+        <li><a href="/tour-our-office" style="color: #0284c7; text-decoration: none; font-weight: 500;">Tour Our Office</a></li>
+        <li><a href="/advanced-dental-technology" style="color: #0284c7; text-decoration: none; font-weight: 500;">Advanced Technology</a></li>
+        <li><a href="/reviews" style="color: #0284c7; text-decoration: none; font-weight: 500;">Patient Reviews</a></li>
+        <li><a href="/contact" style="color: #0284c7; text-decoration: none; font-weight: 500;">Contact Us</a></li>
+        <li><a href="/request-an-appointment" style="color: #0284c7; text-decoration: none; font-weight: 500;">Request an Appointment</a></li>
+      </ul>
+    </div>
+
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px;">
+      <h3 style="color: #0f3d4c; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #38bdf8; padding-bottom: 8px;">Core Dental Care</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+        <li><a href="/preventive-dentistry" style="color: #0284c7; text-decoration: none; font-weight: 500;">Preventive Care &amp; Cleanings</a></li>
+        <li><a href="/childrens-dentistry" style="color: #0284c7; text-decoration: none; font-weight: 500;">Children's Dentistry</a></li>
+        <li><a href="/childrens-dental-checkups-and-cleanings" style="color: #0284c7; text-decoration: none; font-weight: 500;">Kids Checkups &amp; Cleanings</a></li>
+        <li><a href="/childrens-tooth-colored-fillings" style="color: #0284c7; text-decoration: none; font-weight: 500;">Kids Tooth-Colored Fillings</a></li>
+        <li><a href="/emergency-pediatric-dentist" style="color: #0284c7; text-decoration: none; font-weight: 500;">Emergency Pediatric Dentist</a></li>
+        <li><a href="/emergency-dentistry" style="color: #0284c7; text-decoration: none; font-weight: 500;">Emergency Dental Care</a></li>
+        <li><a href="/root-canal-therapy" style="color: #0284c7; text-decoration: none; font-weight: 500;">Root Canal Therapy</a></li>
+        <li><a href="/tooth-extractions" style="color: #0284c7; text-decoration: none; font-weight: 500;">Tooth Extractions</a></li>
+        <li><a href="/wisdom-teeth-removal" style="color: #0284c7; text-decoration: none; font-weight: 500;">Wisdom Teeth Removal</a></li>
+        <li><a href="/gum-disease-treatment" style="color: #0284c7; text-decoration: none; font-weight: 500;">Gum Disease Treatment</a></li>
+        <li><a href="/tmj-therapy" style="color: #0284c7; text-decoration: none; font-weight: 500;">TMJ Therapy &amp; Splints</a></li>
+      </ul>
+    </div>
+
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px;">
+      <h3 style="color: #0f3d4c; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #38bdf8; padding-bottom: 8px;">Restorative &amp; Cosmetic</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+        <li><a href="/restorative-dentistry" style="color: #0284c7; text-decoration: none; font-weight: 500;">Restorative Dentistry</a></li>
+        <li><a href="/replace-missing-teeth" style="color: #0284c7; text-decoration: none; font-weight: 500;">Replace Missing Teeth</a></li>
+        <li><a href="/tooth-colored-fillings" style="color: #0284c7; text-decoration: none; font-weight: 500;">Tooth-Colored Fillings</a></li>
+        <li><a href="/dental-crowns" style="color: #0284c7; text-decoration: none; font-weight: 500;">Dental Crowns</a></li>
+        <li><a href="/dental-bridges" style="color: #0284c7; text-decoration: none; font-weight: 500;">Dental Bridges</a></li>
+        <li><a href="/dentures" style="color: #0284c7; text-decoration: none; font-weight: 500;">Modern Dentures &amp; Partials</a></li>
+        <li><a href="/dental-implants" style="color: #0284c7; text-decoration: none; font-weight: 500;">Dental Implants</a></li>
+        <li><a href="/all-on-4" style="color: #0284c7; text-decoration: none; font-weight: 500;">All-on-4 Implants</a></li>
+        <li><a href="/implant-dentures" style="color: #0284c7; text-decoration: none; font-weight: 500;">Implant-Supported Dentures</a></li>
+        <li><a href="/dental-implant-failure-and-salvage" style="color: #0284c7; text-decoration: none; font-weight: 500;">Dental Implant Salvage</a></li>
+        <li><a href="/cosmetic-dentistry" style="color: #0284c7; text-decoration: none; font-weight: 500;">Cosmetic Dentistry</a></li>
+        <li><a href="/teeth-whitening" style="color: #0284c7; text-decoration: none; font-weight: 500;">Teeth Whitening</a></li>
+        <li><a href="/veneers" style="color: #0284c7; text-decoration: none; font-weight: 500;">Porcelain Veneers</a></li>
+        <li><a href="/cosmetic-bonding" style="color: #0284c7; text-decoration: none; font-weight: 500;">Cosmetic Bonding</a></li>
+      </ul>
+    </div>
+
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px;">
+      <h3 style="color: #0f3d4c; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #38bdf8; padding-bottom: 8px;">Insurance &amp; Resources</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+        <li><a href="/dental-insurance" style="color: #0284c7; text-decoration: none; font-weight: 500;">Dental Insurance Overview</a></li>
+        <li><a href="/medicaid-and-chip" style="color: #0284c7; text-decoration: none; font-weight: 500;">Medicaid &amp; CHIP</a></li>
+        <li><a href="/aetna-dentist" style="color: #0284c7; text-decoration: none; font-weight: 500;">Aetna Dentist</a></li>
+        <li><a href="/delta-dental-dentist" style="color: #0284c7; text-decoration: none; font-weight: 500;">Delta Dental Dentist</a></li>
+        <li><a href="/humana-dentist" style="color: #0284c7; text-decoration: none; font-weight: 500;">Humana Dentist</a></li>
+        <li><a href="/united-concordia-dentist" style="color: #0284c7; text-decoration: none; font-weight: 500;">United Concordia Dentist</a></li>
+        <li><a href="/united-healthcare" style="color: #0284c7; text-decoration: none; font-weight: 500;">United Healthcare Dentist</a></li>
+        <li><a href="/for-patients" style="color: #0284c7; text-decoration: none; font-weight: 500;">Patient Information</a></li>
+        <li><a href="/faqs" style="color: #0284c7; text-decoration: none; font-weight: 500;">Frequently Asked Questions</a></li>
+        <li><a href="/careers" style="color: #0284c7; text-decoration: none; font-weight: 500;">Careers</a></li>
+        <li><a href="/privacy-policy" style="color: #0284c7; text-decoration: none; font-weight: 500;">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Sitemap"}
-        subtitle={undefined}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Website Sitemap"
+      subtitle="Complete Directory of Cove Choice Dental Services & Patient Resources"
+      description="Easily navigate to any service, insurance guide, or patient information page on the Cove Choice Dental website."
+      breadcrumbLabel="Sitemap"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="appointment"
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

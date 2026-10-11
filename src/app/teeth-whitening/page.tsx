@@ -1,24 +1,124 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Teeth Whitening Copperas Cove | Zoom! Teeth Whitening | Cove Choice Dental",
-  description: "",
+  title: "Teeth Whitening Copperas Cove, TX | Zoom! Whitening | Cove Choice Dental",
+  description:
+    "Brighten your smile up to 8 shades in just 1 hour with professional Zoom! teeth whitening in Copperas Cove, TX at Cove Choice Dental. Fast, safe, and effective.",
 };
 
-export default function TeethWhiteningPagePage() {
-  const contentHtml = "\n      \n\n<p>Even if you brush your teeth daily, they will likely get discolored over time. After all, the causes of tooth stains\n    are many &mdash; your environment, your biology, your lifestyle, and more. Still, there is a way to remove even the\n    most stubborn yellows and browns: Zoom! teeth whitening in Copperas Cove! As done by the dentists at Cove Choice\n    Dental, this treatment can&nbsp;<a href=\"/cosmetic-dentistry\">brighten your\n        smile&nbsp;</a>in very little time. To learn more about it, keep reading or&nbsp;<a\n        href=\"/contact\">call us&nbsp;</a>and&nbsp;<a\n        href=\"/request-an-appointment\">book a consultation&nbsp;</a>today!</p>\n<div class=\"page-divider\">\n    <h2>Who Is a Good Candidate for Teeth Whitening?</h2>\n    <p>\n        <img alt=\"dental crown in Copperas Cove being placed over a tooth\" class=\"elem-left\"\n            src=\"/assets/images/whitening-1.jpg\" />\n    </p>\n    <p>Almost anyone with stained enamel is a good candidate for teeth whitening. That said, the treatment tends to work\n        better on certain kinds of discoloration.</p>\n    <p>Teeth whitening, for instance, is effective at erasing extrinsic stains &mdash; the discoloration teeth get from\n        dark-colored foods, smoking, and other outside materials. Since they lie on the tooth surface, treatment can\n        bleach\n        them away with a special gel. Teeth whitening can also work on intrinsic stains beneath the surface of your\n        enamel,\n        but it is not always as effective.</p>\n    <p>Otherwise, you might want to get teeth whitening to boost your self-confidence. With whiter, shinier teeth, you\n        would\n        likely feel more at ease in professional and social situations.</p>\n    <h2>How Does Teeth Whitening Work?</h2>\n    <p>\n        <img alt=\"A woman receiving teeth whitening in Copperas Cove\" class=\"elem-left\"\n            src=\"/assets/images/whitening-2.jpg\" />\n    </p>\n    <p>Here at Cove Choice Dental, our dentists provide two methods of teeth whitening: take-home bleaching kits and\n        in-office treatment with the reputable Zoom! system. As such, how your tooth enamel whitens will depend on which\n        approach you choose. Whichever you select, though, you can expect remarkable results.</p>\n    <h3>Take-Home Teeth Whitening</h3>\n    <p>Take-home whitening is a good option for those wanting flexibility. With it, you can whiten your smile at home\n        using\n        gel-infused bleaching trays. When you use the provided tools as provided, your teeth may turn six to eight\n        shades\n        whiter. Such results will also be evenly spread, as the whitening trays are customized to match your bite.</p>\n    <p>&nbsp;</p>\n    <p>Remember, though, that take-home whitening kits are not the same as those purchased in stores. The former are\n        dentist-approved, while the latter ones are not.</p>\n    <h3>In-Office Teeth Whitening</h3>\n    <p>Unlike take-home whitening, our team can finish the in-office version in just an hour. All we have to do is\n        carefully\n        apply a bleaching gel to your teeth and activate it with a special light. Once the gel is rinsed off, your teeth\n        may\n        be several shades brighter!</p>\n    <p>Due to being thorough and fast, in-office whitening is wonderful for patients with an upcoming special event\n        &mdash;\n        a job interview, a wedding, etc. Plus, studies have proven that its ingredients are safe and effective.</p>\n    <h2>Tips for Maintaining Your Whiter Smile</h2>\n    <p>\n        <img alt=\"A: A woman who received teeth whitening in Copperas Cove\" class=\"elem-left\"\n            src=\"/assets/images/whitening-3.jpg\" />\n    </p>\n    <p>Of course, the results of teeth whitening in Copperas Cove won&rsquo;t last forever. It&rsquo;s a good idea,\n        then, to\n        maintain them as long as possible. Here are some ways you can do so:</p>\n    <ul>\n        <li><strong>Practice Good Oral Hygiene&nbsp;</strong>&ndash; Brush your teeth twice daily and floss them once\n            daily.\n            Plus, visit your dentist every six months for checkups and cleanings.</li>\n        <li><strong>Avoid Certain Foods &amp; Drinks&nbsp;</strong>&ndash; As best you can, try not to eat things that\n            are\n            high in stain-causing tannins.</li>\n        <li><strong>Add More Dairy to Your Diet&nbsp;</strong>&ndash; Eat plenty of white dairy items, as these will\n            keep\n            your teeth strong and bright.</li>\n        <li><strong>Get Touch-ups</strong>: See your dentist for follow-up teeth whitening treatments if and when you\n            need\n            them.</li>\n    </ul>\n<h2>Understanding the Cost of Teeth Whitening&nbsp;</h2>\n<p><img alt=\"A woman smiling after teeth whitening\" class=\"elem-left\" src=\"/assets/images/1-cost-teeth-whitening.jpg\"/></p>\n<p>When it comes to whitening your smile, there are certainly no shortage of options out there promising to remove stains and discoloration for less. Unfortunately, however, these products usually overpromise and underdeliver, and although they <em>claim</em> to be more affordable than professional treatment, could eventually end up costing more by the time you see noticeable results. Worse yet, the lengthy treatment required could subject your teeth to extensive periods of sensitivity, or even permanently damage them.</p>\n<p>With professional whitening from your dentist, you&rsquo;ll get a faster, safer, more effective treatment, keep your teeth healthier overall, and save you money by getting the job done right the first time.</p>\n<button class=\"btn togg\">Read More</button>\n<div class=\"section-toggle\">\n<h3>Factors that Affect the Cost of Teeth Whitening</h3>\n<img alt=\"A woman’s smile before and after teeth whitening\" class=\"elem-sm\" src=\"/assets/images/2-cost-teeth-whitening.jpg\"/>\n<p>Although the cost of teeth whitening in Copperas Cove is usually one set price, there are several important factors that can influence how many treatments you&rsquo;ll need until you achieve your desired results. These include:</p>\n<ul>\n<li>How severe the stains and discoloration are.</li>\n<li>The types of discoloration present, such as whether they&rsquo;re age related, caused by medication, or if they are extrinsic (located on the enamel&rsquo;s surface) or intrinsic (located within the tooth).</li>\n<li>Whether you&rsquo;ll need any preliminary procedures such as fillings or dental crowns.</li>\n</ul>\n<h3>Types of Teeth Whitening: What Do They Cost?&nbsp;</h3>\n<img alt=\"A man getting professional teeth whitening\" class=\"elem-sm\" src=\"/assets/images/3-cost-teeth-whitening.jpg\"/>\n<ul>\n<li>In-office teeth whitening from your dentist typically costs anywhere from $400 to $800, however in some rare cases it can exceed $1,000 or more depending on your individual circumstances.</li>\n<li>A take-home whitening kit with custom fit trays from your dentist typically costs a few hundred dollars.</li>\n<li>Over-the-counter whitening trays that are not custom fit typically cost around $100 or less.</li>\n<li>The cheapest option by far are those teeth whitening strips or gels that can be found in the toothpaste aisle of most stores and pharmacies. Strips typically cost between $20 and $40 a box and contain enough product for about two weeks of treatment.</li>\n</ul>\n<h3>Inexpensive Teeth Whitening Vs. Professional Teeth Whitening</h3>\n<img alt=\"A professional take home whitening kit\" class=\"elem-sm\" src=\"/assets/images/4-cost-teeth-whitening.jpg\"/>\n<p>If you&rsquo;re only paying attention to the numbers mentioned above, you&rsquo;re probably wondering why professional whitening options from your dentist are so popular when they&rsquo;re more expensive, but it&rsquo;s important to remember that when it comes to cosmetic dentistry, the quality of the work is clearly reflected in the amount you pay.</p>\n<p>When relying on cheaper strips or gels, many patients see little to no results, especially when they have more severe discoloration. It can also take many months to achieve the look they desire.</p>\n<p>With professional treatment from your dentist, however, you can lighten your tooth enamel by multiple shades in a fraction of the time. For in office care, you can eliminate up to eight shades of discoloration in as little as one visit, while a professional take-home kit can achieve similar results in about two weeks. In fact, many patients see noticeable changes in their appearance immediately.</p>\n<p>Ultimately, when it comes to choosing the right teeth whitening option, it&rsquo;s important to consider the results you&rsquo;re looking for and how quickly you want them, not <em>just</em> the treatment price.</p>\n<h3>Options For Making Teeth Whitening Affordable</h3>\n<img alt=\"A man paying for professional teeth whitening\" class=\"elem-sm\" src=\"/assets/images/5-cost-teeth-whitening.jpg\"/>\n<p>Because teeth whitening is considered a cosmetic procedure, most dental insurance companies won&rsquo;t cover it. However, at Cove Choice Dental, we are proud to welcome <a href=\"/for-patients#insurance\">flexible financing plans</a> through our preferred third-party lenders, CareCredit and Sunbit. These programs allow patients to break up the cost of their teeth whitening treatment into multiple, low-to-no-interest monthly payments that may be better suited to their budget.</p>\n<p>At Cove Choice Dental, we&rsquo;re ready to assist you with whitening your smile! To learn more about the details of this treatment including the total cost, <a href=\"/contact\">contact us</a> to schedule a consultation and reveal a whiter, brighter smile without the wait!</p>\n</div>\n    \n<h2>Teeth Whitening FAQs</h2>\n<div class=\"accordion\">\n<h3>Does Teeth Whitening Hurt?</h3>\n<p>Many people experience anxiety around dental appointments, even if they&rsquo;re undergoing an elective procedure to enhance their appearance. If you&rsquo;re nervous that your teeth whitening service could hurt, you can thankfully set your fears aside. Our Taylor Choice Dental team uses professional-grade solutions that are designed to mitigate potential discomfort, and we provide custom-fitted trays to avoid application errors that can trigger your enamel or connective tissues.</p>\n<p>With that said, you might experience some mild sensitivity immediately following your treatment because the whitening agent temporarily opens the pores in your enamel, exposing more of the underlying layer of dentin. Avoiding overly hot or cold foods and drinks and spacing out repeated treatments can help prevent this.</p>\n<h3>How Do Professional and Store-Bought Teeth Whitening Differ?</h3>\n<p>If you&rsquo;re on a tight budget, you might wonder whether it&rsquo;s worth investing in professional whitening with our team in Taylor when you can purchase cheaper options at the store. However, commercial-grade products often contain diluted bleaching agents that are less effective at addressing stains. Then, you might misuse or overapply the product and develop sensitivity. You might even inadvertently put bleach over a hidden cavity, which can trigger a painful reaction.</p>\n<p>Meanwhile, our team will examine your teeth and gums first to ensure no pre-existing decay or disease interferes with your results. Then, we use ultra-concentrated products that are meant to reduce possible sensitivity.</p>\n<h3>How Long Does Teeth Whitening Treatment Take?</h3>\n<p>The time it takes to achieve your ideal shade depends significantly on your individual circumstances. For example, we offer in-office whitening that can potentially lighten your grin by up to eight shades in a single, hour-long appointment. However, we can also provide a take-home kit with everything you need to achieve professional results from the comfort of your living room in as few as two weeks.</p>\n<p>The severity and types of stains present can also impact your treatment timeline. Generally, the darker your teeth, the more repetitions are required to produce just-the-right hue, which takes more time.</p>\n<h3>How Can I Maintain My Brighter Smile?</h3>\n<p>Professional teeth whitening results can last anywhere from six months to three years, though caring for your teeth properly can extend their longevity. If you don&rsquo;t already brush and floss twice daily, now&rsquo;s a perfect time to implement a more consistent at-home dental hygiene routine. Regularly clearing plaque and bacteria strengthens your enamel so it&rsquo;s less likely to be discolored over time, and leaves a smooth surface behind that pigmented particles are less likely to cling to. It also helps to limit your consumption of deeply toned foods known to cause stains, like coffee, tea, berries, and wine.</p>\n<p>You can also preserve a brighter grin by quitting unhealthy habits, like smoking vapes or cigarettes. These products contain tobacco, nicotine, and tar which are known for causing oral issues like unsightly stains, cavities, gum disease, and even oral cancer.</p>\n<h3>Can I Drink Coffee Following My Teeth Whitening Treatment?</h3>\n<p>You can, but it&rsquo;s best to wait at least 24 hours. We also recommend taking certain precautions to prevent the liquid from lingering on the surface of your teeth, like using a straw. When you&rsquo;re done, brush your teeth or, at the very least, rinse your mouth thoroughly with water.</p>\n<h3>Is Teeth Whitening Permanent?</h3>\n<p>Unfortunately, the results of your teeth whitening treatment will not last forever. The key to maintaining the bright, vibrant appearance of your smile is incorporating the right habits into your routine, like brushing, flossing, and rinsing with mouthwash. At the same time, avoid smoking or anything else that could cause noticeable stains to resurface.</p>\n<h3>Does Dental Insurance Cover Teeth Whitening?</h3>\n<p>Not usually, no. With that said, you shouldn&rsquo;t hesitate to read through the fine print on your plan to familiarize yourself with your coverage. Even if your provider doesn&rsquo;t cover the cost of cosmetic dentistry, they will likely cover a portion of the cost of any restorative treatments that are needed to create the healthy, beautiful smile that you deserve!</p>\n<p>If your dental insurance plan doesn&rsquo;t cover teeth whitening, or you are uninsured, then don&rsquo;t hesitate to ask our dental team in Copperas Cove about the other financial solutions that are available, like CareCredit! With this trusted third-party financier, you can break up the cost into smaller chunks instead of paying for the entire thing in one lump sum.</p>\n<h3>What Should I Eat After Whitening My Teeth?</h3>\n<p>In an effort to prolong the results of your teeth whitening treatment for 6+ months, we recommend incorporating lots of light-colored foods into your diet. A few examples include white fish, plain yogurt, egg whites, cottage cheese, white rice, bananas, and apples. Of course, you should also steer clear of BBQ sauce, blackberries, dark chocolate, and other pigmented foods and condiments.</p>\n<p>Tip: Drink plenty of water throughout the day! This will help remove food particles from your teeth, prevent dry mouth, and keep you hydrated.</p>\n<h3>When Should I Start Whitening My Teeth Before a Special Event?</h3>\n<p>If you are interested in teeth whitening in Copperas Cove, don&rsquo;t wait until a week or two before your special event to schedule an appointment. After all, we may need time to treat a cavity or another common oral health problem. Not only that, but it may take more than one treatment to achieve the brightness that you desire.</p>\n</div>\n</div>\n<div class=\"more-to-explore\">\n    <span>More to Explore</span>\n    <p>\n        <a class=\"btn\" href=\"/preventive-dentistry\">I Need a Dental Checkup &amp; Cleaning</a>\n        <a class=\"btn\" href=\"/childrens-dentistry\">I Need a Dentist for My Child</a>\n        <a class=\"btn\" href=\"/gum-disease-treatment\">I am Worried About Bleeding Gums</a>\n        <a class=\"btn\" href=\"/restorative-dentistry\">I Have a Cavity or Broken Tooth</a>\n        <a class=\"btn\" href=\"/replace-missing-teeth\">I am Missing One or More Teeth</a>\n        <a class=\"btn\" href=\"/cosmetic-dentistry\">I am Unhappy with My Smile</a>\n        <a class=\"btn\" href=\"/emergency-dentistry\">I am in Pain &amp; Need Help</a>\n        <a class=\"btn\" href=\"/wisdom-teeth-removal\">I Need My Wisdom Teeth Removed</a>\n        <a class=\"btn\" href=\"/tmj-therapy\">I Have Head/Neck/Jaw Pain</a>\n        <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a>\n    </p>\n</div>\n    ";
+export default function TeethWhiteningPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental for Teeth Whitening?</h2>
+  <ul>
+    <li>In-Office Zoom! Power Whitening &amp; Custom Take-Home Kits</li>
+    <li>Lightens Coffee, Tea, Tobacco &amp; Aging Stains up to 8 Shades</li>
+    <li>Clinically Proven, Safe for Sensitive Teeth &amp; Enamel</li>
+    <li>Free Whitening Pen Included with New Patient Specials</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>Who Is a Good Candidate for Teeth Whitening?</h2>
+  <p>
+    <img
+      alt="Dental patient with dazzling white smile in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/whitening-1.jpg"
+    />
+    Even if you brush and floss diligently, tooth enamel naturally absorbs pigments over time from coffee, tea, red wine, dark sauces, and biological aging. Almost any patient with healthy teeth and gums looking to boost confidence for weddings, interviews, or daily life is an ideal candidate for professional whitening.
+  </p>
+
+  <h2>In-Office Zoom! vs. Take-Home Whitening</h2>
+  <p>
+    <img
+      alt="Woman receiving in-office Zoom teeth whitening treatment"
+      class="elem-left"
+      src="/assets/images/whitening-2.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>In-Office Zoom! Whitening (1 Hour):</strong> Our dental team applies professional-strength whitening gel and activates it with a specialized LED light. In just 60 minutes, stubborn surface and deep stains disappear, leaving your smile up to 8 shades lighter.</li>
+    <li><strong>Custom Take-Home Whitening Kits:</strong> We craft customized dental trays that fit your teeth like a glove, providing prescription-grade bleaching gel you can apply comfortably in your own home over 10 to 14 days.</li>
+  </ul>
+
+  <h2>Tips for Maintaining Your Whiter Smile</h2>
+  <p>
+    <img
+      alt="Woman with bright white smile in Copperas Cove"
+      class="elem-left"
+      src="/assets/images/whitening-3.jpg"
+    />
+  </p>
+  <ul>
+    <li><strong>Consistent Hygiene:</strong> Brush twice a day with non-abrasive fluoride toothpaste and floss daily.</li>
+    <li><strong>Rinse After Staining Foods:</strong> Drink water or rinse after dark coffee, colas, red wine, or berries.</li>
+    <li><strong>Periodic Touch-Ups:</strong> Use your custom trays with a refill gel syringe every few months to keep your smile shining like new.</li>
+  </ul>
+
+  <h2>Understanding the Cost of Teeth Whitening</h2>
+  <div class="section-toggle">
+    <h3>Professional Care vs. Over-the-Counter Strips</h3>
+    <img
+      alt="Woman smiling after professional teeth whitening"
+      class="elem-left"
+      src="/assets/images/1-cost-teeth-whitening.jpg"
+    />
+    <p>
+      Drugstore whitening strips and charcoal pastes often contain diluted gels or abrasive particles that can strip enamel and irritate sensitive gums. In contrast, professional dentist-administered treatments protect your gums with dental dams, yield dramatic results immediately, and save money over time by doing the job right.
+    </p>
+    <p>
+      At Cove Choice Dental, we accept flexible 0% interest monthly payment options through <strong>CareCredit®</strong> and <strong>Sunbit</strong>, making cosmetic smile makeovers budget-friendly for everyone.
+    </p>
+  </div>
+
+  <h2>Teeth Whitening FAQs</h2>
+  <div class="accordion">
+    <h3>Does Teeth Whitening Cause Tooth Sensitivity?</h3>
+    <p>
+      Some patients experience minor, temporary sensitivity that resolves within 24 to 48 hours. Our advanced Zoom! formula includes desensitizing agents that protect enamel and soothe nerve endings.
+    </p>
+
+    <h3>How Long Does Professional Whitening Last?</h3>
+    <p>
+      With good oral hygiene and mindful dietary habits, your bright new shade can last anywhere from one to three years before requiring a brief touch-up.
+    </p>
+
+    <h3>Can You Whiten Crowns or Veneers?</h3>
+    <p>
+      Whitening gel only lightens natural enamel. If you plan to get crowns or veneers, we recommend whitening your natural teeth first so restorations can be color-matched to your brightest smile!
+    </p>
+  </div>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/veneers">Porcelain Veneers</a>
+    <a class="btn" href="/cosmetic-bonding">Cosmetic Bonding</a>
+    <a class="btn" href="/cosmetic-dentistry">Cosmetic Smile Makeover</a>
+    <a class="btn" href="/preventive-dentistry">Dental Checkups &amp; Cleanings</a>
+    <a class="btn-alt" href="/dental-services">Explore All Services →</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Teeth Whitening Copperas Cove"}
-        subtitle={"A Quick &amp; Easy Way to Get Whiter Teeth"}
-        description={undefined}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="Professional Teeth Whitening in Copperas Cove, TX"
+      subtitle="Zoom! In-Office Power Whitening & Custom Take-Home Trays"
+      description="Erase years of coffee, tea, and age-related stains in just one hour. Our professional Zoom! teeth whitening delivers fast, safe, and brilliant results that drugstore strips simply can’t match."
+      breadcrumbLabel="Teeth Whitening"
+      bgImage="/assets/images/banner-services.jpg"
+      specialOffer={{
+        title: "Free Whitening Pen with New Patient Special",
+        price: "$100",
+        notes: "Includes Comprehensive Exam, X-Rays & Whitening Pen",
+        href: "/offers-promotions",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }

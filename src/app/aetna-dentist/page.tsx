@@ -1,24 +1,73 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
   title: "Aetna Dentist Copperas Cove | In-Network Aetna Dentist | Cove Choice Dental",
-  description: "Our Copperas Cove dental practice is proud to be in-network with Aetna insurance. Learn how we can help you maximize your benefits.",
+  description: "Our Copperas Cove dental practice is proud to be in-network with Aetna dental insurance. Learn how we help you maximize your annual benefits and save.",
 };
 
-export default function AetnaDentistPagePage() {
-  const contentHtml = "\n<div class=\"page-divider\">\n<h2>Aetna Coverage Availability &amp; Fees</h2>\n<p><img alt=\"Smiling patient in dental treatment chair\" class=\"elem-left\" src=\"/assets/images/aetna-1.jpg\"/></p>\n<p>Aetna offers a few different dental plans, each of which has its own set of fees, coverage levels, and stipulations. We recommend that you set aside a bit of time to get to know the ins and outs of your unique policy. In the meantime, here is a bit of general information about the coverage that might be available with Aetna PPO plans:</p>\n<ul>\n<li><strong>Preventive care, </strong>often including exams, cleanings, and X-rays, may be up to 100% covered.</li>\n<li><strong>Basic services, </strong>such as fillings, are typically around 80% covered.</li>\n<li><strong>Major services, </strong>like crowns and dentures, might be around 50% covered.</li>\n</ul>\n<p>Keep in mind that not all plans cover all services, and you may have to account for a deductible, waiting periods, and your annual maximum when you are trying to calculate out-of-pocket costs. Our team would be happy to help you with this.</p>\n<p>Plus, since we are in-network with Aetna, we have a contract that manages fees. That means you may be able to get more out of your annual maximum (yearly benefits limit) than you would when visiting an out-of-network practice. In some cases, we can even schedule major treatments across calendar years, which could enable you to use two annual maximums instead of just one.</p>\n<h2>Meet Our Team</h2>\n<p><img alt=\"Dental team member assisting patient at front desk\" class=\"elem-left\" src=\"/assets/images/aetna-2.jpg\"/></p>\n<p>At Cove Choice Dental, our team is committed to helping you get the most out of your Aetna insurance plan. We will be happy to assist you with:</p>\n<ul>\n<li>Verifying your benefits and understanding how they apply to different treatments.</li>\n<li>Acquiring preauthorization when necessary.</li>\n<li>Filing your claims in a timely manner.</li>\n<li>Following-up with Aetna to make sure you get the benefits that your plan entitles you to.</li>\n</ul>\n<p>We have lots of experience in navigating the ins and outs of insurance, and we want to put our expertise to work for you! To learn more about how we may be able to serve you, <a href=\"/contact\">contact our office</a> today.</p>\n</div>\n    ";
+export default function AetnaDentistPage() {
+  const contentHtml = `
+<div class="why">
+  <h2>Why Choose Cove Choice Dental as Your In-Network Aetna Dentist?</h2>
+  <ul>
+    <li>Contracted In-Network Savings on All Covered Procedures</li>
+    <li>We Direct-Bill Aetna &amp; Handle All Claims &amp; Paperwork</li>
+    <li>Year-End Treatment Planning to Maximize Annual Maximums</li>
+  </ul>
+</div>
+
+<div class="page-divider">
+  <h2>Aetna Coverage Availability &amp; Typical Benefits</h2>
+  <p><img alt="Smiling patient in dental treatment chair" class="elem-left" src="/assets/images/aetna-1.jpg"/></p>
+  <p>Aetna offers a variety of dental insurance plans, each with its own specific copays, deductible structures, and annual maximums. In general, Aetna PPO plans follow a helpful tiered structure:</p>
+  <ul>
+    <li><strong>Preventive Care (100% Covered):</strong> Routine checkups, professional cleanings, routine bitewing X-rays, and fluoride treatments often involve zero out-of-pocket costs.</li>
+    <li><strong>Basic Services (Up to 80% Covered):</strong> Tooth-colored composite fillings, non-surgical gum therapy, and simple extractions.</li>
+    <li><strong>Major Services (Up to 50% Covered):</strong> Dental crowns, dental bridges, dentures, and surgical oral procedures.</li>
+  </ul>
+  <p>Because Cove Choice Dental is contracted directly with Aetna as an in-network provider, you receive pre-negotiated discount rates that out-of-network dentists cannot offer. This allows your annual maximum benefit to stretch significantly further!</p>
+
+  <h2>Our Team Helps You Maximize Your Aetna Benefits</h2>
+  <p><img alt="Dental team member assisting patient at front desk" class="elem-left" src="/assets/images/aetna-2.jpg"/></p>
+  <p>Navigating dental insurance fine print can feel confusing, but you don't have to do it alone. Our dedicated front-desk insurance specialists will gladly:</p>
+  <ul>
+    <li>Verify your active Aetna coverage and explain your remaining benefits before treatment starts.</li>
+    <li>Submit pre-treatment authorizations so there are never any financial surprises.</li>
+    <li>File all electronic claims promptly with proper diagnostic documentation and X-rays.</li>
+    <li>Strategically schedule multi-stage treatments across calendar years if you are near your annual maximum.</li>
+  </ul>
+</div>
+
+<div class="more-to-explore">
+  <span>More to Explore</span>
+  <p>
+    <a class="btn" href="/dental-insurance">Dental Insurance Guide</a>
+    <a class="btn" href="/preventive-dentistry">Preventive Dental Checkups</a>
+    <a class="btn" href="/dental-crowns">Dental Crowns</a>
+    <a class="btn" href="/medicaid-and-chip">Medicaid &amp; CHIP</a>
+    <a class="btn-alt" href="/dental-services">View All Dental Services</a>
+  </p>
+</div>
+`;
 
   return (
-    <>
-      <PageBanner
-        title={"Aetna Dentist Copperas Cove"}
-        subtitle={"Learn More About the Benefits of Aetna"}
-        description={"If you have a <a href=\"dental-insurance.html\">dental insurance</a> plan from Aetna, you can view it as a precious asset. It can grant you access to low-cost preventive services, <em>and </em>it may reduce the financial strain of those times when your teeth need a bit of restorative treatment. But how can you get the greatest value out of your plan? As an in-network Aetna dentist in Copperas Cove, our team is ready and eager to assist you. Continue reading below to learn more about how we can do so."}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+    <ServicePageLayout
+      title="In-Network Aetna Dentist"
+      subtitle="Maximize Your Aetna Dental Insurance Benefits in Copperas Cove, TX"
+      description="Keep your smile healthy and your out-of-pocket costs predictable. We are proud to be in-network with Aetna Dental PPO plans."
+      breadcrumbLabel="Aetna Dentist"
+      bgImage="/assets/images/banner-services.jpg"
+      sidebarType="insurance"
+      specialOffer={{
+        title: "Aetna In-Network",
+        price: "$0 Copay",
+        description: "Most preventive cleanings, exams & X-rays are 100% covered under Aetna PPO plans.",
+        link: "/request-an-appointment",
+        badge: "In-Network Provider",
+      }}
+    >
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    </ServicePageLayout>
   );
 }
