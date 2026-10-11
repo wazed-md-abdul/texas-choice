@@ -86,21 +86,21 @@ export default function HomeHero() {
             <div className="lg:col-span-7 space-y-6">
               {/* Trust Badge */}
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-medium">
-                <span className="flex text-amber-400 gap-0.5">
+                <span className="flex text-[#febb21] gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="w-3.5 h-3.5 fill-[#febb21] text-[#febb21]" />
                   ))}
                 </span>
                 <span className="text-slate-200">
                   <strong>4.9 Rating</strong> from 1,200+ Patient Reviews
                 </span>
-                <span className="hidden sm:inline text-teal-300 font-semibold">• Copperas Cove, TX</span>
+                <span className="hidden sm:inline text-[#9c8f6d] font-bold">• Copperas Cove, TX</span>
               </div>
 
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] drop-shadow-md">
                 Trustworthy Dental Care That{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-300 to-teal-200">
+                <span className="text-[#e64b38]">
                   Inspires Healthy Smiles
                 </span>
               </h1>
@@ -114,7 +114,7 @@ export default function HomeHero() {
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link
                   href="/request-an-appointment"
-                  className="bg-teal-500 hover:bg-teal-400 text-white font-bold text-base px-7 py-4 rounded-xl shadow-lg hover:shadow-teal-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5"
+                  className="bg-[#e64b38] hover:bg-[#d23b28] text-white font-bold text-base px-7 py-4 rounded-xl shadow-lg hover:shadow-[#e64b38]/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -126,7 +126,7 @@ export default function HomeHero() {
                   href="tel:12549876777"
                   className="bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-base px-6 py-4 rounded-xl backdrop-blur-md transition-all flex items-center gap-2.5"
                 >
-                  <svg className="w-5 h-5 text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#9c8f6d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <span>Call (254) 987-6777</span>
@@ -139,7 +139,7 @@ export default function HomeHero() {
                   href="/emergency-dentistry"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm text-rose-300 hover:text-rose-200 transition-colors bg-rose-500/15 border border-rose-500/30 px-3.5 py-1.5 rounded-lg"
                 >
-                  <span className="w-2 h-2 rounded-full bg-rose-400 animate-ping" />
+                  <span className="w-2 h-2 rounded-full bg-[#e64b38] animate-ping" />
                   <strong>Dental Emergency?</strong> Same-day emergency appointments are available!
                 </Link>
               </div>
@@ -169,15 +169,15 @@ export default function HomeHero() {
 
             {/* Right Specials Card Deck */}
             <div className="lg:col-span-5">
-              <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl">
+              <div className="bg-[#204369]/90 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl">
                 <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/15">
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-teal-300">
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#9c8f6d]">
                       Limited Time Offers
                     </span>
                     <h3 className="text-xl font-bold text-white">Patient Specials</h3>
                   </div>
-                  <span className="px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-300/30 rounded-full text-xs font-semibold">
+                  <span className="px-3 py-1 bg-[#e64b38] text-white rounded-full text-xs font-bold shadow">
                     Instant Voucher
                   </span>
                 </div>
@@ -187,14 +187,14 @@ export default function HomeHero() {
                     <div
                       key={cpn.id}
                       onClick={() => setSelectedCoupon(cpn)}
-                      className="group cursor-pointer bg-white/10 hover:bg-white/20 border border-white/15 hover:border-teal-400/60 p-4 rounded-2xl transition-all transform hover:-translate-y-0.5 duration-200 flex items-center justify-between"
+                      className="group cursor-pointer bg-white/10 hover:bg-white/20 border border-white/15 hover:border-[#9c8f6d]/60 p-4 rounded-2xl transition-all transform hover:-translate-y-0.5 duration-200 flex items-center justify-between"
                     >
                       <div className="space-y-0.5 pr-2">
                         <div className="flex items-center gap-2">
-                          <span className="text-teal-300 font-extrabold text-base sm:text-lg">
+                          <span className="text-[#febb21] font-extrabold text-base sm:text-lg">
                             {cpn.price}
                           </span>
-                          <h4 className="text-sm font-bold text-white group-hover:text-teal-200 transition-colors">
+                          <h4 className="text-sm font-bold text-white group-hover:text-amber-200 transition-colors">
                             {cpn.title.replace(/\$\d+\s*/, "")}
                           </h4>
                         </div>
@@ -202,7 +202,7 @@ export default function HomeHero() {
                       </div>
                       <button
                         type="button"
-                        className="shrink-0 bg-teal-500 group-hover:bg-teal-400 text-white font-bold text-xs px-3.5 py-2 rounded-xl transition-colors shadow"
+                        className="shrink-0 bg-[#e64b38] group-hover:bg-[#d23b28] text-white font-bold text-xs px-3.5 py-2 rounded-xl transition-colors shadow"
                       >
                         Claim
                       </button>
@@ -212,7 +212,7 @@ export default function HomeHero() {
 
                 <div className="mt-5 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-slate-300">
                   <span>*No insurance needed for specials</span>
-                  <Link href="/offers-promotions" className="text-teal-300 hover:text-teal-200 font-semibold">
+                  <Link href="/offers-promotions" className="text-[#9c8f6d] hover:text-white font-bold">
                     All Promotions →
                   </Link>
                 </div>

@@ -49,8 +49,8 @@ export default function HomeReviewsSlider() {
           <span className="text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-slate-500 block mb-3">
             TESTIMONIAL
           </span>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            What Our Patients <span className="text-emerald-500">Are Saying</span>
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-[#204369] tracking-tight leading-tight">
+            What Our Patients <span className="text-[#e64b38]">Are Saying</span>
           </h2>
         </div>
 
@@ -62,8 +62,8 @@ export default function HomeReviewsSlider() {
               className="flex flex-col justify-between h-full group"
             >
               <div>
-                {/* Vibrant Green Double Quotes Icon */}
-                <div className="text-emerald-500 mb-6">
+                {/* Brand Coral Double Quotes Icon */}
+                <div className="text-[#e64b38] mb-6">
                   <svg
                     className="w-9 h-9 fill-current"
                     viewBox="0 0 24 24"
@@ -84,10 +84,10 @@ export default function HomeReviewsSlider() {
                 <img
                   src={rev.img}
                   alt={rev.author}
-                  className="w-11 h-11 rounded-full object-cover shrink-0 ring-2 ring-emerald-500/20"
+                  className="w-11 h-11 rounded-full object-cover shrink-0 ring-2 ring-[#e64b38]/20"
                 />
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm sm:text-base leading-tight">
+                  <h4 className="font-bold text-[#204369] text-sm sm:text-base leading-tight">
                     {rev.author}
                   </h4>
                   <p className="text-xs text-slate-500 font-medium mt-0.5">
@@ -101,16 +101,16 @@ export default function HomeReviewsSlider() {
 
         {/* Bottom Trust Badge & Link */}
         <div className="mt-16 sm:mt-20 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-full border border-slate-200">
-            <span className="flex items-center gap-1 text-amber-500 font-bold text-sm">
-              <Star className="w-4 h-4 fill-amber-400 text-amber-400" /> 4.9 Rating
+          <div className="flex items-center gap-2 bg-[#f2f1ec] px-4 py-2 rounded-full border border-[#9c8f6d]/30">
+            <span className="flex items-center gap-1 text-[#204369] font-bold text-sm">
+              <Star className="w-4 h-4 fill-[#febb21] text-[#febb21]" /> 4.9 Rating
             </span>
-            <span className="text-xs text-slate-500 font-medium">• 1,200+ Google Patient Reviews</span>
+            <span className="text-xs text-slate-600 font-medium">• 1,200+ Google Patient Reviews</span>
           </div>
 
           <Link
             href="/reviews"
-            className="text-xs sm:text-sm font-bold text-[#0b2545] hover:text-teal-700 transition-colors inline-flex items-center gap-1.5"
+            className="text-xs sm:text-sm font-bold text-[#204369] hover:text-[#e64b38] transition-colors inline-flex items-center gap-1.5"
           >
             <span>Read All Verified Patient Reviews</span>
             <span>→</span>

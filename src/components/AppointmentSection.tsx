@@ -27,9 +27,9 @@ export default function AppointmentSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="bg-white rounded-3xl border border-slate-200/80 shadow-2xl overflow-hidden grid lg:grid-cols-12">
           {/* Left Visual & Clinic Contact Column */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-[#0b2545] via-[#134074] to-teal-900 text-white p-8 sm:p-12 flex flex-col justify-between">
+          <div className="lg:col-span-5 bg-gradient-to-br from-[#16304c] via-[#204369] to-[#2d5b8c] text-white p-8 sm:p-12 flex flex-col justify-between">
             <div>
-              <span className="text-teal-300 font-bold uppercase tracking-wider text-xs bg-white/10 px-3 py-1 rounded-full border border-white/15">
+              <span className="text-[#9c8f6d] font-bold uppercase tracking-wider text-xs bg-white/10 px-3 py-1 rounded-full border border-white/15">
                 Convenient Scheduling
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4 leading-tight">
@@ -41,7 +41,7 @@ export default function AppointmentSection() {
 
               <div className="space-y-4 text-sm text-slate-200">
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-teal-300 shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#9c8f6d] shrink-0">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
@@ -51,7 +51,7 @@ export default function AppointmentSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-teal-300 shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#9c8f6d] shrink-0">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
@@ -61,12 +61,12 @@ export default function AppointmentSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-teal-300 shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[#9c8f6d] shrink-0">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
                     <span className="block font-bold text-white">Call Directly</span>
-                    <a href="tel:12549876777" className="text-teal-300 hover:text-white font-bold text-base">
+                    <a href="tel:12549876777" className="text-[#e64b38] hover:text-white font-bold text-base">
                       (254) 987-6777
                     </a>
                   </div>
@@ -94,17 +94,17 @@ export default function AppointmentSection() {
           <div className="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-center">
             {isSubmitted ? (
               <div className="text-center py-12 space-y-4">
-                <div className="w-20 h-20 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
+                <div className="w-20 h-20 bg-[#204369]/10 text-[#204369] rounded-full flex items-center justify-center mx-auto shadow-inner">
                   <Check className="w-10 h-10" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0b2545]">Appointment Request Received!</h3>
+                <h3 className="text-2xl font-bold text-[#204369]">Appointment Request Received!</h3>
                 <p className="text-slate-600 max-w-md mx-auto text-sm leading-relaxed">
                   Thank you, <strong>{formData.name}</strong>. Our scheduling team has received your request for <strong>{formData.reason}</strong>. We will contact you at <strong>{formData.phone}</strong> shortly to finalize your appointment time.
                 </p>
                 <div className="pt-4">
                   <a
                     href="tel:12549876777"
-                    className="inline-block bg-[#0b2545] text-white font-bold px-6 py-3 rounded-xl text-sm shadow hover:bg-[#134074] transition-colors"
+                    className="inline-block bg-[#e64b38] hover:bg-[#c93b2a] text-white font-bold px-6 py-3 rounded-xl text-sm shadow transition-colors"
                   >
                     Need Immediate Assistance? Call (254) 987-6777
                   </a>
@@ -123,7 +123,7 @@ export default function AppointmentSection() {
                       placeholder="e.g. John Doe"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369]"
                     />
                   </div>
 
@@ -137,7 +137,7 @@ export default function AppointmentSection() {
                       placeholder="(254) 000-0000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369]"
                     />
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export default function AppointmentSection() {
                       placeholder="john@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369]"
                     />
                   </div>
 
@@ -164,7 +164,7 @@ export default function AppointmentSection() {
                     <select
                       value={formData.patientStatus}
                       onChange={(e) => setFormData({ ...formData, patientStatus: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 bg-white"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369] bg-white"
                     >
                       <option value="New Patient">New Patient</option>
                       <option value="Returning Patient">Returning Patient</option>
@@ -180,7 +180,7 @@ export default function AppointmentSection() {
                     <select
                       value={formData.reason}
                       onChange={(e) => setFormData({ ...formData, reason: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 bg-white"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369] bg-white"
                     >
                       <option value="New Patient Special ($100 Exam & X-Rays)">New Patient Special ($100 Exam &amp; X-Rays)</option>
                       <option value="Emergency Tooth Pain / Urgent Exam ($65)">Emergency Tooth Pain / Urgent Exam ($65)</option>
@@ -200,7 +200,7 @@ export default function AppointmentSection() {
                     <select
                       value={formData.preferredTime}
                       onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 bg-white"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369] bg-white"
                     >
                       <option value="Morning (8:30 AM - 12:00 PM)">Morning (8:30 AM - 12:00 PM)</option>
                       <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM - 5:00 PM)</option>
@@ -218,14 +218,14 @@ export default function AppointmentSection() {
                     placeholder="e.g. Delta Dental, Medicaid, or specific tooth issue"
                     value={formData.insurance}
                     onChange={(e) => setFormData({ ...formData, insurance: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-800 text-sm focus:outline-none focus:border-[#204369] focus:ring-1 focus:ring-[#204369]"
                   />
                 </div>
 
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 rounded-xl text-sm shadow-md hover:shadow-lg transition-all"
+                    className="w-full bg-[#e64b38] hover:bg-[#204369] text-white font-bold py-3.5 rounded-xl text-sm shadow-md hover:shadow-lg transition-all"
                   >
                     Submit Appointment Request
                   </button>

@@ -2,29 +2,35 @@
 @import "../styles/fontello.css";
 
 @theme {
-  --color-brand-navy: #0b2545;
-  --color-brand-navy-light: #134074;
-  --color-brand-blue: #0077b6;
-  --color-brand-teal: #0d9488;
-  --color-brand-cyan: #0284c7;
-  --color-brand-gold: #f59e0b;
-  --color-brand-red: #e11d48;
-  --color-brand-bg: #f8fafc;
-  --color-brand-border: #e2e8f0;
+  --color-brand-navy: #204369;
+  --color-brand-navy-dark: #16304c;
+  --color-brand-navy-light: #2d5b8c;
+  --color-brand-coral: #e64b38;
+  --color-brand-coral-hover: #d23b28;
+  --color-brand-gold: #9c8f6d;
+  --color-brand-gold-hover: #887b5a;
+  --color-brand-cream: #f2f1ec;
+  --color-brand-cyan: #3a97bb;
+  --color-brand-charcoal: #262626;
+  --color-brand-bg: #f8f8f6;
+  --color-brand-border: #e7e5df;
 
   --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
 }
 
 :root {
-  --bg-gradient: linear-gradient(135deg, #0b2545 0%, #134074 100%);
-  --teal-gradient: linear-gradient(135deg, #0d9488 0%, #0284c7 100%);
+  --bg-gradient: linear-gradient(135deg, #204369 0%, #16304c 100%);
+  --brand-navy: #204369;
+  --brand-coral: #e64b38;
+  --brand-gold: #9c8f6d;
+  --brand-cream: #f2f1ec;
 }
 
 /* Base Body Styles */
 body {
-  background-color: #f8fafc;
-  color: #1e293b;
+  background-color: #f8f8f6;
+  color: #204369;
   font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -11,7 +11,7 @@ import { FaYelp, FaGoogle } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0b2545] text-slate-200 rounded-t-[2.5rem] md:rounded-t-[3.5rem] mt-16 md:mt-24 px-6 sm:px-12 py-12 md:py-16 max-w-[1440px] mx-auto border-t border-white/10 shadow-2xl flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
+    <footer className="w-full bg-[#204369] text-slate-200 rounded-t-[2.5rem] md:rounded-t-[3.5rem] mt-16 md:mt-24 px-6 sm:px-12 py-12 md:py-16 max-w-[1440px] mx-auto border-t border-white/10 shadow-2xl flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
       {/* Brand & Clinic Info (Left) */}
       <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-sm">
         <Link href="/" className="inline-block mb-3">
@@ -31,16 +31,16 @@ export default function Footer() {
             href="https://maps.google.com/?q=181+W+Hwy+190+Suite+4+Copperas+Cove+TX+76522"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center md:justify-start gap-2 hover:text-teal-300 transition-colors"
+            className="flex items-center justify-center md:justify-start gap-2 hover:text-[#9c8f6d] transition-colors"
           >
-            <IoLocationSharp className="text-teal-400 shrink-0 text-sm" />
+            <IoLocationSharp className="text-[#9c8f6d] shrink-0 text-sm" />
             <span>181 W Hwy 190 Suite 4, Copperas Cove, TX 76522</span>
           </a>
           <a
             href="tel:12549876777"
-            className="flex items-center justify-center md:justify-start gap-2 hover:text-teal-300 font-bold transition-colors"
+            className="flex items-center justify-center md:justify-start gap-2 hover:text-[#e64b38] font-bold transition-colors"
           >
-            <IoCall className="text-teal-400 shrink-0 text-sm" />
+            <IoCall className="text-[#e64b38] shrink-0 text-sm" />
             <span>(254) 987-6777</span>
           </a>
         </div>
@@ -50,40 +50,40 @@ export default function Footer() {
       <div className="flex flex-col items-center md:items-end gap-6 w-full md:w-auto">
         {/* Navigation Links */}
         <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-xs sm:text-sm font-medium text-slate-300">
-          <Link href="/about-us" className="hover:text-teal-300 transition-colors">
+          <Link href="/about-us" className="hover:text-[#9c8f6d] transition-colors">
             About Us
           </Link>
-          <Link href="/dental-services" className="hover:text-teal-300 transition-colors">
+          <Link href="/dental-services" className="hover:text-[#9c8f6d] transition-colors">
             Services
           </Link>
-          <Link href="/emergency-dentistry" className="text-rose-400 hover:text-rose-300 font-semibold transition-colors">
+          <Link href="/emergency-dentistry" className="text-[#e64b38] hover:text-white font-bold transition-colors">
             Emergency Care
           </Link>
-          <Link href="/dental-insurance" className="hover:text-teal-300 transition-colors">
+          <Link href="/dental-insurance" className="hover:text-[#9c8f6d] transition-colors">
             Insurance &amp; Medicaid
           </Link>
-          <Link href="/offers-promotions" className="hover:text-amber-300 transition-colors">
+          <Link href="/offers-promotions" className="hover:text-[#febb21] transition-colors">
             Special Offers
           </Link>
-          <Link href="/reviews" className="hover:text-teal-300 transition-colors">
+          <Link href="/reviews" className="hover:text-[#9c8f6d] transition-colors">
             Reviews
           </Link>
-          <Link href="/contact" className="hover:text-teal-300 transition-colors">
+          <Link href="/contact" className="hover:text-[#9c8f6d] transition-colors">
             Contact
           </Link>
-          <Link href="/privacy-policy" className="hover:text-teal-300 transition-colors">
+          <Link href="/privacy-policy" className="hover:text-[#9c8f6d] transition-colors">
             Privacy Policy
           </Link>
         </div>
 
-        {/* Social Links (SkillSphare rounded circular badge style) */}
+        {/* Social Links */}
         <div className="flex items-center gap-2.5">
           <a
             href="https://www.facebook.com/Dentistcopperascove/"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-teal-500 hover:text-white hover:scale-105 transition-all shadow-sm"
+            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-[#e64b38] hover:text-white hover:scale-105 transition-all shadow-sm"
           >
             <IoLogoFacebook className="text-base" />
           </a>
@@ -93,7 +93,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Google Reviews"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-teal-500 hover:text-white hover:scale-105 transition-all shadow-sm"
+            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-[#e64b38] hover:text-white hover:scale-105 transition-all shadow-sm"
           >
             <FaGoogle className="text-sm" />
           </a>
@@ -103,7 +103,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Yelp"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-teal-500 hover:text-white hover:scale-105 transition-all shadow-sm"
+            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-[#e64b38] hover:text-white hover:scale-105 transition-all shadow-sm"
           >
             <FaYelp className="text-sm" />
           </a>
@@ -113,7 +113,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-teal-500 hover:text-white hover:scale-105 transition-all shadow-sm"
+            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-[#e64b38] hover:text-white hover:scale-105 transition-all shadow-sm"
           >
             <IoLogoInstagram className="text-base" />
           </a>
@@ -123,7 +123,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Twitter / X"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-teal-500 hover:text-white hover:scale-105 transition-all shadow-sm"
+            className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 border border-white/15 text-white hover:bg-[#e64b38] hover:text-white hover:scale-105 transition-all shadow-sm"
           >
             <IoLogoTwitter className="text-base" />
           </a>

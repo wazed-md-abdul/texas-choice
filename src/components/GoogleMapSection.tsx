@@ -6,10 +6,10 @@ export default function GoogleMapSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <span className="text-teal-700 font-bold uppercase tracking-wider text-xs sm:text-sm bg-teal-50 px-3 py-1 rounded-full border border-teal-100">
+            <span className="text-[#204369] font-bold uppercase tracking-wider text-xs sm:text-sm bg-[#f2f1ec] px-3.5 py-1.5 rounded-full border border-[#9c8f6d]/30">
               Convenient Copperas Cove Location
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0b2545] mt-2 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#204369] mt-2 tracking-tight">
               Finding Our Dental Office
             </h2>
             <p className="text-slate-600 text-sm mt-1">
@@ -20,7 +20,7 @@ export default function GoogleMapSection() {
             href="https://maps.google.com/?q=181+W+Hwy+190+Suite+4+Copperas+Cove+TX+76522"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#0b2545] hover:bg-[#134074] text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow transition-colors shrink-0"
+            className="inline-flex items-center gap-2 bg-[#204369] hover:bg-[#16304c] text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl shadow transition-colors shrink-0"
           >
             <span>Open in Google Maps</span>
             <span>↗</span>

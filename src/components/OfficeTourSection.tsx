@@ -9,11 +9,11 @@ export default function OfficeTourSection() {
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Column */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-teal-700 font-bold uppercase tracking-wider text-xs sm:text-sm bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-100">
+            <span className="text-[#204369] font-bold uppercase tracking-wider text-xs sm:text-sm bg-[#f2f1ec] px-3.5 py-1.5 rounded-full border border-[#9c8f6d]/30">
               Modern Amenities &amp; Digital Precision
             </span>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0b2545] tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#204369] tracking-tight leading-tight">
               A Comfortable, State-of-the-Art Dental Environment
             </h2>
 
@@ -23,21 +23,21 @@ export default function OfficeTourSection() {
 
             <div className="grid sm:grid-cols-2 gap-4 pt-2">
               <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
-                <div className="w-8 h-8 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-[#204369]/10 text-[#204369] flex items-center justify-center shrink-0">
                   <Camera className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-[#0b2545]">Intraoral Digital Cameras</h4>
+                  <h4 className="font-bold text-sm text-[#204369]">Intraoral Digital Cameras</h4>
                   <p className="text-xs text-slate-500 mt-0.5">See exactly what the dentist sees in real-time.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
-                <div className="w-8 h-8 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-[#204369]/10 text-[#204369] flex items-center justify-center shrink-0">
                   <Zap className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-[#0b2545]">Digital X-Rays</h4>
+                  <h4 className="font-bold text-sm text-[#204369]">Digital X-Rays</h4>
                   <p className="text-xs text-slate-500 mt-0.5">80% less radiation with instant high-res imagery.</p>
                 </div>
               </div>
@@ -46,13 +46,13 @@ export default function OfficeTourSection() {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
                 href="/tour-our-office"
-                className="bg-[#0b2545] hover:bg-[#134074] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow transition-all"
+                className="bg-[#204369] hover:bg-[#16304c] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow transition-all"
               >
                 Tour Our Dental Office
               </Link>
               <Link
                 href="/advanced-dental-technology"
-                className="bg-slate-100 hover:bg-slate-200 text-[#0b2545] font-bold text-sm px-6 py-3.5 rounded-xl transition-all"
+                className="bg-slate-100 hover:bg-slate-200 text-[#204369] font-bold text-sm px-6 py-3.5 rounded-xl transition-all"
               >
                 Explore Technology
               </Link>

@@ -17,16 +17,16 @@ export default function PageBanner({
   breadcrumbs = [{ label: "Home", href: "/" }],
 }: PageBannerProps) {
   return (
-    <div className="relative bg-[#0b2545] text-white py-14 sm:py-20 overflow-hidden">
+    <div className="relative bg-[#204369] text-white py-14 sm:py-20 overflow-hidden">
       {/* Background with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-25"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0b2545] via-[#0b2545]/95 to-[#134074]/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#204369] via-[#204369]/95 to-[#16304c]/90" />
 
       {/* Decorative ambient light */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-[#9c8f6d]/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Breadcrumb Trail */}
@@ -35,11 +35,11 @@ export default function PageBanner({
             {breadcrumbs.map((crumb, idx) => (
               <React.Fragment key={idx}>
                 {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-teal-300 transition-colors">
+                  <Link href={crumb.href} className="hover:text-[#9c8f6d] transition-colors">
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-teal-300 font-medium">{crumb.label}</span>
+                  <span className="text-[#9c8f6d] font-medium">{crumb.label}</span>
                 )}
                 {idx < breadcrumbs.length - 1 && <span className="text-slate-500">/</span>}
               </React.Fragment>
@@ -50,7 +50,7 @@ export default function PageBanner({
         {/* Title & Subtitle */}
         <div className="max-w-3xl">
           {subtitle && (
-            <span className="inline-block text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-300 bg-white/10 px-3.5 py-1 rounded-full border border-white/10 mb-3">
+            <span className="inline-block text-xs sm:text-sm font-bold uppercase tracking-wider text-[#9c8f6d] bg-white/10 px-3.5 py-1 rounded-full border border-white/10 mb-3">
               {subtitle}
             </span>
           )}

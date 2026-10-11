@@ -59,21 +59,21 @@ export default function ServicePageLayout({
           {/* Sticky Sidebar */}
           <div className="lg:col-span-4 space-y-6">
             {/* Quick Booking Widget */}
-            <div className="bg-[#0b2545] text-white rounded-3xl p-6 sm:p-8 shadow-xl sticky top-24">
-              <span className="text-teal-300 font-bold uppercase tracking-wider text-xs block mb-1">
+            <div className="bg-[#204369] text-white rounded-3xl p-6 sm:p-8 shadow-xl sticky top-24">
+              <span className="text-[#9c8f6d] font-bold uppercase tracking-wider text-xs block mb-1">
                 Schedule Your Visit
               </span>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
                 Need Dental Care?
               </h3>
-              <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6">
+              <p className="text-slate-200 text-xs sm:text-sm leading-relaxed mb-6">
                 Our Copperas Cove team is ready to welcome you. Same-day emergency appointments and flexible scheduling available.
               </p>
 
               <div className="space-y-3">
                 <a
                   href="tel:12549876777"
-                  className="w-full bg-teal-500 hover:bg-teal-400 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow transition-colors"
+                  className="w-full bg-[#e64b38] hover:bg-[#c93b2a] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow transition-colors"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -92,17 +92,17 @@ export default function ServicePageLayout({
               {/* Special Offer Card */}
               {specialOffer && (
                 <div className="mt-6 pt-5 border-t border-white/15 bg-white/5 rounded-2xl p-4 border border-white/10">
-                  <span className="text-[11px] font-bold text-amber-300 uppercase tracking-wider block mb-1">
+                  <span className="text-[11px] font-bold text-[#febb21] uppercase tracking-wider block mb-1">
                     Special Offer
                   </span>
                   <div className="flex items-center justify-between mb-1">
                     <h4 className="font-bold text-sm text-white">{specialOffer.title}</h4>
-                    <span className="text-teal-300 font-extrabold text-base">{specialOffer.price}</span>
+                    <span className="text-[#febb21] font-extrabold text-base">{specialOffer.price}</span>
                   </div>
                   <p className="text-xs text-slate-300 mb-3">{specialOffer.notes}</p>
                   <Link
                     href={specialOffer.href}
-                    className="text-xs text-teal-300 hover:text-teal-200 font-bold flex items-center gap-1"
+                    className="text-xs text-[#9c8f6d] hover:text-white font-bold flex items-center gap-1"
                   >
                     View All Specials →
                   </Link>
@@ -121,43 +121,43 @@ export default function ServicePageLayout({
                 </div>
                 <div className="flex justify-between">
                   <span>Medicaid &amp; PPO:</span>
-                  <span className="text-teal-300 font-semibold">Accepted</span>
+                  <span className="text-[#3a97bb] font-semibold">Accepted</span>
                 </div>
               </div>
             </div>
 
             {/* Related Quick Links */}
             <div className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm">
-              <h4 className="font-bold text-sm text-[#0b2545] uppercase tracking-wider mb-3">
+              <h4 className="font-bold text-sm text-[#204369] uppercase tracking-wider mb-3">
                 Related Dental Care
               </h4>
               <ul className="space-y-2 text-sm text-slate-600">
                 <li>
-                  <Link href="/emergency-dentistry" className="hover:text-teal-700 flex items-center justify-between">
+                  <Link href="/emergency-dentistry" className="hover:text-[#e64b38] flex items-center justify-between transition-colors">
                     <span>Emergency Dentistry</span>
                     <span className="text-slate-400">→</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/dental-implants" className="hover:text-teal-700 flex items-center justify-between">
+                  <Link href="/dental-implants" className="hover:text-[#204369] flex items-center justify-between transition-colors">
                     <span>Dental Implants</span>
                     <span className="text-slate-400">→</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/dentures" className="hover:text-teal-700 flex items-center justify-between">
+                  <Link href="/dentures" className="hover:text-[#204369] flex items-center justify-between transition-colors">
                     <span>Modern Dentures</span>
                     <span className="text-slate-400">→</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/preventive-dentistry" className="hover:text-teal-700 flex items-center justify-between">
+                  <Link href="/preventive-dentistry" className="hover:text-[#204369] flex items-center justify-between transition-colors">
                     <span>Family Dental Care</span>
                     <span className="text-slate-400">→</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/dental-insurance" className="hover:text-teal-700 flex items-center justify-between">
+                  <Link href="/dental-insurance" className="hover:text-[#204369] flex items-center justify-between transition-colors">
                     <span>Insurance &amp; Financing</span>
                     <span className="text-slate-400">→</span>
                   </Link>

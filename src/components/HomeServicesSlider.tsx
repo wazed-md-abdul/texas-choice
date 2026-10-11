@@ -129,10 +129,10 @@ export default function HomeServicesSlider() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <span className="text-teal-700 font-bold uppercase tracking-wider text-xs sm:text-sm bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-100">
+            <span className="text-[#204369] font-bold uppercase tracking-wider text-xs sm:text-sm bg-[#9c8f6d]/15 px-3.5 py-1.5 rounded-full border border-[#9c8f6d]/30">
               Comprehensive Dental Treatments
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0b2545] mt-3 mb-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#204369] mt-3 mb-3 tracking-tight">
               Quality Dental Services Under One Roof
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
@@ -142,7 +142,7 @@ export default function HomeServicesSlider() {
 
           <Link
             href="/dental-services"
-            className="inline-flex items-center gap-2 bg-[#0b2545] hover:bg-[#134074] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow transition-all self-start md:self-auto shrink-0"
+            className="inline-flex items-center gap-2 bg-[#204369] hover:bg-[#e64b38] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow transition-all self-start md:self-auto shrink-0"
           >
             <span>Explore All 20+ Services</span>
             <span>→</span>
@@ -163,8 +163,8 @@ export default function HomeServicesSlider() {
               onClick={() => setFilter(tab.id)}
               className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
                 filter === tab.id
-                  ? "bg-[#0b2545] text-white shadow-md"
-                  : "bg-white text-slate-600 hover:bg-slate-200/70 border border-slate-200"
+                  ? "bg-[#204369] text-white shadow-md"
+                  : "bg-white text-[#204369] hover:bg-[#f2f1ec] border border-slate-200"
               }`}
             >
               {tab.label}
@@ -187,18 +187,18 @@ export default function HomeServicesSlider() {
                     alt={svc.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-[#0b2545] text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1.5">
-                    {svc.id === "emergency" && <AlertCircle className="w-3.5 h-3.5 text-rose-600" />}
+                  <div className="absolute top-3 left-3 bg-[#204369]/90 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1.5">
+                    {svc.id === "emergency" && <AlertCircle className="w-3.5 h-3.5 text-[#e64b38]" />}
                     <span>{svc.badge}</span>
                   </div>
                 </div>
 
                 {/* Service Details */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-[#0b2545] group-hover:text-teal-700 transition-colors mb-1">
+                  <h3 className="text-xl font-bold text-[#204369] group-hover:text-[#e64b38] transition-colors mb-1">
                     {svc.title}
                   </h3>
-                  <p className="text-xs font-semibold text-teal-700 mb-3">
+                  <p className="text-xs font-semibold text-[#e64b38] mb-3">
                     {svc.subtitle}
                   </p>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
@@ -208,7 +208,7 @@ export default function HomeServicesSlider() {
                   <ul className="space-y-1.5 mb-2 text-xs text-slate-500 border-t border-slate-100 pt-3">
                     {svc.features.map((feat, idx) => (
                       <li key={idx} className="flex items-center gap-1.5">
-                        <Check className="w-3.5 h-3.5 text-teal-600 shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-[#9c8f6d] shrink-0" />
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -219,7 +219,7 @@ export default function HomeServicesSlider() {
               <div className="px-6 pb-6 pt-2">
                 <Link
                   href={svc.href}
-                  className="w-full block text-center py-2.5 px-4 rounded-xl bg-slate-50 group-hover:bg-[#0b2545] text-[#0b2545] group-hover:text-white font-bold text-xs transition-colors border border-slate-200 group-hover:border-[#0b2545]"
+                  className="w-full block text-center py-2.5 px-4 rounded-xl bg-[#f2f1ec] group-hover:bg-[#e64b38] text-[#204369] group-hover:text-white font-bold text-xs transition-colors border border-[#9c8f6d]/20 group-hover:border-[#e64b38]"
                 >
                   Learn More About {svc.title} →
                 </Link>
