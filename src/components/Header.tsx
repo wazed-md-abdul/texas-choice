@@ -133,7 +133,7 @@ export default function Header() {
                   Dental Technology
                 </Link>
                 <Link href="/advanced-safety-protocol" className="block px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-[#0b2545]">
-                  Safety & Hygiene Protocols
+                  COVID-19 Dental Office Safety Protocol
                 </Link>
               </div>
             </div>
@@ -387,6 +387,9 @@ export default function Header() {
                     </Link>
                     <Link href="/advanced-dental-technology" onClick={closeMenu} className="block px-3 py-1.5 text-sm text-slate-300 hover:text-white">
                       Technology
+                    </Link>
+                    <Link href="/advanced-safety-protocol" onClick={closeMenu} className="block px-3 py-1.5 text-sm text-slate-300 hover:text-white">
+                      COVID-19 Dental Office Safety Protocol
                     </Link>
                   </div>
                 )}

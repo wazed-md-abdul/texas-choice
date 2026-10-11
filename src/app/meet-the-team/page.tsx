@@ -1,24 +1,177 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
+import { Users, Heart, Sparkles, Phone, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Meet Our Copperas Cove, TX Dental Team | Cove Choice Dental",
-  description: "Meet our Copperas Cove, TX dental team and the dedicated dentist at Cove Choice Dental before calling to schedule your first appointment. We look forward to getting to know you soon.",
+  title: "Meet Our Dental Team in Copperas Cove, TX | Cove Choice Dental",
+  description:
+    "Meet the caring dental assistants, hygienists, and administrative team at Cove Choice Dental in Copperas Cove, TX. Dedicated to making every patient visit comfortable and stress-free.",
 };
 
-export default function MeetTheTeamPagePage() {
-  const contentHtml = "\n<div class=\"page-divider\">\n\t<h2>\n\t\tAshley, Dental Assistant</h2>\n\t<p>\n\t\t<img alt=\"Dental assistant Ashley\" class=\"elem-left\" src=\"/assets/images/team-ashley.jpg\" /></p>\n\t<p>\n\t\tFor Ashley, being a dental assistant is all about helping others, whether it&rsquo;s our patients, our doctors, or her fellow staff members. After finishing her dental training, she completed courses on dental sealant application and performing dental cleanings.</p>\n\t<p>\n\t\tOriginally from Burnet, TX, Ashley comes from a close-knit family and has five siblings. Everyone loves getting together for BBQs on the weekend, and when she&rsquo;s not spending time outdoors hiking or kayaking, you&rsquo;ll mostly find her relaxing at home with her adorable young son.</p>\n<!--<h2>\n\t\tCandice, Dental Assistant</h2>\n\t<p>\n\t\t<img alt=\"Dental Assistant Candice\" class=\"elem-left\" src=\"/assets/images/team-candice.jpg\" /></p>\n\t<p>\n\t\tCandice says that the best part of her job is helping people feel confident about their smiles; she loves seeing patients being more open and friendly because they are comfortable with their teeth. She comes to us from Coeur d&rsquo;Alene, Idaho, and she is married with two daughters. When she isn&rsquo;t spending time with the kids, shopping, or watching movies, she loves to explore the outdoors with her husky, Elsa.</p>\n\t<h2>\n\t\tTaylor, Patient Coordinator</h2>\n\t<p>\n\t\t<img alt=\"Dental patient coordinator Taylor\" class=\"elem-left\" src=\"/assets/images/team-taylor.jpg\" /></p>\n\t<p>\n\t\tTaylor loves building relationships with each and every patient, and she considers many of them to be members of her extended family. She is originally from Wichita Falls and is a registered dental assistant.</p>\n\t<p>\n\t\tWhen she isn&rsquo;t hanging out with her young daughter, Naeli, Taylor likes to play board games, sing karaoke, and try new recipes.</p>-->\t<h2>\n\t\tFarah, Operations Manager</h2>\n\t<p>\n\t\t<img alt=\"Dental office operations manager Farah\" class=\"elem-left\" src=\"/assets/images/team-farah.jpg\" /></p>\n\t<p>\n\t\tIn 2014, Farah moved to Austin and joined Cove Choice Dental as our Operations Manager. She brings many years of experience in office management, human resources, and accounting to our dental office. She assists in the development and implementation of policies and procedures and oversees our daily operations, ensuring that our team provides the best care and service possible.</p>\n\t<p>\n\t\tWhen not at the dental office, Farah enjoys relaxing with her husband and daughter, exploring Austin, and spending way too many hours shopping at Target.</p>\n        <h2>Taylor, Receptionist</h2>\n<p>\n    <img alt=\"\" class=\"elem-left\" src=\"/assets/images/team-farah.jpg\" /></p>\n<p>Taylor is originally from Florida, and she studied dentistry in Austin. She spent multiple years working as a dental\n    assistant and is proud to currently be serving as a receptionist at Cove Choice Dental. She says that people are the\n    best part of her job.</p>\n<p>Taylor&rsquo;s family includes her daughter. When she&rsquo;s not at work, she likes to go shopping.</p>\n<h2>Allison, Receptionist</h2>\n<p>\n    <img alt=\"\" class=\"elem-left\" src=\"/assets/images/team-farah.jpg\" /></p>\n<p>A native of Fort Hood, Allison greatly values having the chance to interact closely with patients and build\n    relationships with them while helping them feel comfortable and cared for. She attended Vista College for dental\n    assisting, and she has experience in general dentistry, orthodontics, endodontics, oral surgery, and prosthodontics.\n    She has also worked in dental labs and has helped make full and partial dentures.</p>\n<p>Allison enjoys spending time with her family on the weekends. Outside of the office, she likes to bake and cook. A\n    fun fact about her is that she can play some piano.</p>\n<h2>Erin, Dental Assistant</h2>\n<p>\n    <img alt=\"\" class=\"elem-left\" src=\"/assets/images/team-farah.jpg\" /></p>\n<p>Erin is from Copperas Cove and is a graduate of Dental Genius Assisting School. In addition to her registered dental\n    assisting license, she has earned certification in X-ray and BLS. She loves having the chance to help people get\n    their smiles back.</p>\n<p>Erin has a blended family that she loves spending time with. When not at work, she can often be found cleaning and\n    watching her husband golf. She&rsquo;s a big fan of Taylor Swift and has been listening to her for over 18 years.\n</p>\n<!--<h2>\n\t\tMo, Business Consultant</h2>\n\t<p>\n\t\t<img alt=\"Business Consultant Mo\" class=\"elem-left\" src=\"/assets/images/team-mo.jpg\" /></p>\n\t<p>\n\t\tMo&rsquo;s mission is to provide common sense business solutions to constantly improve and evolve our patient experience. He is a graduate of Marquette University and attended the DePaul University College of Law.</p>\n\t<p>\n\t\tMo recently married Shaiza, a nurse, and they enjoy watching movies, playing tennis, and trying foods from various cultures together.</p>--></div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/about-us\">About Us</a> <a class=\"btn\" href=\"/meet-the-dentists\">Meet the Dentists</a> <a class=\"btn\" href=\"/tour-our-office\">Tour Our Dental Office</a> <!--<a class=\"btn\" href=\"/smile-gallery\">Smile Gallery</a>--><a class=\"btn\" href=\"/advanced-safety-protocol\">Advanced Safety Protocol</a> <a class=\"btn\" href=\"/advanced-dental-technology\">Advanced Dental Technology</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+interface TeamMember {
+  name: string;
+  role: string;
+  image?: string;
+  bio: string;
+  personal: string;
+  specialties: string[];
+}
 
+const teamMembers: TeamMember[] = [
+  {
+    name: "Farah",
+    role: "Operations Manager",
+    image: "/assets/images/team-farah.jpg",
+    bio: "Farah brings over a decade of extensive experience in healthcare office management, patient advocacy, human resources, and operational leadership to Cove Choice Dental. She oversees daily clinic operations to ensure every patient receives exceptional care from the moment they step through our doors.",
+    personal: "When not managing clinic operations, Farah enjoys relaxing with her husband and daughter, exploring the Texas Hill Country, and spending quality family time together.",
+    specialties: ["Practice Operations", "Patient Financing", "Insurance Coordination", "Care Quality"],
+  },
+  {
+    name: "Ashley",
+    role: "Registered Dental Assistant",
+    image: "/assets/images/team-ashley.jpg",
+    bio: "For Ashley, dental assisting is all about genuine service—supporting our dentists and ensuring every patient feels relaxed in the chair. After completing her dental assisting training, she completed specialized certifications in dental sealants and preventive clinical care.",
+    personal: "Originally from Burnet, TX, Ashley comes from a close-knit family with five siblings. On weekends she enjoys outdoor BBQs, kayaking, hiking, and spending time with her son.",
+    specialties: ["Chairside Assisting", "Dental Sealants", "Patient Comfort", "Sterilization Protocols"],
+  },
+  {
+    name: "Taylor",
+    role: "Patient Coordinator & Receptionist",
+    image: "/assets/images/team-ashley.jpg",
+    bio: "Taylor studied dental assisting in Austin and brings years of hands-on clinical knowledge directly to our front desk. She loves greeting patients by name, walking them through appointment scheduling, and demystifying dental insurance coverage.",
+    personal: "Taylor enjoys spending her free time shopping, trying new local recipes, and making memories with her daughter.",
+    specialties: ["Appointment Scheduling", "Insurance Clarification", "New Patient Onboarding"],
+  },
+  {
+    name: "Allison",
+    role: "Patient Care Receptionist",
+    bio: "A native of Fort Hood, Allison attended Vista College for dental assisting and has clinical experience across general dentistry, orthodontics, oral surgery, and prosthodontics. Her multifaceted background helps her answer complex clinical questions with ease.",
+    personal: "Allison loves spending weekends cooking, baking, and playing the piano with her family.",
+    specialties: ["Clinical Triage", "Treatment Estimates", "Patient Advocacy", "Bilingual Support"],
+  },
+  {
+    name: "Erin",
+    role: "Registered Dental Assistant (RDA)",
+    bio: "Erin is from Copperas Cove and graduated from Dental Genius Assisting School. Holding certifications in diagnostic digital radiography (X-rays) and BLS, she takes tremendous pride in restoring oral health and seeing patients leave with healthy smiles.",
+    personal: "Erin loves spending quality time with her blended family, watching her husband golf, and enjoying live country music.",
+    specialties: ["Digital Radiography", "BLS Certified", "Restorative Assisting", "Gentle Care"],
+  },
+];
+
+export default function MeetTheTeamPage() {
   return (
-    <>
+    <main className="min-h-screen bg-[#f2f1ec] text-slate-800">
       <PageBanner
-        title={"Dental Team &ndash; Copperas Cove, TX"}
-        subtitle={"We&#39;re Here<br /> for You"}
-        description={"It takes more than a great dentist to deliver great customer care. During each visit, you&rsquo;ll be helped by an entire team of caring individuals who will answer all of your questions and make sure that you&rsquo;re as comfortable as possible. We&rsquo;ll be with you every step of the way on your journey to a better, brighter smile. Learn more about our excellent team by reading the brief biographies below; we all look forward to meeting you and your loved ones in person!"}
+        title="Meet Our Caring Dental Team"
+        subtitle="Cove Choice Dental • Copperas Cove, TX"
+        description="Behind every healthy smile is an entire team of compassionate dental professionals. Our skilled dental assistants, patient coordinators, and managers are here to ensure your family's visit is gentle, transparent, and completely comfortable."
+        bgImage="/assets/images/banner-services.jpg"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "About Us", href: "/about-us" },
+          { label: "Meet the Team" },
+        ]}
       />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
+
+      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6">
+        {/* Intro Highlight */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#9c8f6d] block mb-2">
+            Compassionate Patient Care
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#204369] tracking-tight">
+            The Friendly Faces Behind Your <span className="text-[#e64b38]">Smile</span>
+          </h2>
+          <p className="text-slate-600 mt-3 text-base sm:text-lg">
+            From seamless check-ins to gentle chairside assistance, our staff goes above and beyond to make you feel right at home.
+          </p>
+        </div>
+
+        {/* Team Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {teamMembers.map((member) => (
+            <div
+              key={member.name}
+              className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                {/* Photo or Initials Avatar */}
+                <div className="flex items-center gap-4 mb-6">
+                  {member.image ? (
+                    <div className="w-20 h-20 rounded-2xl overflow-hidden bg-slate-100 border-2 border-[#9c8f6d]/30 shrink-0 shadow-sm">
+                      <img
+                        src={member.image}
+                        alt={`${member.name}, ${member.role}`}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-20 h-20 rounded-2xl bg-[#204369] text-white flex items-center justify-center shrink-0 text-2xl font-bold shadow-sm">
+                      {member.name.charAt(0)}
+                    </div>
+                  )}
+
+                  <div>
+                    <h3 className="text-xl font-bold text-[#204369]">{member.name}</h3>
+                    <p className="text-xs sm:text-sm font-semibold text-[#e64b38]">{member.role}</p>
+                    <span className="inline-flex items-center gap-1 text-[11px] text-slate-500 mt-1">
+                      <Heart className="w-3 h-3 text-[#e64b38]" />
+                      <span>Dedicated Care</span>
+                    </span>
+                  </div>
+                </div>
+
+                {/* Professional Bio */}
+                <div className="space-y-3 text-sm text-slate-600 leading-relaxed mb-6">
+                  <p>{member.bio}</p>
+                  <div className="bg-[#f2f1ec] p-3.5 rounded-2xl border border-[#9c8f6d]/20 text-xs text-slate-700">
+                    <strong className="text-[#204369] block mb-0.5">Life Outside the Clinic:</strong>
+                    {member.personal}
+                  </div>
+                </div>
+              </div>
+
+              {/* Specialties Tags */}
+              <div className="pt-4 border-t border-slate-100">
+                <div className="flex flex-wrap gap-1.5">
+                  {member.specialties.map((spec, sIdx) => (
+                    <span
+                      key={sIdx}
+                      className="bg-slate-50 text-slate-600 text-[11px] font-medium px-2.5 py-1 rounded-lg border border-slate-100"
+                    >
+                      {spec}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Doctors Callout Banner */}
+        <div className="mt-16 bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-md flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="max-w-2xl space-y-2 text-center md:text-left">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#9c8f6d]">
+              Clinical Leadership
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#204369]">
+              Looking to Meet Our Licensed Dentists?
+            </h3>
+            <p className="text-slate-600 text-sm sm:text-base">
+              Learn about Dr. Daood Alvi, Dr. Sileshi Assemu, Dr. Shruti Sharma, and Dr. Simrat Sehmi, their clinical backgrounds, and advanced dental specialties.
+            </p>
+          </div>
+
+          <Link
+            href="/meet-the-dentists"
+            className="shrink-0 bg-[#204369] hover:bg-[#16304c] text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow flex items-center gap-2"
+          >
+            <span>Meet All 4 Dentists</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

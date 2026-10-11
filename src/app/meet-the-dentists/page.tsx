@@ -30,47 +30,47 @@ export default function MeetTheDentistsPage() {
       {/* More to Explore Section */}
       <section className="py-16 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <span className="text-teal-700 font-bold uppercase tracking-wider text-xs bg-teal-50 px-3.5 py-1.5 rounded-full border border-teal-100">
+          <span className="text-[#204369] font-bold uppercase tracking-wider text-xs bg-[#f2f1ec] px-3.5 py-1.5 rounded-full border border-[#9c8f6d]/30">
             Learn More About Our Practice
           </span>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0b2545] mt-3 mb-6">
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-[#204369] mt-3 mb-6">
             Explore Cove Choice Dental
           </h3>
 
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
             <Link
               href="/about-us"
-              className="bg-slate-100 hover:bg-[#0b2545] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
+              className="bg-slate-100 hover:bg-[#204369] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
             >
               What Sets Us Apart
             </Link>
             <Link
               href="/meet-the-team"
-              className="bg-slate-100 hover:bg-[#0b2545] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
+              className="bg-slate-100 hover:bg-[#204369] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
             >
-              Meet Dental Hygienists &amp; Staff
+              Meet Dental Staff
             </Link>
             <Link
               href="/tour-our-office"
-              className="bg-slate-100 hover:bg-[#0b2545] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
+              className="bg-slate-100 hover:bg-[#204369] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
             >
               Tour Our Office
             </Link>
             <Link
               href="/advanced-safety-protocol"
-              className="bg-slate-100 hover:bg-[#0b2545] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
+              className="bg-slate-100 hover:bg-[#204369] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
             >
               Safety Protocols
             </Link>
             <Link
               href="/advanced-dental-technology"
-              className="bg-slate-100 hover:bg-[#0b2545] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
+              className="bg-slate-100 hover:bg-[#204369] hover:text-white text-slate-800 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-xl transition-all"
             >
               Dental Technology
             </Link>
             <Link
               href="/dental-services"
-              className="bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow transition-all"
+              className="bg-[#e64b38] hover:bg-[#c93b2a] text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow transition-all"
             >
               View All Services →
             </Link>

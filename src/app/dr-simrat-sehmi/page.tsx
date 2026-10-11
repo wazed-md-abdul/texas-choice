@@ -1,24 +1,86 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/PageBanner";
+import DoctorProfileLayout, { DoctorProfileData } from "@/components/DoctorProfileLayout";
 
 export const metadata: Metadata = {
-  title: "Meet Copperas Cove, TX Dentist Dr. Simrat Sehmi | Texas Choice Dental",
-  description: "Dr. Simrat Sehmi is eager to help you and your loved ones feel right at home here at Texas Choice Dental.",
+  title: "Dr. Simrat Sehmi, DDS | Family & Pediatric Dentist in Copperas Cove, TX | Cove Choice Dental",
+  description:
+    "Meet Dr. Simrat Sehmi, DDS at Cove Choice Dental in Copperas Cove, TX. Expert family and pediatric dental care, Invisalign, lasers, and full-arch reconstructive dentistry.",
 };
 
-export default function DrSimratSehmiPagePage() {
-  const contentHtml = "\n<p>According to Dr. Sehmi, being a dentist is all about developing a meaningful relationship with each patient, making them feel comfortable, and giving them a smile that looks and feels great. She hopes to make your trips to the dentist as easy as possible and ensure you always walk out of our office feeling satisfied. Before you meet her in person, you can learn more about Dr. Sehmi below.</p>\n<div class=\"text-center\" style=\"margin: 60px auto;\">\n<h2>Why Did You Decide to Become a Dentist?</h2>\n<p>Dr. Sehmi learned about the importance of someone&rsquo;s smile from a very early age. It was the first thing she noticed about people, and as a shy child, someone smiling gave her a lot of comfort and confidence to open up. This interest eventually turned into her passion, and she decided to focus her career on spreading the magic and power of healing of smiles by becoming a dentist.</p>\n</div>\n<div class=\"page-divider\">\n<h2>Where Did You Study Dentistry?</h2>\n<p><img alt=\"\" class=\"elem-left\" src=\"/assets/images/dr-sehmi-bio-2.jpg\"/></p>\n<p>Dr. Sehmi attended Virginia Commonwealth University and ultimately earned her dental degree from the VCU School of Dentistry. Since then, she has consistently taken classes to better herself and make sure she&rsquo;s up to date on the latest techniques and technology. To date, she has completed advanced training for Invisalign, dental implant dentistry, and full arch reconstructions.</p>\n<p>She is also an active member of the Texas Dental Association and Academy of Laser Dentistry.</p>\n<h2>Outside of the Dental Office, What Do You Like to Do?</h2>\n<p><img alt=\"\" class=\"elem-left\" src=\"/assets/images/dr-sehmi-bio-3.jpg\"/></p>\n<p>A former competitive swimmer and Indian classical dancer, Dr. Sehmi is happily married and likes to spend her free time hiking and exploring new restaurants around Austin. Back indoors, she also loves to cook and bake&mdash;be sure to ask her about the last thing she made when you see her! On lazy days, you&rsquo;ll usually find her relaxing with her tuxedo cat, Ziggy.</p>\n</div>\n<div class=\"more-to-explore\">\n\t<span>More to Explore</span>\n\t<p>\n\t\t<a class=\"btn\" href=\"/about-us\">About Us</a> <a class=\"btn\" href=\"/meet-the-dentists\">Meet the Dentists</a> <a class=\"btn\" href=\"/meet-the-team\">Meet the Team</a> <a class=\"btn\" href=\"/tour-our-office\">Tour Our Dental Office</a> <!--<a class=\"btn\" href=\"/smile-gallery\">Smile Gallery</a>--><a class=\"btn\" href=\"/advanced-safety-protocol\">Advanced Safety Protocol</a> <a class=\"btn\" href=\"/advanced-dental-technology\">Advanced Dental Technology</a> <a class=\"btn-alt\" href=\"/dental-services\">View Our Services</a></p>\n</div>\n    ";
+const sehmiData: DoctorProfileData = {
+  name: "Dr. Simrat Sehmi, DDS",
+  credentials: "Doctor of Dental Surgery, VCU School of Dentistry",
+  role: "Family & Pediatric Dentist",
+  specialty: "Children's Dentistry & Preventive Care",
+  portraitImage: "/assets/images/dr-sehmi-bio-1.png",
+  introQuote:
+    "A genuine smile carries immense healing power. My passion is creating a warm, anxiety-free dental home where kids, teens, and adults feel completely empowered and cared for.",
+  bioIntro: [
+    "According to Dr. Sehmi, being a dentist is fundamentally about developing meaningful, caring relationships with every patient—making them feel totally at ease while giving them a radiant, pain-free smile.",
+    "She strives to make each dental visit as seamless and gentle as possible, ensuring that patients of all ages leave the practice smiling with pride and confidence.",
+  ],
+  keyHighlights: [
+    "Doctor of Dental Surgery (VCU)",
+    "Gentle Pediatric Dental Techniques",
+    "Invisalign® Certified Provider",
+    "Academy of Laser Dentistry Member",
+    "Full Arch Reconstructive Dentistry",
+  ],
+  whyDentistry: {
+    title: "Why Did You Decide to Become a Dentist?",
+    text: [
+      "Dr. Sehmi recognized the profound emotional importance of a healthy smile from early childhood. As a shy child, seeing a welcoming smile gave her the courage to open up and connect with others.",
+      "That early realization blossomed into a lifelong passion. She decided to dedicate her career to spreading that same healing power, confidence, and comfort to families in Central Texas.",
+    ],
+  },
+  education: {
+    title: "Where Did You Study Dentistry?",
+    degree: "Doctor of Dental Surgery (DDS)",
+    school: "Virginia Commonwealth University School of Dentistry (Richmond, VA)",
+    text: [
+      "Dr. Sehmi attended Virginia Commonwealth University for her undergraduate education and earned her Doctorate of Dental Surgery from the respected VCU School of Dentistry.",
+      "She consistently completes advanced master-level training to stay at the cutting edge of clinical care, including extensive certifications in Invisalign clear aligners, dental laser therapy, and complex full-arch smile restorations.",
+    ],
+    image: "/assets/images/dr-sehmi-bio-2.jpg",
+    imageAlt: "Dr. Sehmi clinical dental education certificate",
+    memberships: [
+      "American Dental Association (ADA)",
+      "Texas Dental Association (TDA)",
+      "Academy of Laser Dentistry (ALD)",
+      "American Academy of Pediatric Dentistry Affiliation",
+    ],
+  },
+  personalLife: {
+    title: "Outside of the Dental Office, What Do You Like to Do?",
+    text: [
+      "A former competitive swimmer and Indian classical dancer, Dr. Sehmi is happily married and loves spending her leisure time hiking scenic trails and discovering new dining spots around the Austin and Hill Country area.",
+      "Back indoors, she loves to cook and bake—be sure to ask her about her newest pastry creation at your next checkup! On relaxed days off, you'll usually find her spending time with her friendly tuxedo cat, Ziggy.",
+    ],
+    image: "/assets/images/dr-sehmi-bio-3.jpg",
+    imageAlt: "Dr. Sehmi enjoying outdoor recreation",
+  },
+  otherDentists: [
+    {
+      name: "Dr. Daood Alvi, DDS",
+      role: "Founder & Lead Dentist",
+      image: "/assets/images/dr-alvi-landing.jpg",
+      href: "/dr-daood-alvi",
+    },
+    {
+      name: "Dr. Sileshi Assemu, DDS",
+      role: "General & Family Dentist",
+      image: "/assets/images/dr-assemu-landing.jpg",
+      href: "/dr-assemu",
+    },
+    {
+      name: "Dr. Shruti Sharma, DDS",
+      role: "General & Cosmetic Dentist",
+      image: "/assets/images/dr-sharma-landing.jpg",
+      href: "/dr-sharma",
+    },
+  ],
+};
 
-  return (
-    <>
-      <PageBanner
-        title={"Experienced Copperas Cove, TX Dentist"}
-        subtitle={"Get to Know Dr. Simrat Sehmi"}
-        description={"<img alt=\"\" class=\"main-img\" src=\"assets/images/dr-sehmi-bio-1.png\"/>"}
-      />
-      <main className="wrapper">
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      </main>
-    </>
-  );
+export default function DrSimratSehmiPage() {
+  return <DoctorProfileLayout doctor={sehmiData} />;
 }
